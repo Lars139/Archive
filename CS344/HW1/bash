@@ -1,0 +1,38 @@
+#!/bin/bash
+cp ~/../../../../../nfs/farm/classes/eecs/summer2014/cs344-001/pawlowsb.tar.bz2 ./pawlowsb.tar.bz2
+
+tar -xvf ./pawlowsb.tar.bz2
+cd assign2
+ls -al
+
+tar -xvf dir3.tar.bz2
+tar -xvf dir0.tar.bz2
+tar -xvf dir1.tar.bz2
+tar -xvf dir2.tar.bz2
+tar -xvf dir4.tar.bz2
+
+cd dir0
+ls
+cat file.txt
+cd ..
+
+cd dir1
+ls
+cat file.txt
+cd ..
+
+cd dir2
+ls
+cat file.txt
+cd ..
+
+cd dir3
+ls
+cat file.txt
+cd ..
+
+cd dir4
+ls
+cat file.txt
+cd ..
+

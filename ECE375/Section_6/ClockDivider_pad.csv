@@ -1,0 +1,73 @@
+Release 8.1i - Fit P.15xf
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 5-22-2013  6:10PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  ClockDivider.ngd
+output file: ClockDivider_pad.csv
+Part type:   xc9572xl
+Speed grade: -10
+Package:     vq44
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,TIE,,I/O/GCK3,,,,,,,,,,
+P2,TIE,,I/O,,,,,,,,,,
+P3,TIE,,I/O,,,,,,,,,,
+P4,GND,,GND,,,,,,,,,,
+P5,Clock_512,O,I/O,OUTPUT,,,,,,,,,
+P6,TIE,,I/O,,,,,,,,,,
+P7,TIE,,I/O,,,,,,,,,,
+P8,Clock_64,O,I/O,OUTPUT,,,,,,,,,
+P9,TDI,,TDI,,,,,,,,,,
+P10,TMS,,TMS,,,,,,,,,,
+P11,TCK,,TCK,,,,,,,,,,
+P12,TIE,,I/O,,,,,,,,,,
+P13,TIE,,I/O,,,,,,,,,,
+P14,Clock_8,O,I/O,OUTPUT,,,,,,,,,
+P15,VCC,,VCCINT,,,,,,,,,,
+P16,TIE,,I/O,,,,,,,,,,
+P17,GND,,GND,,,,,,,,,,
+P18,TIE,,I/O,,,,,,,,,,
+P19,Clock_1024,O,I/O,OUTPUT,,,,,,,,,
+P20,TIE,,I/O,,,,,,,,,,
+P21,TIE,,I/O,,,,,,,,,,
+P22,TIE,,I/O,,,,,,,,,,
+P23,Clock_2,O,I/O,OUTPUT,,,,,,,,,
+P24,TDO,,TDO,,,,,,,,,,
+P25,GND,,GND,,,,,,,,,,
+P26,VCC,,VCCIO,,,,,,,,,,
+P27,TIE,,I/O,,,,,,,,,,
+P28,TIE,,I/O,,,,,,,,,,
+P29,Clock_256,O,I/O,OUTPUT,,,,,,,,,
+P30,TIE,,I/O,,,,,,,,,,
+P31,Clock_32,O,I/O,OUTPUT,,,,,,,,,
+P32,TIE,,I/O,,,,,,,,,,
+P33,Reset,GSR,I/O/GSR,,,,,,,,,,
+P34,TIE,,I/O/GTS2,,,,,,,,,,
+P35,VCC,,VCCINT,,,,,,,,,,
+P36,TIE,,I/O/GTS1,,,,,,,,,,
+P37,Clock_4,O,I/O,OUTPUT,,,,,,,,,
+P38,TIE,,I/O,,,,,,,,,,
+P39,Clock_128,O,I/O,OUTPUT,,,,,,,,,
+P40,TIE,,I/O,,,,,,,,,,
+P41,TIE,,I/O,,,,,,,,,,
+P42,Clock_16,O,I/O,OUTPUT,,,,,,,,,
+P43,Clock,GCK,I/O/GCK1,,,,,,,,,,
+P44,TIE,,I/O/GCK2,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

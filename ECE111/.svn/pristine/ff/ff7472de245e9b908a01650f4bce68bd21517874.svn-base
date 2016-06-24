@@ -1,0 +1,33 @@
+\hypertarget{namespacegui}{\section{gui Namespace Reference}
+\label{namespacegui}\index{gui@{gui}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgui_1_1_motor_g_u_i}{Motor\-G\-U\-I}
+\begin{DoxyCompactList}\small\item\em Defines the main frame for the G\-U\-I. \end{DoxyCompactList}\item 
+class \hyperlink{classgui_1_1_g_u_i___launcher}{G\-U\-I\-\_\-\-Launcher}
+\begin{DoxyCompactList}\small\item\em Abstracts away the creation of the \hyperlink{classgui_1_1_motor_g_u_i}{Motor\-G\-U\-I} and launches it in the default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Defines the GUI that abstracts away the connection with the OSUisp2 and Tiny261
+Created on Aug 13, 2012
+
+@author: Robert L. Phillips III
+@version: 1.0
+
+@section DEPENDENCIES
+    -  wxPython
+          The GUI is generated using the third party library wxPython.  All documentation
+          for the wxPython library can be found at wxpython.org.
+          
+    -  tiny26
+          Contains the libraries necessary for the GUI to establish a connection to the
+          Tiny26 and send commands to it.
+          
+    -  time
+          Contains the sleep function, which is needed to block certain threads for a certain
+          amount of time
+\end{DoxyVerb}
+ 

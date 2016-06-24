@@ -1,0 +1,478 @@
+\hypertarget{libraries_2_a_d_c_8h}{\section{T\-:/students/phillir2/\-Tiny261/libraries/adc.h File Reference}
+\label{libraries_2_a_d_c_8h}\index{T\-:/students/phillir2/\-Tiny261/libraries/adc.\-h@{T\-:/students/phillir2/\-Tiny261/libraries/adc.\-h}}
+}
+{\ttfamily \#include \char`\"{}types.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a1075ec572c43abf8c30fb2c9bb5ce665}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0}~0x00
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a852fad8f349227f95fd698f6b0f951da}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1}~0x01
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a97d7b78aa50ac10219ef299eead2914c}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2}~0x02
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a64c1fe89be44188e82af6ba92f931e0d}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3}~0x03
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_ad5499dd3064296f6d3bcfaac65a732d8}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4}~0x04
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a637d55ae60101f4e431f0c7a1e8f17d4}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5}~0x05
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a3bd241c95c2e2922af108d196271f8c8}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6}~0x06
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a333456ac5e816125333b01c81a2fc222}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7}~0x07
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_aef83eb9af51452694d56cc8c3f7e311b}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8}~0x08
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_af7d76fab67cb2c2c92def3853ee80cc2}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9}~0x09
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a9a6b71fa340ef231f6536538869d976c}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10}~0x0\-A
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_abee13b387a2a255fe407fe6674cb62ae}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1}~0x00
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_aeaac601e7fb65dfbfa157c738fd3a1db}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2}~0x01
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a7aec4350b204d9c8160ab7419e15d93e}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4}~0x02
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_ab30c91a0c1d57639fbb9aa2e13719d45}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8}~0x03
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a56bf388f5fd18903f1d356dd654a9930}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16}~0x04
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_aaf5c1d488815feb1416a5c9d1710c2c8}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32}~0x05
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a51e4e47f4ef2b5f25be89b958a4bb8a8}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64}~0x06
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_ac324413055383e702d8a76739dd01664}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128}~0x07
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a7dc684a9d3f21b2a52dc74aea546d724}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K}~0b00011111
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_abf476b63e70a7381a2e4d0f39631dfe6}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K}~0b00000111
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_acd2a0fb5183eb8bb3759943d35f059e3}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K}~0b11000000
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_afa512ab6557d736d1857030529343634}{A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T}~\hyperlink{types_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_ab8390a55a184369c3c47c8adbecf0b16}{A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T}~\hyperlink{types_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\-R\-U\-E}
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_ace17af43b64b290289a2d7477cc45c0b}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C}~0b00000000
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a13a892f461d00a29d15a55f536123f05}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F}~0b01000000
+\item 
+\#define \hyperlink{libraries_2_a_d_c_8h_a09a147811ebf92632353c0b2927f1f39}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25}~0b10000000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a93da2a312068f8ac491e7384f861bc08}{A\-D\-C\-Set\-Channel} (uint8\-\_\-t channel)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a68d173ae4a4c5818a785c139383f739d}{A\-D\-C\-Set\-Adjust} (\hyperlink{types_8h_ad2f8ed01c1733d4eab0932d970abaa4c}{B\-O\-O\-L} left\-Adjust)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a1a23edb1f3a9f7b5bf740948101d79f0}{A\-D\-C\-Set\-Prescaler} (uint8\-\_\-t prescale)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_af9b6913208f12a3024b5badacf5280b7}{A\-D\-C\-Set\-Free\-Running} (\hyperlink{types_8h_ad2f8ed01c1733d4eab0932d970abaa4c}{B\-O\-O\-L} free\-Run)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a29c75436bf70fb1cae821d76e8c04a39}{A\-D\-C\-Set\-Reference} (uint8\-\_\-t reference)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_ae93b8576e3663cff6d42dd4519bdffd6}{A\-D\-C\-Enable\-Interrupt} (void)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a2d5316f019983635d5e609b18c5e4e91}{A\-D\-C\-Disable\-Interrupt} (void)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a574696914019391724fa0394a6d731f6}{A\-D\-C\-Enable} (void)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_afc044b445254bde568fb058cb208f30c}{A\-D\-C\-Disable} (void)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_aaea8aaf61d92b9f25b40821defeecf7c}{A\-D\-C\-Start} (void)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a14565a9c62c5080ec8f58bfceeafa64c}{A\-D\-C\-Finish} (void)
+\item 
+\hyperlink{types_8h_ad2f8ed01c1733d4eab0932d970abaa4c}{B\-O\-O\-L} \hyperlink{libraries_2_a_d_c_8h_a3d11d0d2897d16f9b2c28610d0805e26}{A\-D\-C\-Done} (void)
+\item 
+void \hyperlink{libraries_2_a_d_c_8h_a331766a4dc04f10dd9766c272e377a40}{Setup\-A\-D\-C} (uint8\-\_\-t prescale, \hyperlink{types_8h_ad2f8ed01c1733d4eab0932d970abaa4c}{B\-O\-O\-L} free\-Run)
+\item 
+uint8\-\_\-t \hyperlink{libraries_2_a_d_c_8h_a6ebdab6a06e2f3af8323f06c44afa291}{Read\-A\-D\-C} (uint8\-\_\-t channel)
+\item 
+uint8\-\_\-t \hyperlink{libraries_2_a_d_c_8h_a3fba5d9035cb6daa53d8b95c49f9c04e}{Read\-A\-D\-C\-Averaged} (uint8\-\_\-t channel, uint8\-\_\-t samples)
+\item 
+uint16\-\_\-t \hyperlink{libraries_2_a_d_c_8h_a32f2e1566c2698d36305fe9b7a38996e}{Read\-Precise\-A\-D\-C} (uint8\-\_\-t channel)
+\item 
+uint16\-\_\-t \hyperlink{libraries_2_a_d_c_8h_a0d63477e1fb2d6685bc6029dcedccd64}{Read\-Precise\-A\-D\-C\-Averaged} (uint8\-\_\-t channel, uint8\-\_\-t samples)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Matthew Shuman 
+
+Joey Tomlinson 
+
+Dan Albert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created 8/5/09 
+
+Last updated 8/24/12 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-1
+\end{DoxyVersion}
+\begin{DoxyNote}{Note}
+Edited by Robert L. Phillips I\-I\-I
+\end{DoxyNote}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Includes functions for setting up and reading the hardware A\-D\-C on the attiny26.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y261 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{libraries_2_a_d_c_8h_ab8390a55a184369c3c47c8adbecf0b16}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T@{A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T}}
+\index{A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T@{A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T~{\bf T\-R\-U\-E}}}\label{libraries_2_a_d_c_8h_ab8390a55a184369c3c47c8adbecf0b16}
+A\-D\-C left adjusts the result (8 bits in A\-D\-C\-H, 2 bits in A\-D\-C\-L) \hypertarget{libraries_2_a_d_c_8h_a1075ec572c43abf8c30fb2c9bb5ce665}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0~0x00}}\label{libraries_2_a_d_c_8h_a1075ec572c43abf8c30fb2c9bb5ce665}
+A\-D\-C reads from A\-D\-C 0 \hypertarget{libraries_2_a_d_c_8h_a852fad8f349227f95fd698f6b0f951da}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1~0x01}}\label{libraries_2_a_d_c_8h_a852fad8f349227f95fd698f6b0f951da}
+A\-D\-C reads from A\-D\-C 1 \hypertarget{libraries_2_a_d_c_8h_a9a6b71fa340ef231f6536538869d976c}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10~0x0\-A}}\label{libraries_2_a_d_c_8h_a9a6b71fa340ef231f6536538869d976c}
+A\-D\-C reads from A\-D\-C 10 \hypertarget{libraries_2_a_d_c_8h_a97d7b78aa50ac10219ef299eead2914c}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2~0x02}}\label{libraries_2_a_d_c_8h_a97d7b78aa50ac10219ef299eead2914c}
+A\-D\-C reads from A\-D\-C 2 \hypertarget{libraries_2_a_d_c_8h_a64c1fe89be44188e82af6ba92f931e0d}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3~0x03}}\label{libraries_2_a_d_c_8h_a64c1fe89be44188e82af6ba92f931e0d}
+A\-D\-C reads from A\-D\-C 3 \hypertarget{libraries_2_a_d_c_8h_ad5499dd3064296f6d3bcfaac65a732d8}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4~0x04}}\label{libraries_2_a_d_c_8h_ad5499dd3064296f6d3bcfaac65a732d8}
+A\-D\-C reads from A\-D\-C 4 \hypertarget{libraries_2_a_d_c_8h_a637d55ae60101f4e431f0c7a1e8f17d4}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5~0x05}}\label{libraries_2_a_d_c_8h_a637d55ae60101f4e431f0c7a1e8f17d4}
+A\-D\-C reads from A\-D\-C 5 \hypertarget{libraries_2_a_d_c_8h_a3bd241c95c2e2922af108d196271f8c8}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6~0x06}}\label{libraries_2_a_d_c_8h_a3bd241c95c2e2922af108d196271f8c8}
+A\-D\-C reads from A\-D\-C 6 \hypertarget{libraries_2_a_d_c_8h_a333456ac5e816125333b01c81a2fc222}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7~0x07}}\label{libraries_2_a_d_c_8h_a333456ac5e816125333b01c81a2fc222}
+A\-D\-C reads from A\-D\-C 7 \hypertarget{libraries_2_a_d_c_8h_aef83eb9af51452694d56cc8c3f7e311b}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8~0x08}}\label{libraries_2_a_d_c_8h_aef83eb9af51452694d56cc8c3f7e311b}
+A\-D\-C reads from A\-D\-C 8 \hypertarget{libraries_2_a_d_c_8h_af7d76fab67cb2c2c92def3853ee80cc2}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9~0x09}}\label{libraries_2_a_d_c_8h_af7d76fab67cb2c2c92def3853ee80cc2}
+A\-D\-C reads from A\-D\-C 9 \hypertarget{libraries_2_a_d_c_8h_a7dc684a9d3f21b2a52dc74aea546d724}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K}}
+\index{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K@{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-M\-A\-S\-K~0b00011111}}\label{libraries_2_a_d_c_8h_a7dc684a9d3f21b2a52dc74aea546d724}
+Bit mask for A\-D\-C mux bits. \hypertarget{libraries_2_a_d_c_8h_abee13b387a2a255fe407fe6674cb62ae}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-1~0x00}}\label{libraries_2_a_d_c_8h_abee13b387a2a255fe407fe6674cb62ae}
+A\-D\-C uses C\-K as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_ac324413055383e702d8a76739dd01664}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128~0x07}}\label{libraries_2_a_d_c_8h_ac324413055383e702d8a76739dd01664}
+A\-D\-C uses C\-K/128 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_a56bf388f5fd18903f1d356dd654a9930}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16~0x04}}\label{libraries_2_a_d_c_8h_a56bf388f5fd18903f1d356dd654a9930}
+A\-D\-C uses C\-K/16 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_aeaac601e7fb65dfbfa157c738fd3a1db}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2~0x01}}\label{libraries_2_a_d_c_8h_aeaac601e7fb65dfbfa157c738fd3a1db}
+A\-D\-C uses C\-K/2 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_aaf5c1d488815feb1416a5c9d1710c2c8}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32~0x05}}\label{libraries_2_a_d_c_8h_aaf5c1d488815feb1416a5c9d1710c2c8}
+A\-D\-C uses C\-K/32 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_a7aec4350b204d9c8160ab7419e15d93e}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4~0x02}}\label{libraries_2_a_d_c_8h_a7aec4350b204d9c8160ab7419e15d93e}
+A\-D\-C uses C\-K/2 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_a51e4e47f4ef2b5f25be89b958a4bb8a8}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64~0x06}}\label{libraries_2_a_d_c_8h_a51e4e47f4ef2b5f25be89b958a4bb8a8}
+A\-D\-C uses C\-K/64 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_ab30c91a0c1d57639fbb9aa2e13719d45}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8~0x03}}\label{libraries_2_a_d_c_8h_ab30c91a0c1d57639fbb9aa2e13719d45}
+A\-D\-C uses C\-K/4 as A\-D\-C frequency. \hypertarget{libraries_2_a_d_c_8h_abf476b63e70a7381a2e4d0f39631dfe6}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K}}
+\index{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K@{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-\-M\-A\-S\-K~0b00000111}}\label{libraries_2_a_d_c_8h_abf476b63e70a7381a2e4d0f39631dfe6}
+Bit mask for A\-D\-C prescaler bits. \hypertarget{libraries_2_a_d_c_8h_a09a147811ebf92632353c0b2927f1f39}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-R\-E\-F\-\_\-25@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25}}
+\index{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-R\-E\-F\-\_\-25~0b10000000}}\label{libraries_2_a_d_c_8h_a09a147811ebf92632353c0b2927f1f39}
+A\-D\-C references the internal 2.\-56\-V source for A\-D conversions. \hypertarget{libraries_2_a_d_c_8h_a13a892f461d00a29d15a55f536123f05}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F}}
+\index{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F~0b01000000}}\label{libraries_2_a_d_c_8h_a13a892f461d00a29d15a55f536123f05}
+A\-D\-C references the A\-R\-E\-F pin for A\-D conversions. \hypertarget{libraries_2_a_d_c_8h_acd2a0fb5183eb8bb3759943d35f059e3}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K}}
+\index{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-M\-A\-S\-K~0b11000000}}\label{libraries_2_a_d_c_8h_acd2a0fb5183eb8bb3759943d35f059e3}
+Bit mask for A\-D\-C reference bits. \hypertarget{libraries_2_a_d_c_8h_ace17af43b64b290289a2d7477cc45c0b}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C}}
+\index{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C@{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C~0b00000000}}\label{libraries_2_a_d_c_8h_ace17af43b64b290289a2d7477cc45c0b}
+A\-D\-C references V\-C\-C for A\-D conversions. \hypertarget{libraries_2_a_d_c_8h_afa512ab6557d736d1857030529343634}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T@{A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T}}
+\index{A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T@{A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T~{\bf F\-A\-L\-S\-E}}}\label{libraries_2_a_d_c_8h_afa512ab6557d736d1857030529343634}
+A\-D\-C right adjusts the result (2 bits in A\-D\-C\-H, 8 bits in A\-D\-C\-L) 
+
+\subsection{Function Documentation}
+\hypertarget{libraries_2_a_d_c_8h_afc044b445254bde568fb058cb208f30c}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Disable@{A\-D\-C\-Disable}}
+\index{A\-D\-C\-Disable@{A\-D\-C\-Disable}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Disable}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Disable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_afc044b445254bde568fb058cb208f30c}
+Disables the A\-D\-C. \hypertarget{libraries_2_a_d_c_8h_a2d5316f019983635d5e609b18c5e4e91}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Disable\-Interrupt@{A\-D\-C\-Disable\-Interrupt}}
+\index{A\-D\-C\-Disable\-Interrupt@{A\-D\-C\-Disable\-Interrupt}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Disable\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Disable\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a2d5316f019983635d5e609b18c5e4e91}
+Disables the analog conversion complete interrupt. \hypertarget{libraries_2_a_d_c_8h_a3d11d0d2897d16f9b2c28610d0805e26}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Done@{A\-D\-C\-Done}}
+\index{A\-D\-C\-Done@{A\-D\-C\-Done}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Done}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\-O\-O\-L} A\-D\-C\-Done (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a3d11d0d2897d16f9b2c28610d0805e26}
+Tests the analog conversion complete flag.
+
+\begin{DoxyReturn}{Returns}
+The current state of the A\-D conversion. 
+\end{DoxyReturn}
+\hypertarget{libraries_2_a_d_c_8h_a574696914019391724fa0394a6d731f6}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Enable@{A\-D\-C\-Enable}}
+\index{A\-D\-C\-Enable@{A\-D\-C\-Enable}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Enable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a574696914019391724fa0394a6d731f6}
+Enables the A\-D\-C. \hypertarget{libraries_2_a_d_c_8h_ae93b8576e3663cff6d42dd4519bdffd6}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Enable\-Interrupt@{A\-D\-C\-Enable\-Interrupt}}
+\index{A\-D\-C\-Enable\-Interrupt@{A\-D\-C\-Enable\-Interrupt}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Enable\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Enable\-Interrupt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_ae93b8576e3663cff6d42dd4519bdffd6}
+Enables the analog conversion complete interrupt. \hypertarget{libraries_2_a_d_c_8h_a14565a9c62c5080ec8f58bfceeafa64c}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Finish@{A\-D\-C\-Finish}}
+\index{A\-D\-C\-Finish@{A\-D\-C\-Finish}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Finish (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a14565a9c62c5080ec8f58bfceeafa64c}
+Clears the analog conversion complete flag after an analog conversion. \hypertarget{libraries_2_a_d_c_8h_a68d173ae4a4c5818a785c139383f739d}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Set\-Adjust@{A\-D\-C\-Set\-Adjust}}
+\index{A\-D\-C\-Set\-Adjust@{A\-D\-C\-Set\-Adjust}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Set\-Adjust}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Set\-Adjust (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-O\-O\-L}}]{left\-Adjust}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a68d173ae4a4c5818a785c139383f739d}
+Set A\-D\-C register to either left or right adjust the bits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\-Adjust} & A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T Sets the A\-D\-C result to left adjust mode (8 bits in A\-D\-C\-H, 2 bits in A\-D\-C\-L) A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T Sets the A\-D\-C result to right adjust mode (2 bits in A\-D\-C\-H, 8 bits in A\-D\-C\-L)\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_ab8390a55a184369c3c47c8adbecf0b16}{A\-D\-C\-\_\-\-L\-E\-F\-T\-A\-D\-J\-U\-S\-T} 
+
+\hyperlink{libraries_2_a_d_c_8h_afa512ab6557d736d1857030529343634}{A\-D\-C\-\_\-\-R\-I\-G\-H\-T\-A\-D\-J\-U\-S\-T} 
+\end{DoxySeeAlso}
+\hypertarget{libraries_2_a_d_c_8h_a93da2a312068f8ac491e7384f861bc08}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Set\-Channel@{A\-D\-C\-Set\-Channel}}
+\index{A\-D\-C\-Set\-Channel@{A\-D\-C\-Set\-Channel}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Set\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Set\-Channel (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{channel}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a93da2a312068f8ac491e7384f861bc08}
+Set pin to use for adc input
+
+
+\begin{DoxyParams}{Parameters}
+{\em Channel} & used to select pin to use for adc input. See table 46 in the A\-T\-T\-I\-N\-Y26 datasheet for mux option\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_a1075ec572c43abf8c30fb2c9bb5ce665}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C0} 
+
+\hyperlink{libraries_2_a_d_c_8h_a852fad8f349227f95fd698f6b0f951da}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C1} 
+
+\hyperlink{libraries_2_a_d_c_8h_a97d7b78aa50ac10219ef299eead2914c}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C2} 
+
+\hyperlink{libraries_2_a_d_c_8h_a64c1fe89be44188e82af6ba92f931e0d}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C3} 
+
+\hyperlink{libraries_2_a_d_c_8h_ad5499dd3064296f6d3bcfaac65a732d8}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C4} 
+
+\hyperlink{libraries_2_a_d_c_8h_a637d55ae60101f4e431f0c7a1e8f17d4}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C5} 
+
+\hyperlink{libraries_2_a_d_c_8h_a3bd241c95c2e2922af108d196271f8c8}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C6} 
+
+\hyperlink{libraries_2_a_d_c_8h_a333456ac5e816125333b01c81a2fc222}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C7} 
+
+\hyperlink{libraries_2_a_d_c_8h_aef83eb9af51452694d56cc8c3f7e311b}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C8} 
+
+\hyperlink{libraries_2_a_d_c_8h_af7d76fab67cb2c2c92def3853ee80cc2}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C9} 
+
+\hyperlink{libraries_2_a_d_c_8h_a9a6b71fa340ef231f6536538869d976c}{A\-D\-C\-\_\-\-M\-U\-X\-\_\-\-A\-D\-C10} 
+\end{DoxySeeAlso}
+\hypertarget{libraries_2_a_d_c_8h_af9b6913208f12a3024b5badacf5280b7}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Set\-Free\-Running@{A\-D\-C\-Set\-Free\-Running}}
+\index{A\-D\-C\-Set\-Free\-Running@{A\-D\-C\-Set\-Free\-Running}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Set\-Free\-Running}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Set\-Free\-Running (
+\begin{DoxyParamCaption}
+\item[{{\bf B\-O\-O\-L}}]{free\-Run}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_af9b6913208f12a3024b5badacf5280b7}
+Puts the A\-D\-C in free running mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em free\-Run} & T\-R\-U\-E enables free running mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_aeaac601e7fb65dfbfa157c738fd3a1db}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-2} 
+
+\hyperlink{libraries_2_a_d_c_8h_a7aec4350b204d9c8160ab7419e15d93e}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4} 
+
+\hyperlink{libraries_2_a_d_c_8h_ab30c91a0c1d57639fbb9aa2e13719d45}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-8} 
+
+\hyperlink{libraries_2_a_d_c_8h_a56bf388f5fd18903f1d356dd654a9930}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-16} 
+
+\hyperlink{libraries_2_a_d_c_8h_aaf5c1d488815feb1416a5c9d1710c2c8}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-32} 
+
+\hyperlink{libraries_2_a_d_c_8h_a51e4e47f4ef2b5f25be89b958a4bb8a8}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-64} 
+
+\hyperlink{libraries_2_a_d_c_8h_ac324413055383e702d8a76739dd01664}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-128} 
+\end{DoxySeeAlso}
+\hypertarget{libraries_2_a_d_c_8h_a1a23edb1f3a9f7b5bf740948101d79f0}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Set\-Prescaler@{A\-D\-C\-Set\-Prescaler}}
+\index{A\-D\-C\-Set\-Prescaler@{A\-D\-C\-Set\-Prescaler}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Set\-Prescaler}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Set\-Prescaler (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{prescale}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a1a23edb1f3a9f7b5bf740948101d79f0}
+Select the A\-D\-C clock prescaler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em prescale} & The value to put into the prescaler register. \\
+\hline
+\end{DoxyParams}
+\hypertarget{libraries_2_a_d_c_8h_a29c75436bf70fb1cae821d76e8c04a39}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Set\-Reference@{A\-D\-C\-Set\-Reference}}
+\index{A\-D\-C\-Set\-Reference@{A\-D\-C\-Set\-Reference}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Set\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Set\-Reference (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{reference}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a29c75436bf70fb1cae821d76e8c04a39}
+Sets the reference that the A\-D\-C will compare to.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reference} & The reference for analog comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_ace17af43b64b290289a2d7477cc45c0b}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-V\-C\-C} 
+
+\hyperlink{libraries_2_a_d_c_8h_a13a892f461d00a29d15a55f536123f05}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-\-A\-R\-E\-F} 
+
+\hyperlink{libraries_2_a_d_c_8h_a09a147811ebf92632353c0b2927f1f39}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25} 
+\end{DoxySeeAlso}
+\hypertarget{libraries_2_a_d_c_8h_aaea8aaf61d92b9f25b40821defeecf7c}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!A\-D\-C\-Start@{A\-D\-C\-Start}}
+\index{A\-D\-C\-Start@{A\-D\-C\-Start}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{A\-D\-C\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void A\-D\-C\-Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_aaea8aaf61d92b9f25b40821defeecf7c}
+Begins an analog conversion. \hypertarget{libraries_2_a_d_c_8h_a6ebdab6a06e2f3af8323f06c44afa291}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!Read\-A\-D\-C@{Read\-A\-D\-C}}
+\index{Read\-A\-D\-C@{Read\-A\-D\-C}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{Read\-A\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Read\-A\-D\-C (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{channel}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a6ebdab6a06e2f3af8323f06c44afa291}
+Preforms a blocking hardware A\-D\-C read. If you need to use processor cycles while the A\-D\-C is being read, consider using adc interrupts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Selects which A\-D\-C channel to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+8-\/bit A\-D\-C value. 
+\end{DoxyReturn}
+\hypertarget{libraries_2_a_d_c_8h_a3fba5d9035cb6daa53d8b95c49f9c04e}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!Read\-A\-D\-C\-Averaged@{Read\-A\-D\-C\-Averaged}}
+\index{Read\-A\-D\-C\-Averaged@{Read\-A\-D\-C\-Averaged}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{Read\-A\-D\-C\-Averaged}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Read\-A\-D\-C\-Averaged (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{channel, }
+\item[{uint8\-\_\-t}]{samples}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a3fba5d9035cb6daa53d8b95c49f9c04e}
+Reads the A\-D\-C multiple times and returns the average A\-D\-C value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Selects which A\-D\-C channel to read. \\
+\hline
+{\em samples} & The number of samples to take. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Averaged 8-\/bit A\-D\-C reading. 
+\end{DoxyReturn}
+\hypertarget{libraries_2_a_d_c_8h_a32f2e1566c2698d36305fe9b7a38996e}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!Read\-Precise\-A\-D\-C@{Read\-Precise\-A\-D\-C}}
+\index{Read\-Precise\-A\-D\-C@{Read\-Precise\-A\-D\-C}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{Read\-Precise\-A\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Read\-Precise\-A\-D\-C (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{channel}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a32f2e1566c2698d36305fe9b7a38996e}
+Preforms a blocking hardware A\-D\-C read. If you need to use processor cycles while the A\-D\-C is being read, consider using adc interrupts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Selects which A\-D\-C channel to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+10-\/bit A\-D\-C value. 
+\end{DoxyReturn}
+\hypertarget{libraries_2_a_d_c_8h_a0d63477e1fb2d6685bc6029dcedccd64}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!Read\-Precise\-A\-D\-C\-Averaged@{Read\-Precise\-A\-D\-C\-Averaged}}
+\index{Read\-Precise\-A\-D\-C\-Averaged@{Read\-Precise\-A\-D\-C\-Averaged}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{Read\-Precise\-A\-D\-C\-Averaged}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Read\-Precise\-A\-D\-C\-Averaged (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{channel, }
+\item[{uint8\-\_\-t}]{samples}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a0d63477e1fb2d6685bc6029dcedccd64}
+Reads the A\-D\-C multiple times and returns the average A\-D\-C value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & Selects which A\-D\-C channel to read. \\
+\hline
+{\em samples} & The number of samples to take. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Averaged 10-\/bit A\-D\-C reading. 
+\end{DoxyReturn}
+\hypertarget{libraries_2_a_d_c_8h_a331766a4dc04f10dd9766c272e377a40}{\index{libraries/\-A\-D\-C.\-h@{libraries/\-A\-D\-C.\-h}!Setup\-A\-D\-C@{Setup\-A\-D\-C}}
+\index{Setup\-A\-D\-C@{Setup\-A\-D\-C}!libraries/ADC.h@{libraries/\-A\-D\-C.\-h}}
+\subsubsection[{Setup\-A\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}void Setup\-A\-D\-C (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{prescale, }
+\item[{{\bf B\-O\-O\-L}}]{free\-Run}
+\end{DoxyParamCaption}
+)}}\label{libraries_2_a_d_c_8h_a331766a4dc04f10dd9766c272e377a40}
+Initializes A\-D\-C, allowing the user to set useful A\-D\-C options during initialization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em prescale} & A\-D\-C clock frequency is set to sys\-\_\-clk/prescaler See table 47 in the A\-T\-T\-I\-N\-Y26 datasheet for prescaler options \\
+\hline
+{\em free\-Run} & set to 1 to enable free running mode \\
+\hline
+\end{DoxyParams}

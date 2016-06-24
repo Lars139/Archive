@@ -1,0 +1,336 @@
+\hypertarget{usb_8h}{\section{C\-:/\-Users/\-Robert/\-Documents/\-Porn/\-Summer 2012/\-E\-C\-E111/tiny26usb/usb.h File Reference}
+\label{usb_8h}\index{C\-:/\-Users/\-Robert/\-Documents/\-Porn/\-Summer 2012/\-E\-C\-E111/tiny26usb/usb.\-h@{C\-:/\-Users/\-Robert/\-Documents/\-Porn/\-Summer 2012/\-E\-C\-E111/tiny26usb/usb.\-h}}
+}
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+{\ttfamily \#include $<$setupapi.\-h$>$}\\*
+{\ttfamily \#include $<$ddk/hidsdi.\-h$>$}\\*
+{\ttfamily \#include $<$ddk/hidpi.\-h$>$}\\*
+{\ttfamily \#include $<$ddk/hidusage.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_report_out}{Report\-Out}
+\item 
+struct \hyperlink{struct_report_in}{Report\-In}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usb_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}{Dll\-Export}~\-\_\-\-\_\-declspec( dllexport )
+\item 
+\#define \hyperlink{usb_8h_a6d38a8c9d2927333c15aee5d4e118e6c}{U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S}~0
+\item 
+\#define \hyperlink{usb_8h_a7740d6b3c1581a07523be3b3d5039c95}{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}~1
+\item 
+\#define \hyperlink{usb_8h_a0d2858ff0ca8d95aaf31876e1535a4db}{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O}~2
+\item 
+\#define \hyperlink{usb_8h_aeffd7f45947b1e146f8dfc1c6d94704e}{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D}~3
+\item 
+\#define \hyperlink{usb_8h_a9c2a9f31eb25bedeee8376d32d682c31}{D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N}~-\/1
+\item 
+\#define \hyperlink{usb_8h_a3c5f4e9cbf42e1b7b7532fac1fe7c5c4}{O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X}~-\/2
+\item 
+\#define \hyperlink{usb_8h_a5e0a37287e4c5120029839cf331cb1c2}{M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D}~-\/3
+\item 
+\#define \hyperlink{usb_8h_afacc31d698613eacdbb0ded97ecf9f3a}{T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D}~-\/4
+\item 
+\#define \hyperlink{usb_8h_af5a8d2267dd3844efdc023b036b9465c}{R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}~-\/5
+\item 
+\#define \hyperlink{usb_8h_a98189233a203d9c3e33265b7a6bcc9eb}{C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D}~-\/1
+\item 
+\#define \hyperlink{usb_8h_af1f31626d1809a352c1f6001d2a8ff23}{T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D}~-\/2
+\item 
+\#define \hyperlink{usb_8h_a65528c74adc6691eac2c7a2f39328064}{C\-O\-N\-N\-E\-C\-T}~1
+\item 
+\#define \hyperlink{usb_8h_a587604e6f3570c0fc32794384d4d0d1f}{D\-I\-S\-C\-O\-N\-N\-E\-C\-T}~2
+\item 
+\#define \hyperlink{usb_8h_a1f10b8ba5835d94b044aff121dd2b839}{T\-R\-A\-N\-S\-M\-I\-T}~3
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct usb\-Device \hyperlink{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{usb\-Device\-\_\-t}
+\item 
+typedef unsigned char \hyperlink{usb_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}
+\item 
+typedef struct \hyperlink{struct_report_out}{Report\-Out} \hyperlink{usb_8h_a4740b88edecf3fc40f7b2cab9f24428b}{Report\-Out\-\_\-t}
+\item 
+typedef struct \hyperlink{struct_report_in}{Report\-In} \hyperlink{usb_8h_aec456e25445aae63e8e0f226d1ef1af1}{Report\-In\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{usb_8h_acac7315d6e9c8798911568609feb07d1}{Usb\-Send\-Data} (\hyperlink{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{usb\-Device\-\_\-t} $\ast$dev, \hyperlink{usb_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} command, \hyperlink{usb_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$data\-To\-Send, int length, \hyperlink{usb_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$out\-Buffer, int out\-Buffer\-Length)
+\item 
+int \hyperlink{usb_8h_a4124baf205f3eaf1f12b13ba34d50d2f}{Usb\-Open\-Device} (\hyperlink{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{usb\-Device\-\_\-t} $\ast$$\ast$device, int vendor, char $\ast$vendor\-Name, int product, char $\ast$product\-Name)
+\item 
+void \hyperlink{usb_8h_a9478572a3b6e75aa7d6336d8652e90ed}{Usb\-Close\-Device} (\hyperlink{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{usb\-Device\-\_\-t} $\ast$dev)
+\item 
+int \hyperlink{usb_8h_ae5204f6fea1644a8da8c9cc94ab9bc3e}{Usb\-Establish\-Connection} (\hyperlink{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{usb\-Device\-\_\-t} $\ast$dev)
+\item 
+int \hyperlink{usb_8h_a2d307a446ee17b60b24e96edaa49bee6}{Update\-Servo\-Position} (\hyperlink{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{usb\-Device\-\_\-t} $\ast$dev, int position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Robert L. Phillips I\-I\-I 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Code adapted from the Tiny26 test widget written by Ben Porter 
+\end{DoxyNote}
+\begin{DoxyVersion}{Version}
+1.\-1
+\end{DoxyVersion}
+\hypertarget{usb_8h_SUMMARY}{}\subsection{S\-U\-M\-M\-A\-R\-Y}\label{usb_8h_SUMMARY}
+Project\-: tiny26usb.\-dll
+
+Build Environment\-: Code\-::\-Blocks 10.\-05
+
+Compiler\-: G\-N\-U G\-C\-C Compiler
+
+Linked Libraries\-:
+\begin{DoxyItemize}
+\item libhid
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item libhidparse
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item libsetupapi
+\end{DoxyItemize}\hypertarget{usb_8h_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{usb_8h_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{usb_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{usb_8h_DESCRIPTION}
+Library definition for the tiny26usb library. This library allows the user to forward commands to the Tiny26 microcontroller using the O\-S\-Uisp2 universal programmer. In order for this library to work, the Tiny26 must have the correct firmware installed because of the way the library checks to ensure that the Tiny26 is connected and receiving the commands from the computer.
+
+This library is meant to abstract away the inner workings of the U\-S\-B connection to the O\-S\-Uisp2 and the Tiny26 for the purpose of an E\-C\-E111 demo.
+
+Example Usage (for example Python usage, see the E\-C\-E111 Python G\-U\-I demo)\-: \begin{DoxyVerb}    usbDevice_t * dev;
+
+    UsbOpenDevice(&dev, 0x16c0, "beaversource.oregonstate.edu/projects/osuisp2", 0x05df, "OSUisp2");
+
+    UsbEstablishConnection(dev);
+
+    UsbUpdateServoPosition(dev, 150);
+
+    UsbCloseDevice(dev);
+\end{DoxyVerb}
+\hypertarget{usb_8h_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{usb_8h_HARDWARE}
+Target Device\-: O\-S\-Uisp2 Universal Programmer 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{usb_8h_a65528c74adc6691eac2c7a2f39328064}{\index{usb.\-h@{usb.\-h}!C\-O\-N\-N\-E\-C\-T@{C\-O\-N\-N\-E\-C\-T}}
+\index{C\-O\-N\-N\-E\-C\-T@{C\-O\-N\-N\-E\-C\-T}!usb.h@{usb.\-h}}
+\subsubsection[{C\-O\-N\-N\-E\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-N\-N\-E\-C\-T~1}}\label{usb_8h_a65528c74adc6691eac2c7a2f39328064}
+O\-S\-Uisp2 connect mode command \hypertarget{usb_8h_a98189233a203d9c3e33265b7a6bcc9eb}{\index{usb.\-h@{usb.\-h}!C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D@{C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D@{C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D}!usb.h@{usb.\-h}}
+\subsubsection[{C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D~-\/1}}\label{usb_8h_a98189233a203d9c3e33265b7a6bcc9eb}
+The O\-S\-Uisp2 Universal Programmer could not be put into connect mode \hypertarget{usb_8h_a9c2a9f31eb25bedeee8376d32d682c31}{\index{usb.\-h@{usb.\-h}!D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N@{D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N}}
+\index{D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N@{D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N}!usb.h@{usb.\-h}}
+\subsubsection[{D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N~-\/1}}\label{usb_8h_a9c2a9f31eb25bedeee8376d32d682c31}
+The U\-S\-B device handle has not been opened \hypertarget{usb_8h_a587604e6f3570c0fc32794384d4d0d1f}{\index{usb.\-h@{usb.\-h}!D\-I\-S\-C\-O\-N\-N\-E\-C\-T@{D\-I\-S\-C\-O\-N\-N\-E\-C\-T}}
+\index{D\-I\-S\-C\-O\-N\-N\-E\-C\-T@{D\-I\-S\-C\-O\-N\-N\-E\-C\-T}!usb.h@{usb.\-h}}
+\subsubsection[{D\-I\-S\-C\-O\-N\-N\-E\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-S\-C\-O\-N\-N\-E\-C\-T~2}}\label{usb_8h_a587604e6f3570c0fc32794384d4d0d1f}
+O\-S\-Uisp2 disconnect mode command \hypertarget{usb_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}{\index{usb.\-h@{usb.\-h}!Dll\-Export@{Dll\-Export}}
+\index{Dll\-Export@{Dll\-Export}!usb.h@{usb.\-h}}
+\subsubsection[{Dll\-Export}]{\setlength{\rightskip}{0pt plus 5cm}\#define Dll\-Export~\-\_\-\-\_\-declspec( dllexport )}}\label{usb_8h_af83a0ad9d707a0bc5fe281b6e5c358a1}
+Causes the method to be exported to the D\-L\-L \hypertarget{usb_8h_a5e0a37287e4c5120029839cf331cb1c2}{\index{usb.\-h@{usb.\-h}!M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D@{M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D}}
+\index{M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D@{M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D}!usb.h@{usb.\-h}}
+\subsubsection[{M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D~-\/3}}\label{usb_8h_a5e0a37287e4c5120029839cf331cb1c2}
+The size of the send buffer is too large \hypertarget{usb_8h_a3c5f4e9cbf42e1b7b7532fac1fe7c5c4}{\index{usb.\-h@{usb.\-h}!O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X@{O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X}}
+\index{O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X@{O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X}!usb.h@{usb.\-h}}
+\subsubsection[{O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X~-\/2}}\label{usb_8h_a3c5f4e9cbf42e1b7b7532fac1fe7c5c4}
+The size of the output buffer exceeds the max \hypertarget{usb_8h_af5a8d2267dd3844efdc023b036b9465c}{\index{usb.\-h@{usb.\-h}!R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D@{R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}!usb.h@{usb.\-h}}
+\subsubsection[{R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D~-\/5}}\label{usb_8h_af5a8d2267dd3844efdc023b036b9465c}
+U\-S\-B H\-I\-D failed to receive a response \hypertarget{usb_8h_af1f31626d1809a352c1f6001d2a8ff23}{\index{usb.\-h@{usb.\-h}!T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D@{T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D@{T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D}!usb.h@{usb.\-h}}
+\subsubsection[{T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D~-\/2}}\label{usb_8h_af1f31626d1809a352c1f6001d2a8ff23}
+A connection to the Tiny261 could not be established \hypertarget{usb_8h_afacc31d698613eacdbb0ded97ecf9f3a}{\index{usb.\-h@{usb.\-h}!T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D@{T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D@{T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D}!usb.h@{usb.\-h}}
+\subsubsection[{T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D~-\/4}}\label{usb_8h_afacc31d698613eacdbb0ded97ecf9f3a}
+U\-S\-B transmission to the H\-I\-D failed \hypertarget{usb_8h_a1f10b8ba5835d94b044aff121dd2b839}{\index{usb.\-h@{usb.\-h}!T\-R\-A\-N\-S\-M\-I\-T@{T\-R\-A\-N\-S\-M\-I\-T}}
+\index{T\-R\-A\-N\-S\-M\-I\-T@{T\-R\-A\-N\-S\-M\-I\-T}!usb.h@{usb.\-h}}
+\subsubsection[{T\-R\-A\-N\-S\-M\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-R\-A\-N\-S\-M\-I\-T~3}}\label{usb_8h_a1f10b8ba5835d94b044aff121dd2b839}
+O\-S\-Uisp2 transmit mode command \hypertarget{usb_8h_a7740d6b3c1581a07523be3b3d5039c95}{\index{usb.\-h@{usb.\-h}!U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S@{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}}
+\index{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S@{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}!usb.h@{usb.\-h}}
+\subsubsection[{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S~1}}\label{usb_8h_a7740d6b3c1581a07523be3b3d5039c95}
+There were insufficient permissions to open a U\-S\-B connection \hypertarget{usb_8h_a0d2858ff0ca8d95aaf31876e1535a4db}{\index{usb.\-h@{usb.\-h}!U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O@{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O}}
+\index{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O@{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O}!usb.h@{usb.\-h}}
+\subsubsection[{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O~2}}\label{usb_8h_a0d2858ff0ca8d95aaf31876e1535a4db}
+An I/\-O error caused the U\-S\-B connection to fail \hypertarget{usb_8h_aeffd7f45947b1e146f8dfc1c6d94704e}{\index{usb.\-h@{usb.\-h}!U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D@{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D}}
+\index{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D@{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D}!usb.h@{usb.\-h}}
+\subsubsection[{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D~3}}\label{usb_8h_aeffd7f45947b1e146f8dfc1c6d94704e}
+The U\-S\-B device was not found \hypertarget{usb_8h_a6d38a8c9d2927333c15aee5d4e118e6c}{\index{usb.\-h@{usb.\-h}!U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S@{U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S}}
+\index{U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S@{U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S}!usb.h@{usb.\-h}}
+\subsubsection[{U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S~0}}\label{usb_8h_a6d38a8c9d2927333c15aee5d4e118e6c}
+U\-S\-B connection was opened successfully 
+
+\subsection{Typedef Documentation}
+\hypertarget{usb_8h_aec456e25445aae63e8e0f226d1ef1af1}{\index{usb.\-h@{usb.\-h}!Report\-In\-\_\-t@{Report\-In\-\_\-t}}
+\index{Report\-In\-\_\-t@{Report\-In\-\_\-t}!usb.h@{usb.\-h}}
+\subsubsection[{Report\-In\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Report\-In}  {\bf Report\-In\-\_\-t}}}\label{usb_8h_aec456e25445aae63e8e0f226d1ef1af1}
+Input Report Structure \hypertarget{usb_8h_a4740b88edecf3fc40f7b2cab9f24428b}{\index{usb.\-h@{usb.\-h}!Report\-Out\-\_\-t@{Report\-Out\-\_\-t}}
+\index{Report\-Out\-\_\-t@{Report\-Out\-\_\-t}!usb.h@{usb.\-h}}
+\subsubsection[{Report\-Out\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Report\-Out}  {\bf Report\-Out\-\_\-t}}}\label{usb_8h_a4740b88edecf3fc40f7b2cab9f24428b}
+Output Report Structure \hypertarget{usb_8h_a65f85814a8290f9797005d3b28e7e5fc}{\index{usb.\-h@{usb.\-h}!uchar@{uchar}}
+\index{uchar@{uchar}!usb.h@{usb.\-h}}
+\subsubsection[{uchar}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf uchar}}}\label{usb_8h_a65f85814a8290f9797005d3b28e7e5fc}
+uchar assignemnt unsigned char \hypertarget{usb_8h_ae832d2d7286727b3840f0de971c9f16b}{\index{usb.\-h@{usb.\-h}!usb\-Device\-\_\-t@{usb\-Device\-\_\-t}}
+\index{usb\-Device\-\_\-t@{usb\-Device\-\_\-t}!usb.h@{usb.\-h}}
+\subsubsection[{usb\-Device\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct usb\-Device {\bf usb\-Device\-\_\-t}}}\label{usb_8h_ae832d2d7286727b3840f0de971c9f16b}
+Windows U\-S\-B device type 
+
+\subsection{Function Documentation}
+\hypertarget{usb_8h_a2d307a446ee17b60b24e96edaa49bee6}{\index{usb.\-h@{usb.\-h}!Update\-Servo\-Position@{Update\-Servo\-Position}}
+\index{Update\-Servo\-Position@{Update\-Servo\-Position}!usb.h@{usb.\-h}}
+\subsubsection[{Update\-Servo\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int Update\-Servo\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf usb\-Device\-\_\-t} $\ast$}]{dev, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}}\label{usb_8h_a2d307a446ee17b60b24e96edaa49bee6}
+Sends a request to the Tiny261 to update the motor position
+
+Moves the motor unless 0 or 255 is given as the position parameter. If 0 is given as the position, the motor will not move and the Tiny will only respond with the solar measurements. If 255 is given as the position, it will cause the Tiny to search for the position with the highest solar measurements. If the given position is out of range (position range = 0 $<$= position $<$= 255), 1 or 254 will be sent instead depending on which extrema was violated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & The handle to the U\-S\-B device that corresponds to the connection between the computer, O\-S\-Uisp2, and Tiny261 \\
+\hline
+{\em position} & The position that the motor is to be moved to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return code that indicates whether the transmission was successful 
+\end{DoxyReturn}
+\hypertarget{usb_8h_a9478572a3b6e75aa7d6336d8652e90ed}{\index{usb.\-h@{usb.\-h}!Usb\-Close\-Device@{Usb\-Close\-Device}}
+\index{Usb\-Close\-Device@{Usb\-Close\-Device}!usb.h@{usb.\-h}}
+\subsubsection[{Usb\-Close\-Device}]{\setlength{\rightskip}{0pt plus 5cm}void Usb\-Close\-Device (
+\begin{DoxyParamCaption}
+\item[{{\bf usb\-Device\-\_\-t} $\ast$}]{dev}
+\end{DoxyParamCaption}
+)}}\label{usb_8h_a9478572a3b6e75aa7d6336d8652e90ed}
+Closes the connection to the Tiny261 and O\-S\-Uisp2 Universal Programmer
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & The handle to the U\-S\-B device that corresponds to the connection between the computer and the O\-S\-Uisp2 \\
+\hline
+\end{DoxyParams}
+\hypertarget{usb_8h_ae5204f6fea1644a8da8c9cc94ab9bc3e}{\index{usb.\-h@{usb.\-h}!Usb\-Establish\-Connection@{Usb\-Establish\-Connection}}
+\index{Usb\-Establish\-Connection@{Usb\-Establish\-Connection}!usb.h@{usb.\-h}}
+\subsubsection[{Usb\-Establish\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}int Usb\-Establish\-Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf usb\-Device\-\_\-t} $\ast$}]{dev}
+\end{DoxyParamCaption}
+)}}\label{usb_8h_ae5204f6fea1644a8da8c9cc94ab9bc3e}
+Establishes a connection to the Tiny261
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & The handle to the U\-S\-B device that corresponds to the connection between the computer and the O\-S\-Uisp2\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{usb_8h_a98189233a203d9c3e33265b7a6bcc9eb}{C\-O\-N\-N\-E\-C\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-A\-I\-L\-E\-D} 
+
+\hyperlink{usb_8h_af1f31626d1809a352c1f6001d2a8ff23}{T\-I\-N\-Y\-\_\-\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-E\-D}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The return code that indicates whether a connection to the Tiny261 was successfully established 
+\end{DoxyReturn}
+\hypertarget{usb_8h_a4124baf205f3eaf1f12b13ba34d50d2f}{\index{usb.\-h@{usb.\-h}!Usb\-Open\-Device@{Usb\-Open\-Device}}
+\index{Usb\-Open\-Device@{Usb\-Open\-Device}!usb.h@{usb.\-h}}
+\subsubsection[{Usb\-Open\-Device}]{\setlength{\rightskip}{0pt plus 5cm}int Usb\-Open\-Device (
+\begin{DoxyParamCaption}
+\item[{{\bf usb\-Device\-\_\-t} $\ast$$\ast$}]{device, }
+\item[{int}]{vendor, }
+\item[{char $\ast$}]{vendor\-Name, }
+\item[{int}]{product, }
+\item[{char $\ast$}]{product\-Name}
+\end{DoxyParamCaption}
+)}}\label{usb_8h_a4124baf205f3eaf1f12b13ba34d50d2f}
+Open a connection to the specified U\-S\-B device
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & A pointer to the device pointer that is to hold the device instance \\
+\hline
+{\em vendor} & The vendor I\-D of the desired U\-S\-B device \\
+\hline
+{\em vendor\-Name} & The name of the vendor corresponding to the desired U\-S\-B device \\
+\hline
+{\em product} & The product I\-D of the desired U\-S\-B device \\
+\hline
+{\em product\-Name} & The name of the U\-S\-B device\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return code that indicates whether or not an error occurred
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{usb_8h_a6d38a8c9d2927333c15aee5d4e118e6c}{U\-S\-B\-O\-P\-E\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S} 
+
+\hyperlink{usb_8h_a7740d6b3c1581a07523be3b3d5039c95}{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-A\-C\-C\-E\-S\-S} 
+
+\hyperlink{usb_8h_a0d2858ff0ca8d95aaf31876e1535a4db}{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-I\-O} 
+
+\hyperlink{usb_8h_aeffd7f45947b1e146f8dfc1c6d94704e}{U\-S\-B\-O\-P\-E\-N\-\_\-\-E\-R\-R\-\_\-\-N\-O\-T\-F\-O\-U\-N\-D} 
+\end{DoxySeeAlso}
+\hypertarget{usb_8h_acac7315d6e9c8798911568609feb07d1}{\index{usb.\-h@{usb.\-h}!Usb\-Send\-Data@{Usb\-Send\-Data}}
+\index{Usb\-Send\-Data@{Usb\-Send\-Data}!usb.h@{usb.\-h}}
+\subsubsection[{Usb\-Send\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int Usb\-Send\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf usb\-Device\-\_\-t} $\ast$}]{dev, }
+\item[{{\bf uchar}}]{command, }
+\item[{{\bf uchar} $\ast$}]{data\-To\-Send, }
+\item[{int}]{length, }
+\item[{{\bf uchar} $\ast$}]{out\-Buffer, }
+\item[{int}]{out\-Buffer\-Length}
+\end{DoxyParamCaption}
+)}}\label{usb_8h_acac7315d6e9c8798911568609feb07d1}
+Send and receive data over U\-S\-B (Windows)
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & \\
+\hline
+{\em command} & to send to the device \\
+\hline
+{\em data\-To\-Send} & The data buffer to be sent \\
+\hline
+{\em length} & The length of the data to send \\
+\hline
+{\em out\-Buffer} & The buffer to hold response (8 characters) \\
+\hline
+{\em out\-Buffer\-Length} & The expected length of the response data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length The length of the data received
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{usb_8h_a65528c74adc6691eac2c7a2f39328064}{C\-O\-N\-N\-E\-C\-T} 
+
+\hyperlink{usb_8h_a587604e6f3570c0fc32794384d4d0d1f}{D\-I\-S\-C\-O\-N\-N\-E\-C\-T} 
+
+\hyperlink{usb_8h_a1f10b8ba5835d94b044aff121dd2b839}{T\-R\-A\-N\-S\-M\-I\-T} 
+
+\hyperlink{usb_8h_a9c2a9f31eb25bedeee8376d32d682c31}{D\-E\-V\-I\-C\-E\-\_\-\-N\-O\-T\-\_\-\-O\-P\-E\-N} 
+
+\hyperlink{usb_8h_a3c5f4e9cbf42e1b7b7532fac1fe7c5c4}{O\-U\-T\-B\-U\-F\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-M\-A\-X} 
+
+\hyperlink{usb_8h_a5e0a37287e4c5120029839cf331cb1c2}{M\-U\-L\-T\-I\-P\-L\-E\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-D} 
+
+\hyperlink{usb_8h_afacc31d698613eacdbb0ded97ecf9f3a}{T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-\_\-\-F\-A\-I\-L\-E\-D} 
+
+\hyperlink{usb_8h_af5a8d2267dd3844efdc023b036b9465c}{R\-E\-C\-E\-I\-V\-E\-\_\-\-F\-A\-I\-L\-E\-D} 
+\end{DoxySeeAlso}

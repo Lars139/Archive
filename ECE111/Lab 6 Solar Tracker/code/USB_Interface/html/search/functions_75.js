@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['updateservoposition',['UpdateServoPosition',['../usb_8c.html#aca6768d7c49ac102c9e71cbd9cd9210b',1,'UpdateServoPosition(usbDevice_t *dev, int position):&#160;usb.c'],['../usb_8h.html#a2d307a446ee17b60b24e96edaa49bee6',1,'UpdateServoPosition(usbDevice_t *dev, int position):&#160;usb.c']]],
+  ['usbclosedevice',['UsbCloseDevice',['../usb_8c.html#a8148ba440dcddccba1b57dfd40738d2b',1,'UsbCloseDevice(usbDevice_t *dev):&#160;usb.c'],['../usb_8h.html#a9478572a3b6e75aa7d6336d8652e90ed',1,'UsbCloseDevice(usbDevice_t *dev):&#160;usb.c']]],
+  ['usbestablishconnection',['UsbEstablishConnection',['../usb_8c.html#a7d6d4825145d4c1711e151faf2dfe559',1,'UsbEstablishConnection(usbDevice_t *dev):&#160;usb.c'],['../usb_8h.html#ae5204f6fea1644a8da8c9cc94ab9bc3e',1,'UsbEstablishConnection(usbDevice_t *dev):&#160;usb.c']]],
+  ['usbopendevice',['UsbOpenDevice',['../usb_8c.html#a7dd6a9df244ea5040c331006b9e51f96',1,'UsbOpenDevice(usbDevice_t **device, int vendor, char *vendorName, int product, char *productName):&#160;usb.c'],['../usb_8h.html#a4124baf205f3eaf1f12b13ba34d50d2f',1,'UsbOpenDevice(usbDevice_t **device, int vendor, char *vendorName, int product, char *productName):&#160;usb.c']]],
+  ['usbsenddata',['UsbSendData',['../usb_8c.html#aaae4536e883a0f5e6691a72c7dfecd06',1,'UsbSendData(usbDevice_t *dev, uchar command, uchar *dataToSend, int length, uchar *outBuffer, int outBufferLength):&#160;usb.c'],['../usb_8h.html#acac7315d6e9c8798911568609feb07d1',1,'UsbSendData(usbDevice_t *dev, uchar command, uchar *dataToSend, int length, uchar *outBuffer, int outBufferLength):&#160;usb.c']]]
+];

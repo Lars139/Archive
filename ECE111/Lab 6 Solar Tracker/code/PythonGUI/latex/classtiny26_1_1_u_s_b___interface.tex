@@ -1,0 +1,167 @@
+\hypertarget{classtiny26_1_1_u_s_b___interface}{\section{tiny26.\-U\-S\-B\-\_\-\-Interface Class Reference}
+\label{classtiny26_1_1_u_s_b___interface}\index{tiny26.\-U\-S\-B\-\_\-\-Interface@{tiny26.\-U\-S\-B\-\_\-\-Interface}}
+}
+
+
+The usb interface for the O\-S\-Uisp2 and the Tiny261 is contained in this class.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtiny26_1_1_u_s_b___interface_a7f215a18e8b642c3fbdd85034341bfec}{def \hyperlink{classtiny26_1_1_u_s_b___interface_a7f215a18e8b642c3fbdd85034341bfec}{\-\_\-\-\_\-init\-\_\-\-\_\-}}\label{classtiny26_1_1_u_s_b___interface_a7f215a18e8b642c3fbdd85034341bfec}
+
+\begin{DoxyCompactList}\small\item\em Constructor for the usb interface. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_u_s_b___interface_a4253137584b496ee45353b5a3c061bfb}{Is\-Connected}
+\begin{DoxyCompactList}\small\item\em Returns the connection status. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_u_s_b___interface_a77bb39d15835e15e5ff0dcfc1de4bbda}{Measure\-Solar\-Panel}
+\begin{DoxyCompactList}\small\item\em Reads the output of the solar panel. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_u_s_b___interface_aafc201d921ed8e71f6068f130e47b5e9}{Find\-Most\-Sun}
+\begin{DoxyCompactList}\small\item\em Moves the solar panel to its optimal position. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_u_s_b___interface_ad469c3dcb16971e83b5f6827999da033}{Set\-Solar\-Position}
+\begin{DoxyCompactList}\small\item\em Moves the solar panel to the specified position. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_u_s_b___interface_a2b0699d9fc55586245706cf07fb2361c}{Show\-Error\-Msg}
+\begin{DoxyCompactList}\small\item\em Displays an error message box with the supplied message and title. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_u_s_b___interface_af674dcd1942eb31f15280d41b5f0e4d3}{Close\-Connection}
+\begin{DoxyCompactList}\small\item\em Cleans up the connection to the Tiny26. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtiny26_1_1_u_s_b___interface_a52e6b805c40277c871717f365de8dd16}{\hyperlink{classtiny26_1_1_u_s_b___interface_a52e6b805c40277c871717f365de8dd16}{window}}\label{classtiny26_1_1_u_s_b___interface_a52e6b805c40277c871717f365de8dd16}
+
+\begin{DoxyCompactList}\small\item\em The frame that is associated with the U\-S\-B interface. \end{DoxyCompactList}\item 
+\hypertarget{classtiny26_1_1_u_s_b___interface_a2625b065c6150108c013f35773de24f2}{\hyperlink{classtiny26_1_1_u_s_b___interface_a2625b065c6150108c013f35773de24f2}{lib}}\label{classtiny26_1_1_u_s_b___interface_a2625b065c6150108c013f35773de24f2}
+
+\begin{DoxyCompactList}\small\item\em tiny26usb.\-dll library \end{DoxyCompactList}\item 
+\hypertarget{classtiny26_1_1_u_s_b___interface_a41e15534c462ecca4c4df61572e4b9ee}{\hyperlink{classtiny26_1_1_u_s_b___interface_a41e15534c462ecca4c4df61572e4b9ee}{device}}\label{classtiny26_1_1_u_s_b___interface_a41e15534c462ecca4c4df61572e4b9ee}
+
+\begin{DoxyCompactList}\small\item\em usb\-Device\-\_\-t $\ast$ needed to establish a connection with O\-S\-Uisp2 and the Tiny \end{DoxyCompactList}\item 
+\hypertarget{classtiny26_1_1_u_s_b___interface_ae04d38cc27318c29dd28bd3ee4c28e96}{\hyperlink{classtiny26_1_1_u_s_b___interface_ae04d38cc27318c29dd28bd3ee4c28e96}{connected}}\label{classtiny26_1_1_u_s_b___interface_ae04d38cc27318c29dd28bd3ee4c28e96}
+
+\begin{DoxyCompactList}\small\item\em Holds the connection status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The usb interface for the O\-S\-Uisp2 and the Tiny261 is contained in this class. 
+
+It contains all the methods for establishing connections, closing connections, and sending request to the Tiny261 to move the servo and to get the A\-D\-C measurements from the solar panel. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classtiny26_1_1_u_s_b___interface_af674dcd1942eb31f15280d41b5f0e4d3}{\index{tiny26\-::\-U\-S\-B\-\_\-\-Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}!Close\-Connection@{Close\-Connection}}
+\index{Close\-Connection@{Close\-Connection}!tiny26::USB_Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}}
+\subsubsection[{Close\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-U\-S\-B\-\_\-\-Interface.\-Close\-Connection (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_u_s_b___interface_af674dcd1942eb31f15280d41b5f0e4d3}
+
+
+Cleans up the connection to the Tiny26. 
+
+Sends a request to the O\-S\-Uisp2 Universal Programmer to disconnect from the Tiny
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtiny26_1_1_u_s_b___interface_aafc201d921ed8e71f6068f130e47b5e9}{\index{tiny26\-::\-U\-S\-B\-\_\-\-Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}!Find\-Most\-Sun@{Find\-Most\-Sun}}
+\index{Find\-Most\-Sun@{Find\-Most\-Sun}!tiny26::USB_Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}}
+\subsubsection[{Find\-Most\-Sun}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-U\-S\-B\-\_\-\-Interface.\-Find\-Most\-Sun (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_u_s_b___interface_aafc201d921ed8e71f6068f130e47b5e9}
+
+
+Moves the solar panel to its optimal position. 
+
+Sends a request to the Tiny to search for the position that gives the solar panel the most light. The Tiny does not respond to any movement requests while it is searching for the solar panel's optimal position
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtiny26_1_1_u_s_b___interface_a4253137584b496ee45353b5a3c061bfb}{\index{tiny26\-::\-U\-S\-B\-\_\-\-Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}!Is\-Connected@{Is\-Connected}}
+\index{Is\-Connected@{Is\-Connected}!tiny26::USB_Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}}
+\subsubsection[{Is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-U\-S\-B\-\_\-\-Interface.\-Is\-Connected (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_u_s_b___interface_a4253137584b496ee45353b5a3c061bfb}
+
+
+Returns the connection status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtiny26_1_1_u_s_b___interface_a77bb39d15835e15e5ff0dcfc1de4bbda}{\index{tiny26\-::\-U\-S\-B\-\_\-\-Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}!Measure\-Solar\-Panel@{Measure\-Solar\-Panel}}
+\index{Measure\-Solar\-Panel@{Measure\-Solar\-Panel}!tiny26::USB_Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}}
+\subsubsection[{Measure\-Solar\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-U\-S\-B\-\_\-\-Interface.\-Measure\-Solar\-Panel (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_u_s_b___interface_a77bb39d15835e15e5ff0dcfc1de4bbda}
+
+
+Reads the output of the solar panel. 
+
+Sends a request to the Tiny to keep the motor in the current position respond with the light measurements
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtiny26_1_1_u_s_b___interface_ad469c3dcb16971e83b5f6827999da033}{\index{tiny26\-::\-U\-S\-B\-\_\-\-Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}!Set\-Solar\-Position@{Set\-Solar\-Position}}
+\index{Set\-Solar\-Position@{Set\-Solar\-Position}!tiny26::USB_Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}}
+\subsubsection[{Set\-Solar\-Position}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-U\-S\-B\-\_\-\-Interface.\-Set\-Solar\-Position (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{position}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_u_s_b___interface_ad469c3dcb16971e83b5f6827999da033}
+
+
+Moves the solar panel to the specified position. 
+
+Sends a request to the Tiny to move the servo to the specified position. The Tiny will not respond to any requests while it is moving the servo. If the given position is out of the valid range, the servo moves to 254 or 1 depending on which extrema was violated
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em position,\-:} & The desired position (0 $<$ position $<$ 255) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtiny26_1_1_u_s_b___interface_a2b0699d9fc55586245706cf07fb2361c}{\index{tiny26\-::\-U\-S\-B\-\_\-\-Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}!Show\-Error\-Msg@{Show\-Error\-Msg}}
+\index{Show\-Error\-Msg@{Show\-Error\-Msg}!tiny26::USB_Interface@{tiny26\-::\-U\-S\-B\-\_\-\-Interface}}
+\subsubsection[{Show\-Error\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-U\-S\-B\-\_\-\-Interface.\-Show\-Error\-Msg (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{message, }
+\item[{}]{title}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_u_s_b___interface_a2b0699d9fc55586245706cf07fb2361c}
+
+
+Displays an error message box with the supplied message and title. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em message,\-:} & The desired message for the Message Box \\
+\hline
+{\em title,\-:} & The desired title for the Message Box \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tiny26.\-py\end{DoxyCompactItemize}

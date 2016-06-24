@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "Z:/Section3/Section3_Schematic.xst" -ofn "Z:/Section3/Section3_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Section3_Schematic.ucf -p xc9572xl-VQ44-10 Section3_Schematic.ngc Section3_Schematic.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -nogtsopt -nogsropt -unused float -power std -terminate float Section3_Schematic.ngd 
+XSLTProcess Section3_Schematic_build.xml 
+tsim -intstyle ise Section3_Schematic Section3_Schematic.nga 
+taengine -intstyle ise -f Section3_Schematic -w --format html1 -l Section3_Schematic_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Section3_Schematic -i Section3_Schematic 
+xst -intstyle ise -ifn "F:/Section3/Section3_Schematic.xst" -ofn "F:/Section3/Section3_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Section3_Schematic.ucf -p xc9572xl-VQ44-10 Section3_Schematic.ngc Section3_Schematic.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -nogtsopt -nogsropt -unused float -power std -terminate float Section3_Schematic.ngd 
+XSLTProcess Section3_Schematic_build.xml 
+tsim -intstyle ise Section3_Schematic Section3_Schematic.nga 
+hprep6 -s IEEE1149 -n Section3_Schematic -i Section3_Schematic 

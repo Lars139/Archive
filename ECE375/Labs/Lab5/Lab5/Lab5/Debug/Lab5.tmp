@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.52</VERSION>
+ <DEVICE>"ATmega128"</DEVICE>
+ <WORKING_DIR>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1117\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1117\avrassembler\Include\m128def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Debug/Lab5.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab5.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab5.map</FILE>
+  <FILE>Lab5.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>88</LINE></INIT>
+  <HitLeft><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>178</LINE></HitLeft>
+  <HitRight><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>144</LINE></HitRight>
+  <MAIN><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>130</LINE></MAIN>
+  <Wait><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>214</LINE></Wait>
+  <Loop><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>219</LINE></Loop>
+  <OLoop><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>220</LINE></OLoop>
+  <ILoop><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>221</LINE></ILoop>
+  <FUNC><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab5\Lab5\Lab5\Lab5.asm</FILE><LINE>250</LINE></FUNC>
+ </LABELS>
+</ASSEMBLER_INFO>

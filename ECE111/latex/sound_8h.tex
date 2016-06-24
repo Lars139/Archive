@@ -1,0 +1,342 @@
+\hypertarget{sound_8h}{\section{T\-:/students/phillir2/\-Tiny261/libraries/sound.h File Reference}
+\label{sound_8h}\index{T\-:/students/phillir2/\-Tiny261/libraries/sound.\-h@{T\-:/students/phillir2/\-Tiny261/libraries/sound.\-h}}
+}
+
+
+A local header file that defines note frequencies and function prototypes for speaker functionality.  
+
+
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{sound_8h_a08f3d49d5c023475f5d18a0c49b3c49e}{\#define \hyperlink{sound_8h_a08f3d49d5c023475f5d18a0c49b3c49e}{F\-R\-E\-Q\-\_\-\-G\-\_\-\-L}~159}\label{sound_8h_a08f3d49d5c023475f5d18a0c49b3c49e}
+
+\begin{DoxyCompactList}\small\item\em G3, 196.\-00 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_ad891e29b05e65a4782062c5169b2d208}{\#define \hyperlink{sound_8h_ad891e29b05e65a4782062c5169b2d208}{F\-R\-E\-Q\-\_\-\-G\-S\-\_\-\-L}~150}\label{sound_8h_ad891e29b05e65a4782062c5169b2d208}
+
+\begin{DoxyCompactList}\small\item\em G3\#, 207.\-65 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a7eab55af41fed9fb23c3df3581de3daa}{\#define \hyperlink{sound_8h_a7eab55af41fed9fb23c3df3581de3daa}{F\-R\-E\-Q\-\_\-\-A\-\_\-\-L}~142}\label{sound_8h_a7eab55af41fed9fb23c3df3581de3daa}
+
+\begin{DoxyCompactList}\small\item\em A3 , 220.\-00 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a0e98f6659b1db64561d82196502ac853}{\#define \hyperlink{sound_8h_a0e98f6659b1db64561d82196502ac853}{F\-R\-E\-Q\-\_\-\-A\-S\-\_\-\-L}~134}\label{sound_8h_a0e98f6659b1db64561d82196502ac853}
+
+\begin{DoxyCompactList}\small\item\em A3\#, 233.\-08 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_ad67f53d51262ea7e4e3dd33cac1bd5ab}{\#define \hyperlink{sound_8h_ad67f53d51262ea7e4e3dd33cac1bd5ab}{F\-R\-E\-Q\-\_\-\-B\-\_\-\-L}~126}\label{sound_8h_ad67f53d51262ea7e4e3dd33cac1bd5ab}
+
+\begin{DoxyCompactList}\small\item\em B3 , 246.\-94 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a8206cc9519ff38dcf4e23e0e94885fcd}{\#define \hyperlink{sound_8h_a8206cc9519ff38dcf4e23e0e94885fcd}{F\-R\-E\-Q\-\_\-\-C}~119}\label{sound_8h_a8206cc9519ff38dcf4e23e0e94885fcd}
+
+\begin{DoxyCompactList}\small\item\em C4 , 261.\-63 Hz (Middle C) \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a1606204f5da253563adf7d075ddfff25}{\#define \hyperlink{sound_8h_a1606204f5da253563adf7d075ddfff25}{F\-R\-E\-Q\-\_\-\-C\-S}~113}\label{sound_8h_a1606204f5da253563adf7d075ddfff25}
+
+\begin{DoxyCompactList}\small\item\em C4\#, 277.\-18 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a8febbb9f26d6a4dce20f33ebdac80d31}{\#define \hyperlink{sound_8h_a8febbb9f26d6a4dce20f33ebdac80d31}{F\-R\-E\-Q\-\_\-\-D}~106}\label{sound_8h_a8febbb9f26d6a4dce20f33ebdac80d31}
+
+\begin{DoxyCompactList}\small\item\em D4, 293.\-66 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a25ddcd28d63de246fc069a4ba70c6d0e}{\#define \hyperlink{sound_8h_a25ddcd28d63de246fc069a4ba70c6d0e}{F\-R\-E\-Q\-\_\-\-D\-S}~100}\label{sound_8h_a25ddcd28d63de246fc069a4ba70c6d0e}
+
+\begin{DoxyCompactList}\small\item\em D4\#, 311.\-13 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_aac308f722ef3ecdbdcf7194464f9d6c3}{\#define \hyperlink{sound_8h_aac308f722ef3ecdbdcf7194464f9d6c3}{F\-R\-E\-Q\-\_\-\-E}~95}\label{sound_8h_aac308f722ef3ecdbdcf7194464f9d6c3}
+
+\begin{DoxyCompactList}\small\item\em E4 , 329.\-63 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_acbfe714609e7679db8c9c01c9a9ad5b1}{\#define \hyperlink{sound_8h_acbfe714609e7679db8c9c01c9a9ad5b1}{F\-R\-E\-Q\-\_\-\-F}~89}\label{sound_8h_acbfe714609e7679db8c9c01c9a9ad5b1}
+
+\begin{DoxyCompactList}\small\item\em F4 , 349.\-23 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a624c5ec479b15e8e592681d86f0b1641}{\#define \hyperlink{sound_8h_a624c5ec479b15e8e592681d86f0b1641}{F\-R\-E\-Q\-\_\-\-F\-S}~84}\label{sound_8h_a624c5ec479b15e8e592681d86f0b1641}
+
+\begin{DoxyCompactList}\small\item\em F4\#, 369.\-99 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_af06fa514305ed957993f2eb3c29f61fe}{\#define \hyperlink{sound_8h_af06fa514305ed957993f2eb3c29f61fe}{F\-R\-E\-Q\-\_\-\-G}~80}\label{sound_8h_af06fa514305ed957993f2eb3c29f61fe}
+
+\begin{DoxyCompactList}\small\item\em G4 , 392.\-00 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a5144c65e290e840e939c72a9b7256cd0}{\#define \hyperlink{sound_8h_a5144c65e290e840e939c72a9b7256cd0}{F\-R\-E\-Q\-\_\-\-G\-S}~75}\label{sound_8h_a5144c65e290e840e939c72a9b7256cd0}
+
+\begin{DoxyCompactList}\small\item\em G4\#, 415.\-30 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a462d92fd66ae04ceb8ade3bbc27fcbe8}{\#define \hyperlink{sound_8h_a462d92fd66ae04ceb8ade3bbc27fcbe8}{F\-R\-E\-Q\-\_\-\-A}~71}\label{sound_8h_a462d92fd66ae04ceb8ade3bbc27fcbe8}
+
+\begin{DoxyCompactList}\small\item\em A4 , 440.\-00 Hz (Standard tuning note) \end{DoxyCompactList}\item 
+\#define \hyperlink{sound_8h_a9efb598d3859016a83512b56bc8c9af3}{F\-R\-E\-Q\-\_\-\-A\-S}~67
+\item 
+\hypertarget{sound_8h_a8b435da41b0d2fc5e13084b241d41e72}{\#define \hyperlink{sound_8h_a8b435da41b0d2fc5e13084b241d41e72}{F\-R\-E\-Q\-\_\-\-B}~63}\label{sound_8h_a8b435da41b0d2fc5e13084b241d41e72}
+
+\begin{DoxyCompactList}\small\item\em B4 , 493.\-88 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_af170f12f0598e0314cecd15a71e1c10b}{\#define \hyperlink{sound_8h_af170f12f0598e0314cecd15a71e1c10b}{F\-R\-E\-Q\-\_\-\-C\-\_\-\-H}~60}\label{sound_8h_af170f12f0598e0314cecd15a71e1c10b}
+
+\begin{DoxyCompactList}\small\item\em C5 , 523.\-25 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a2c51526e2b398ce1ea171301c287943a}{\#define \hyperlink{sound_8h_a2c51526e2b398ce1ea171301c287943a}{F\-R\-E\-Q\-\_\-\-C\-S\-\_\-\-H}~56}\label{sound_8h_a2c51526e2b398ce1ea171301c287943a}
+
+\begin{DoxyCompactList}\small\item\em C5\#, 523.\-25 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a53f02506185da6ac1367a7c202fd2750}{\#define \hyperlink{sound_8h_a53f02506185da6ac1367a7c202fd2750}{F\-R\-E\-Q\-\_\-\-D\-\_\-\-H}~53}\label{sound_8h_a53f02506185da6ac1367a7c202fd2750}
+
+\begin{DoxyCompactList}\small\item\em D5, 587.\-33 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a7b29c4646d72ff6f6a182f36a38e64ef}{\#define \hyperlink{sound_8h_a7b29c4646d72ff6f6a182f36a38e64ef}{F\-R\-E\-Q\-\_\-\-D\-S\-\_\-\-H}~50}\label{sound_8h_a7b29c4646d72ff6f6a182f36a38e64ef}
+
+\begin{DoxyCompactList}\small\item\em D5\#, 622.\-25 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a0c3774625cf693afb4f82d0a2fc29ea4}{\#define \hyperlink{sound_8h_a0c3774625cf693afb4f82d0a2fc29ea4}{F\-R\-E\-Q\-\_\-\-E\-\_\-\-H}~47}\label{sound_8h_a0c3774625cf693afb4f82d0a2fc29ea4}
+
+\begin{DoxyCompactList}\small\item\em E5, 659.\-25 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a749d888e77a4c167817a756af9c2ed90}{\#define \hyperlink{sound_8h_a749d888e77a4c167817a756af9c2ed90}{F\-R\-E\-Q\-\_\-\-F\-\_\-\-H}~44}\label{sound_8h_a749d888e77a4c167817a756af9c2ed90}
+
+\begin{DoxyCompactList}\small\item\em F5, 698.\-46 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a336613165c01d166c2e863e2ec0571c0}{\#define \hyperlink{sound_8h_a336613165c01d166c2e863e2ec0571c0}{F\-R\-E\-Q\-\_\-\-F\-S\-\_\-\-H}~42}\label{sound_8h_a336613165c01d166c2e863e2ec0571c0}
+
+\begin{DoxyCompactList}\small\item\em F5\#, 739.\-99 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a364226ea217fc5534501a4c1da6908eb}{\#define \hyperlink{sound_8h_a364226ea217fc5534501a4c1da6908eb}{F\-R\-E\-Q\-\_\-\-G\-\_\-\-H}~39}\label{sound_8h_a364226ea217fc5534501a4c1da6908eb}
+
+\begin{DoxyCompactList}\small\item\em G5, 783.\-99 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_ac314b6f78976569af5bddd0571a54a28}{\#define \hyperlink{sound_8h_ac314b6f78976569af5bddd0571a54a28}{F\-R\-E\-Q\-\_\-\-G\-S\-\_\-\-H}~37}\label{sound_8h_ac314b6f78976569af5bddd0571a54a28}
+
+\begin{DoxyCompactList}\small\item\em G5\#, 830.\-61 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_abc28e21b6e147f9405a6a1746b44ee90}{\#define \hyperlink{sound_8h_abc28e21b6e147f9405a6a1746b44ee90}{F\-R\-E\-Q\-\_\-\-A\-\_\-\-H}~35}\label{sound_8h_abc28e21b6e147f9405a6a1746b44ee90}
+
+\begin{DoxyCompactList}\small\item\em A5, 880.\-00 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a046bbb715799bd651df2ce63fe06babd}{\#define \hyperlink{sound_8h_a046bbb715799bd651df2ce63fe06babd}{F\-R\-E\-Q\-\_\-\-A\-S\-\_\-\-H}~33}\label{sound_8h_a046bbb715799bd651df2ce63fe06babd}
+
+\begin{DoxyCompactList}\small\item\em A5\#, 932.\-33 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_ad2d9254a52b4f598797889dc20d6d417}{\#define \hyperlink{sound_8h_ad2d9254a52b4f598797889dc20d6d417}{F\-R\-E\-Q\-\_\-\-B\-\_\-\-H}~31}\label{sound_8h_ad2d9254a52b4f598797889dc20d6d417}
+
+\begin{DoxyCompactList}\small\item\em B5, 987.\-77 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a4b7d5ea751fa7c59c602e17d1b5e81a8}{\#define \hyperlink{sound_8h_a4b7d5ea751fa7c59c602e17d1b5e81a8}{F\-R\-E\-Q\-\_\-\-C\-\_\-\-H\-H}~29}\label{sound_8h_a4b7d5ea751fa7c59c602e17d1b5e81a8}
+
+\begin{DoxyCompactList}\small\item\em C6 , 1046.\-5 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_acd26eb7f0afa194f5eae0629cdae4c5e}{\#define \hyperlink{sound_8h_acd26eb7f0afa194f5eae0629cdae4c5e}{F\-R\-E\-Q\-\_\-\-C\-S\-\_\-\-H\-H}~28}\label{sound_8h_acd26eb7f0afa194f5eae0629cdae4c5e}
+
+\begin{DoxyCompactList}\small\item\em C6\#, 1108.\-7 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_aaaf4a88229c4d0e1fc5c7a618359b4c1}{\#define \hyperlink{sound_8h_aaaf4a88229c4d0e1fc5c7a618359b4c1}{F\-R\-E\-Q\-\_\-\-D\-\_\-\-H\-H}~26}\label{sound_8h_aaaf4a88229c4d0e1fc5c7a618359b4c1}
+
+\begin{DoxyCompactList}\small\item\em D6, 1174.\-7 Hz. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_a3ddad2f5cfc2e77330d8bfa418d7fd2d}{\#define \hyperlink{sound_8h_a3ddad2f5cfc2e77330d8bfa418d7fd2d}{F\-R\-E\-Q\-\_\-\-D\-S\-\_\-\-H\-H}~25}\label{sound_8h_a3ddad2f5cfc2e77330d8bfa418d7fd2d}
+
+\begin{DoxyCompactList}\small\item\em D6\#, 1244.\-5 Hz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sound_8h_a953501d1c175ff5bdd6ec7d02f76e81f}{setup\-Speaker} (unsigned char $\ast$spkr\-Port, unsigned char spkr\-Pin)
+\item 
+void \hyperlink{sound_8h_a7562b8938b54d5f7c00600d92b6a4ec7}{set\-Frequency} (unsigned char)
+\begin{DoxyCompactList}\small\item\em Sets the value to compare with timer/counter1. This sets the frequency generated on the square wave output for the speaker. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8h_a6db3401bf7e8dfba801a50364f8ff652}{speaker\-On} ()
+\begin{DoxyCompactList}\small\item\em Enables speaker output by enabling the compare match interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8h_a30e99799331221be8119a5f006994b89}{disable\-Speaker} ()
+\begin{DoxyCompactList}\small\item\em Disables speaker output by disabling the compare match interrupt for timer/counter1. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8h_a4daeb026f7eea15ed53b4e71624bd6ab}{Quarter\-Note} (unsigned char note)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function plays a specified note for the duration of a quarter beat. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8h_a2eb918b9eaacf11ca438aa7612e45a81}{Quarter\-Rest} (void)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function turns the speaker off for the duration of a quarter beat. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8h_ac4c2280456dad886472bec44283fbb68}{Eighth\-Note} (unsigned char note)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function plays a specified note for the duration of an eighth beat. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8h_afe74a1bc145456c941597ba9296651d4}{Eighth\-Rest} (void)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function turns the speaker off for the duration of a eighth beat. \end{DoxyCompactList}\item 
+\hypertarget{sound_8h_ad543f9307298e39f4d63b98a9bb0a4a0}{void {\bfseries Measure\-One} (void)}\label{sound_8h_ad543f9307298e39f4d63b98a9bb0a4a0}
+
+\item 
+\hypertarget{sound_8h_aee93b30ceec1a58df5faf4a10df9c574}{void {\bfseries Measure\-Two} (void)}\label{sound_8h_aee93b30ceec1a58df5faf4a10df9c574}
+
+\item 
+\hypertarget{sound_8h_ade7215e26d1bf79c9d1c7e6993bd4b93}{void {\bfseries Measure\-Three} (void)}\label{sound_8h_ade7215e26d1bf79c9d1c7e6993bd4b93}
+
+\item 
+\hypertarget{sound_8h_aa0ca09190611627997a58726144746d9}{void {\bfseries Measure\-Four} (void)}\label{sound_8h_aa0ca09190611627997a58726144746d9}
+
+\item 
+\hypertarget{sound_8h_a021d003115a3cb5303b38cb78da06137}{void {\bfseries Measure\-Five} (void)}\label{sound_8h_a021d003115a3cb5303b38cb78da06137}
+
+\item 
+\hypertarget{sound_8h_a3185e1b1547d4651a332416d3e8b9bb4}{void {\bfseries Measure\-Six} (void)}\label{sound_8h_a3185e1b1547d4651a332416d3e8b9bb4}
+
+\item 
+\hypertarget{sound_8h_ab90a1dd4bd49238f4120d562b39a6a2a}{void {\bfseries Measure\-Seven} (void)}\label{sound_8h_ab90a1dd4bd49238f4120d562b39a6a2a}
+
+\item 
+\hypertarget{sound_8h_ae9c59f6e32c873458088b30eaa4f1be1}{void {\bfseries Measure\-Eight} (void)}\label{sound_8h_ae9c59f6e32c873458088b30eaa4f1be1}
+
+\item 
+\hypertarget{sound_8h_abb2542d0c1cc680e42d05f28edaee788}{void {\bfseries Measure\-Nine} (void)}\label{sound_8h_abb2542d0c1cc680e42d05f28edaee788}
+
+\item 
+\hypertarget{sound_8h_a6ff5ffccdc4bdee8d617216a55e9279c}{void {\bfseries Measure\-Ten} (void)}\label{sound_8h_a6ff5ffccdc4bdee8d617216a55e9279c}
+
+\item 
+\hypertarget{sound_8h_a42ed4754bab7c8f40a5afc5287b69339}{void {\bfseries Measure\-Eleven} (void)}\label{sound_8h_a42ed4754bab7c8f40a5afc5287b69339}
+
+\item 
+\hypertarget{sound_8h_a0513b9184e565901df099454a8c5204b}{void {\bfseries Measure\-Twelve} (void)}\label{sound_8h_a0513b9184e565901df099454a8c5204b}
+
+\item 
+\hypertarget{sound_8h_a154315eb87e69563b1d4bf6a39deeed2}{void {\bfseries Measure\-Thirteen} (void)}\label{sound_8h_a154315eb87e69563b1d4bf6a39deeed2}
+
+\item 
+\hypertarget{sound_8h_a4a72fd9ceac99cff05b5d56e1571caaf}{void {\bfseries Measure\-Fourteen} (void)}\label{sound_8h_a4a72fd9ceac99cff05b5d56e1571caaf}
+
+\item 
+\hypertarget{sound_8h_aa5beff7a89fb6f25fd33ca087c681c42}{void {\bfseries Measure\-Fifteen} (void)}\label{sound_8h_aa5beff7a89fb6f25fd33ca087c681c42}
+
+\item 
+\hypertarget{sound_8h_aa50722ad1444c85b4976f69134c138da}{void {\bfseries Measure\-Sixteen} (void)}\label{sound_8h_aa50722ad1444c85b4976f69134c138da}
+
+\item 
+\hypertarget{sound_8h_a074b030806e006f10d8c54287e15d5db}{void {\bfseries Measure\-Eighteen} (void)}\label{sound_8h_a074b030806e006f10d8c54287e15d5db}
+
+\item 
+\hypertarget{sound_8h_a88fc66fb0d7c4b3da5f84737bf012164}{void {\bfseries Measure\-Nineteen} (void)}\label{sound_8h_a88fc66fb0d7c4b3da5f84737bf012164}
+
+\item 
+\hypertarget{sound_8h_a5c8ee3206d676c6fd530c55c78b15d13}{void {\bfseries Measure\-Twenty} (void)}\label{sound_8h_a5c8ee3206d676c6fd530c55c78b15d13}
+
+\item 
+\hypertarget{sound_8h_a65e4c59f814e63ace41ad44dc5f9dd63}{void {\bfseries Measure\-Twenty\-One} (void)}\label{sound_8h_a65e4c59f814e63ace41ad44dc5f9dd63}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A local header file that defines note frequencies and function prototypes for speaker functionality. \begin{DoxyAuthor}{Author}
+Matthew Shuman 
+
+David Overgaard 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07/12/10 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+2.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+The square wave which drives the speaker is generated by toggling an I\-O pin after a certine number of timer ticks. The number of ticks needed to generate a certian frequency is calculated as follows\-:
+\begin{DoxyItemize}
+\item T\-I\-M\-E\-R1 Period = 1/timer\-\_\-frequency = 1/62.\-5khz = 0.\-000016s
+\item The period of the generated wave = timer\-\_\-period$\ast$timer\-\_\-ticks$\ast$2 = 0.\-000032$\ast$timer\-\_\-ticks
+\item Generated wave frequency = 1/(0.\-000032$\ast$timer\-\_\-ticks)
+\end{DoxyItemize}\hypertarget{sound_8h_FUNCTION}{}\subsection{P\-R\-O\-T\-O\-T\-Y\-P\-E\-S}\label{sound_8h_FUNCTION}
+These are used allow other source files to use functions defined in music.\-c To use these functions in another file, \#include music.\-h in that file. This will allow your file to compile using these function prototypes To build your final executable, you will need to compile your file and music.\-c into object files, then link these into an executable using linker software. This process is taken care of in the makefile for this project 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{sound_8h_a9efb598d3859016a83512b56bc8c9af3}{\index{sound.\-h@{sound.\-h}!F\-R\-E\-Q\-\_\-\-A\-S@{F\-R\-E\-Q\-\_\-\-A\-S}}
+\index{F\-R\-E\-Q\-\_\-\-A\-S@{F\-R\-E\-Q\-\_\-\-A\-S}!sound.h@{sound.\-h}}
+\subsubsection[{F\-R\-E\-Q\-\_\-\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-R\-E\-Q\-\_\-\-A\-S~67}}\label{sound_8h_a9efb598d3859016a83512b56bc8c9af3}
+\#, 466.\-16 Hz 
+
+\subsection{Function Documentation}
+\hypertarget{sound_8h_a30e99799331221be8119a5f006994b89}{\index{sound.\-h@{sound.\-h}!disable\-Speaker@{disable\-Speaker}}
+\index{disable\-Speaker@{disable\-Speaker}!sound.h@{sound.\-h}}
+\subsubsection[{disable\-Speaker}]{\setlength{\rightskip}{0pt plus 5cm}void disable\-Speaker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_a30e99799331221be8119a5f006994b89}
+
+
+Disables speaker output by disabling the compare match interrupt for timer/counter1. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{sound_8h_ac4c2280456dad886472bec44283fbb68}{\index{sound.\-h@{sound.\-h}!Eighth\-Note@{Eighth\-Note}}
+\index{Eighth\-Note@{Eighth\-Note}!sound.h@{sound.\-h}}
+\subsubsection[{Eighth\-Note}]{\setlength{\rightskip}{0pt plus 5cm}void Eighth\-Note (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{note}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_ac4c2280456dad886472bec44283fbb68}
+
+
+For the set tempo, this function plays a specified note for the duration of an eighth beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{sound_8h_afe74a1bc145456c941597ba9296651d4}{\index{sound.\-h@{sound.\-h}!Eighth\-Rest@{Eighth\-Rest}}
+\index{Eighth\-Rest@{Eighth\-Rest}!sound.h@{sound.\-h}}
+\subsubsection[{Eighth\-Rest}]{\setlength{\rightskip}{0pt plus 5cm}void Eighth\-Rest (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_afe74a1bc145456c941597ba9296651d4}
+
+
+For the set tempo, this function turns the speaker off for the duration of a eighth beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{sound_8h_a4daeb026f7eea15ed53b4e71624bd6ab}{\index{sound.\-h@{sound.\-h}!Quarter\-Note@{Quarter\-Note}}
+\index{Quarter\-Note@{Quarter\-Note}!sound.h@{sound.\-h}}
+\subsubsection[{Quarter\-Note}]{\setlength{\rightskip}{0pt plus 5cm}void Quarter\-Note (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{note}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_a4daeb026f7eea15ed53b4e71624bd6ab}
+
+
+For the set tempo, this function plays a specified note for the duration of a quarter beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{sound_8h_a2eb918b9eaacf11ca438aa7612e45a81}{\index{sound.\-h@{sound.\-h}!Quarter\-Rest@{Quarter\-Rest}}
+\index{Quarter\-Rest@{Quarter\-Rest}!sound.h@{sound.\-h}}
+\subsubsection[{Quarter\-Rest}]{\setlength{\rightskip}{0pt plus 5cm}void Quarter\-Rest (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_a2eb918b9eaacf11ca438aa7612e45a81}
+
+
+For the set tempo, this function turns the speaker off for the duration of a quarter beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{sound_8h_a7562b8938b54d5f7c00600d92b6a4ec7}{\index{sound.\-h@{sound.\-h}!set\-Frequency@{set\-Frequency}}
+\index{set\-Frequency@{set\-Frequency}!sound.h@{sound.\-h}}
+\subsubsection[{set\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Frequency (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{char}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_a7562b8938b54d5f7c00600d92b6a4ec7}
+
+
+Sets the value to compare with timer/counter1. This sets the frequency generated on the square wave output for the speaker. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{sound_8h_a953501d1c175ff5bdd6ec7d02f76e81f}{\index{sound.\-h@{sound.\-h}!setup\-Speaker@{setup\-Speaker}}
+\index{setup\-Speaker@{setup\-Speaker}!sound.h@{sound.\-h}}
+\subsubsection[{setup\-Speaker}]{\setlength{\rightskip}{0pt plus 5cm}void setup\-Speaker (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{spkr\-Port, }
+\item[{unsigned char}]{spkr\-Pin}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_a953501d1c175ff5bdd6ec7d02f76e81f}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets up T\-I\-M\-E\-R1 and S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A interrupt to use for speaker functionality. \hypertarget{sound_8h_a6db3401bf7e8dfba801a50364f8ff652}{\index{sound.\-h@{sound.\-h}!speaker\-On@{speaker\-On}}
+\index{speaker\-On@{speaker\-On}!sound.h@{sound.\-h}}
+\subsubsection[{speaker\-On}]{\setlength{\rightskip}{0pt plus 5cm}void speaker\-On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sound_8h_a6db3401bf7e8dfba801a50364f8ff652}
+
+
+Enables speaker output by enabling the compare match interrupt. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

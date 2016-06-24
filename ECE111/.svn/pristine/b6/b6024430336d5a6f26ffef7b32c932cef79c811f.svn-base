@@ -1,0 +1,73 @@
+\hypertarget{stepper_8c}{\section{T\-:/students/phillir2/\-Tiny261/libraries/stepper.c File Reference}
+\label{stepper_8c}\index{T\-:/students/phillir2/\-Tiny261/libraries/stepper.\-c@{T\-:/students/phillir2/\-Tiny261/libraries/stepper.\-c}}
+}
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{stepper_8c_a584f982f1593889babd425c50cf18340}{\#define {\bfseries step1}~(P\-O\-R\-T\-A = 0b10010000)}\label{stepper_8c_a584f982f1593889babd425c50cf18340}
+
+\item 
+\hypertarget{stepper_8c_ac43a3868189964c15fd966524089a9ab}{\#define {\bfseries step2}~(P\-O\-R\-T\-A = 0b01100000)}\label{stepper_8c_ac43a3868189964c15fd966524089a9ab}
+
+\item 
+\hypertarget{stepper_8c_a9c0fcd646fe9d1103c5718f949be26d5}{\#define {\bfseries step3}~(P\-O\-R\-T\-A = 0b10000000)}\label{stepper_8c_a9c0fcd646fe9d1103c5718f949be26d5}
+
+\item 
+\hypertarget{stepper_8c_a3917930265f261b2887f49398e17c10e}{\#define {\bfseries step4}~(P\-O\-R\-T\-A = 0b00100000)}\label{stepper_8c_a3917930265f261b2887f49398e17c10e}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stepper_8c_a211938e1199340aa8dae46d9fdd89c95}{run\-Stepper\-Motor} (unsigned short int direction, int time, int step\-Number)
+\item 
+void \hyperlink{stepper_8c_ada501e38b6fc4d18752b04acee2339ad}{take\-Step} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{stepper_8c_a7b9e371c51a6e28dd2786517195c272c}{char {\bfseries curr\-Step} = 0}\label{stepper_8c_a7b9e371c51a6e28dd2786517195c272c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joey Tomlinson 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Library for interfacing to a quadrature encoder. An interrupt is used to read the encoder increments. The interrupt declaration is \#defined as R\-O\-T\-A\-R\-Y\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-I\-S\-R. To use this library, you need to include R\-O\-T\-A\-R\-Y\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-I\-S\-R in the main file of your orogram.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L
+
+Hardware Description\-: By default a stepper motor is connected to P\-O\-R\-T\-A pins 4-\/7 as follows\-: P\-A4\-: Disable2; P\-A5\-: Phase2; P\-A6\-: Disable1; P\-A7\-: Phase1 This can be changed using the \#defines below 
+
+\subsection{Function Documentation}
+\hypertarget{stepper_8c_a211938e1199340aa8dae46d9fdd89c95}{\index{stepper.\-c@{stepper.\-c}!run\-Stepper\-Motor@{run\-Stepper\-Motor}}
+\index{run\-Stepper\-Motor@{run\-Stepper\-Motor}!stepper.c@{stepper.\-c}}
+\subsubsection[{run\-Stepper\-Motor}]{\setlength{\rightskip}{0pt plus 5cm}void run\-Stepper\-Motor (
+\begin{DoxyParamCaption}
+\item[{unsigned short int}]{direction, }
+\item[{int}]{time, }
+\item[{int}]{step\-Number}
+\end{DoxyParamCaption}
+)}}\label{stepper_8c_a211938e1199340aa8dae46d9fdd89c95}
+Turns the strepper motor in a specified direction, at a specificed speed, for a specificed number of steps.
+
+direction to turn. 1 is forward, 0 is reverse  time time between steps in milliseconds  step\-Number number of steps to take \hypertarget{stepper_8c_ada501e38b6fc4d18752b04acee2339ad}{\index{stepper.\-c@{stepper.\-c}!take\-Step@{take\-Step}}
+\index{take\-Step@{take\-Step}!stepper.c@{stepper.\-c}}
+\subsubsection[{take\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void take\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stepper_8c_ada501e38b6fc4d18752b04acee2339ad}
+Function used to execute the cycle needed to have the motor take a single step. 

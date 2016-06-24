@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1345240881 source:c:\users\robert\documents\porn\summer 2012\ece111\tiny26usb\usb.c
+	"usb.h"
+	<string.h>
+	<stdlib.h>
+
+1345240855 c:\users\robert\documents\porn\summer 2012\ece111\tiny26usb\usb.h
+	<windows.h>
+	<setupapi.h>
+	<ddk/hidsdi.h>
+	<ddk/hidpi.h>
+	<ddk/hidusage.h>
+

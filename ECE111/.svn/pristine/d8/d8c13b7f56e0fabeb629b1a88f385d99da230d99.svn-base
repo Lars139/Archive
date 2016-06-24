@@ -1,0 +1,46 @@
+\hypertarget{dir_bd14a24703a8f57116df77a562ea58f3}{\section{T\-:/students/phillir2/\-Tiny261/libraries Directory Reference}
+\label{dir_bd14a24703a8f57116df77a562ea58f3}\index{T\-:/students/phillir2/\-Tiny261/libraries Directory Reference@{T\-:/students/phillir2/\-Tiny261/libraries Directory Reference}}
+}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{adc_8c}{adc.\-c}
+\item 
+file \hyperlink{libraries_2_a_d_c_8h}{adc.\-h}
+\item 
+file \hyperlink{delay_8c}{delay.\-c}
+\item 
+file \hyperlink{delay_8h}{delay.\-h}
+\item 
+file \hyperlink{motor__ctl_8c}{motor\-\_\-ctl.\-c}
+\item 
+file \hyperlink{motor__ctl_8h}{motor\-\_\-ctl.\-h}
+\item 
+file \hyperlink{pins_8h}{pins.\-h}
+\item 
+file \hyperlink{rotary_encoder_8c}{rotary\-Encoder.\-c}
+\item 
+file \hyperlink{rotary_encoder_8h}{rotary\-Encoder.\-h}
+\item 
+file \hyperlink{servo__ctl_8c}{servo\-\_\-ctl.\-c}
+\item 
+file \hyperlink{servo__ctl_8h}{servo\-\_\-ctl.\-h}
+\item 
+file \hyperlink{sound_8c}{sound.\-c}
+\item 
+file \hyperlink{sound_8h}{sound.\-h}
+\begin{DoxyCompactList}\small\item\em A local header file that defines note frequencies and function prototypes for speaker functionality. \end{DoxyCompactList}\item 
+file \hyperlink{speedometer_8c}{speedometer.\-c}
+\item 
+file \hyperlink{speedometer_8h}{speedometer.\-h}
+\item 
+file \hyperlink{stepper_8c}{stepper.\-c}
+\item 
+file {\bfseries stepper.\-h}
+\item 
+file \hyperlink{types_8h}{types.\-h}
+\item 
+file \hyperlink{util_8c}{util.\-c}
+\item 
+file {\bfseries util.\-h}
+\end{DoxyCompactItemize}

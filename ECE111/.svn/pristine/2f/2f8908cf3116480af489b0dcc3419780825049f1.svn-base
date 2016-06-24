@@ -1,0 +1,111 @@
+\hypertarget{speedometer_8h}{\section{T\-:/students/phillir2/\-Tiny261/libraries/speedometer.h File Reference}
+\label{speedometer_8h}\index{T\-:/students/phillir2/\-Tiny261/libraries/speedometer.\-h@{T\-:/students/phillir2/\-Tiny261/libraries/speedometer.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{speedometer_8h_a0d39a56adcdc71e418e1aa7642cbc035}{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R}~0x00
+\item 
+\#define \hyperlink{speedometer_8h_a9ba0295d51a66713d78690d61be7c029}{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L}~0x01
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{speedometer_8h_a8b809aac0b2faeaf3ea879c6f326fc45}{speedometer} (unsigned char $\ast$led0\-Port, unsigned char led0\-Pin, unsigned char $\ast$led1\-Port, unsigned char led1\-Pin, unsigned char $\ast$led2\-Port, unsigned char led2\-Pin, unsigned char $\ast$led3\-Port, unsigned char led3\-Pin)
+\begin{DoxyCompactList}\small\item\em Stores register addresses for later by the display. \end{DoxyCompactList}\item 
+void \hyperlink{speedometer_8h_a3ae75118d02dd85ed735374d759eaba0}{update\-Speedometer} (unsigned char value, unsigned char direction)
+\begin{DoxyCompactList}\small\item\em Updates the L\-E\-Ds defined by \hyperlink{speedometer_8c_a8b809aac0b2faeaf3ea879c6f326fc45}{speedometer()} with a new value. The direction in which the L\-E\-Ds light up is defined by {\itshape direction}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Dan Albert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created 7/15/2010 
+
+Last updated 7/15/10 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Includes functions for using a row of four L\-E\-Ds as a display.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L Pin definitions are set up to use with the Tekbots tiny\-\_\-mb.\-0 motor controller Documentation for the tiny\-\_\-mb.\-0 can be found here\-: \href{http://eecs.oregonstate.edu/education/products/tiny_mb.0/}{\tt http\-://eecs.\-oregonstate.\-edu/education/products/tiny\-\_\-mb.\-0/} 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{speedometer_8h_a0d39a56adcdc71e418e1aa7642cbc035}{\index{speedometer.\-h@{speedometer.\-h}!S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R@{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R}}
+\index{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R@{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R}!speedometer.h@{speedometer.\-h}}
+\subsubsection[{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R~0x00}}\label{speedometer_8h_a0d39a56adcdc71e418e1aa7642cbc035}
+Fills the L\-E\-Ds beginning with the led0. \hypertarget{speedometer_8h_a9ba0295d51a66713d78690d61be7c029}{\index{speedometer.\-h@{speedometer.\-h}!S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L@{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L}}
+\index{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L@{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L}!speedometer.h@{speedometer.\-h}}
+\subsubsection[{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L~0x01}}\label{speedometer_8h_a9ba0295d51a66713d78690d61be7c029}
+Fills the L\-E\-Ds beginning with the led3. 
+
+\subsection{Function Documentation}
+\hypertarget{speedometer_8h_a8b809aac0b2faeaf3ea879c6f326fc45}{\index{speedometer.\-h@{speedometer.\-h}!speedometer@{speedometer}}
+\index{speedometer@{speedometer}!speedometer.h@{speedometer.\-h}}
+\subsubsection[{speedometer}]{\setlength{\rightskip}{0pt plus 5cm}void speedometer (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{led0\-Port, }
+\item[{unsigned char}]{led0\-Pin, }
+\item[{unsigned char $\ast$}]{led1\-Port, }
+\item[{unsigned char}]{led1\-Pin, }
+\item[{unsigned char $\ast$}]{led2\-Port, }
+\item[{unsigned char}]{led2\-Pin, }
+\item[{unsigned char $\ast$}]{led3\-Port, }
+\item[{unsigned char}]{led3\-Pin}
+\end{DoxyParamCaption}
+)}}\label{speedometer_8h_a8b809aac0b2faeaf3ea879c6f326fc45}
+
+
+Stores register addresses for later by the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led0\-Port} & The port that the first L\-E\-D is connected to. \\
+\hline
+{\em led0\-Pin} & The pin that the first L\-E\-D is connected to. \\
+\hline
+{\em led1\-Port} & The port that the second L\-E\-D is connected to. \\
+\hline
+{\em led1\-Pin} & The pin that the second L\-E\-D is connected to. \\
+\hline
+{\em led2\-Port} & The port that the third L\-E\-D is connected to. \\
+\hline
+{\em led2\-Pin} & The pin that the third L\-E\-D is connected to. \\
+\hline
+{\em led3\-Port} & The port that the last L\-E\-D is connected to. \\
+\hline
+{\em led3\-Pin} & The pin that the last L\-E\-D is connected to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{speedometer_8h_a3ae75118d02dd85ed735374d759eaba0}{\index{speedometer.\-h@{speedometer.\-h}!update\-Speedometer@{update\-Speedometer}}
+\index{update\-Speedometer@{update\-Speedometer}!speedometer.h@{speedometer.\-h}}
+\subsubsection[{update\-Speedometer}]{\setlength{\rightskip}{0pt plus 5cm}void update\-Speedometer (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{value, }
+\item[{unsigned char}]{direction}
+\end{DoxyParamCaption}
+)}}\label{speedometer_8h_a3ae75118d02dd85ed735374d759eaba0}
+
+
+Updates the L\-E\-Ds defined by \hyperlink{speedometer_8c_a8b809aac0b2faeaf3ea879c6f326fc45}{speedometer()} with a new value. The direction in which the L\-E\-Ds light up is defined by {\itshape direction}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to display. \\
+\hline
+{\em direction} & Determines which direction to fill the L\-E\-Ds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{speedometer_8h_a0d39a56adcdc71e418e1aa7642cbc035}{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-L\-T\-R} 
+
+\hyperlink{speedometer_8h_a9ba0295d51a66713d78690d61be7c029}{S\-P\-E\-E\-D\-O\-\_\-\-D\-I\-R\-\_\-\-R\-T\-L} 
+\end{DoxySeeAlso}

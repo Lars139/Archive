@@ -1,0 +1,112 @@
+\hypertarget{rotary_encoder_8c}{\section{T\-:/students/phillir2/\-Tiny261/libraries/rotary\-Encoder.c File Reference}
+\label{rotary_encoder_8c}\index{T\-:/students/phillir2/\-Tiny261/libraries/rotary\-Encoder.\-c@{T\-:/students/phillir2/\-Tiny261/libraries/rotary\-Encoder.\-c}}
+}
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}delay.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rotary\-Encoder.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{rotary_encoder_8c_aa163428376d969ef07512d48d7ab496c}{\#define {\bfseries E\-N\-C\-\_\-\-M\-S\-B}()~bit\-\_\-is\-\_\-set(P\-I\-N\-B, 0)}\label{rotary_encoder_8c_aa163428376d969ef07512d48d7ab496c}
+
+\item 
+\hypertarget{rotary_encoder_8c_a00476fe17b449678483626d88789a636}{\#define {\bfseries E\-N\-C\-\_\-\-L\-S\-B}()~bit\-\_\-is\-\_\-set(P\-I\-N\-B, 1)}\label{rotary_encoder_8c_a00476fe17b449678483626d88789a636}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{rotary_encoder_8c_a5143013c45a26fc8b242ee50591268d1}{init\-Rotary} (char lsb, char msb)
+\item 
+int \hyperlink{rotary_encoder_8c_a9aa1009a386d83a3a1fc09d58a8c927b}{get\-Cur\-Pos} ()
+\item 
+int \hyperlink{rotary_encoder_8c_a30eb6f86f67804a411eed333ea547f24}{gray\-To\-Dec} (char msb, char lsb)
+\item 
+void \hyperlink{rotary_encoder_8c_a8f88a6646683a5aaa20215f77b716a90}{I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{rotary_encoder_8c_a09f7d431eff2309476107a71214bdc5b}{unsigned int {\bfseries cur\-Pos}}\label{rotary_encoder_8c_a09f7d431eff2309476107a71214bdc5b}
+
+\item 
+\hypertarget{rotary_encoder_8c_a64d0c39624b8e627889e0893b77a9c8f}{unsigned char {\bfseries prev}}\label{rotary_encoder_8c_a64d0c39624b8e627889e0893b77a9c8f}
+
+\item 
+\hypertarget{rotary_encoder_8c_a84638f354a4158c082fec2c6095de587}{unsigned char {\bfseries cur}}\label{rotary_encoder_8c_a84638f354a4158c082fec2c6095de587}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joey Tomlinson 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Library for interfacing to a quadrature encoder. An interrupt is used to read the encoder increments. The interrupt declaration is \#defined as R\-O\-T\-A\-R\-Y\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-I\-S\-R. To use this library, you need to include R\-O\-T\-A\-R\-Y\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-I\-S\-R in the main file of your orogram.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L
+
+Hardware Description\-: 
+
+\subsection{Function Documentation}
+\hypertarget{rotary_encoder_8c_a9aa1009a386d83a3a1fc09d58a8c927b}{\index{rotary\-Encoder.\-c@{rotary\-Encoder.\-c}!get\-Cur\-Pos@{get\-Cur\-Pos}}
+\index{get\-Cur\-Pos@{get\-Cur\-Pos}!rotaryEncoder.c@{rotary\-Encoder.\-c}}
+\subsubsection[{get\-Cur\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Cur\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{rotary_encoder_8c_a9aa1009a386d83a3a1fc09d58a8c927b}
+Gets the change in position since init\-Rotary was called.
+
+\begin{DoxyReturn}{Returns}
+current position of the rotary encoder. 
+\end{DoxyReturn}
+\hypertarget{rotary_encoder_8c_a30eb6f86f67804a411eed333ea547f24}{\index{rotary\-Encoder.\-c@{rotary\-Encoder.\-c}!gray\-To\-Dec@{gray\-To\-Dec}}
+\index{gray\-To\-Dec@{gray\-To\-Dec}!rotaryEncoder.c@{rotary\-Encoder.\-c}}
+\subsubsection[{gray\-To\-Dec}]{\setlength{\rightskip}{0pt plus 5cm}int gray\-To\-Dec (
+\begin{DoxyParamCaption}
+\item[{char}]{msb, }
+\item[{char}]{lsb}
+\end{DoxyParamCaption}
+)}}\label{rotary_encoder_8c_a30eb6f86f67804a411eed333ea547f24}
+Takes two msb and lsb, and converts the 2 bit greycode to it's corresponding decimal value. 
+\begin{DoxyParams}{Parameters}
+{\em 1st} & bit of the rotary encoders output. \\
+\hline
+{\em 2nd} & bit of the rotary encoders output. \\
+\hline
+\end{DoxyParams}
+\hypertarget{rotary_encoder_8c_a5143013c45a26fc8b242ee50591268d1}{\index{rotary\-Encoder.\-c@{rotary\-Encoder.\-c}!init\-Rotary@{init\-Rotary}}
+\index{init\-Rotary@{init\-Rotary}!rotaryEncoder.c@{rotary\-Encoder.\-c}}
+\subsubsection[{init\-Rotary}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Rotary (
+\begin{DoxyParamCaption}
+\item[{char}]{lsb, }
+\item[{char}]{msb}
+\end{DoxyParamCaption}
+)}}\label{rotary_encoder_8c_a5143013c45a26fc8b242ee50591268d1}
+Initialization function for rotary encoder. Sets the previous encoder value to be whatever the pins are initially at. Also sets the current position of the rotary encoder to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1st} & bit of the rotary encoders output. \\
+\hline
+{\em 2nd} & bit of the rotary encoders output. \\
+\hline
+\end{DoxyParams}
+\hypertarget{rotary_encoder_8c_a8f88a6646683a5aaa20215f77b716a90}{\index{rotary\-Encoder.\-c@{rotary\-Encoder.\-c}!I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect@{I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect}}
+\index{I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect@{I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect}!rotaryEncoder.c@{rotary\-Encoder.\-c}}
+\subsubsection[{I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect}]{\setlength{\rightskip}{0pt plus 5cm}void I\-S\-R\-\_\-\-I\-O\-\_\-\-P\-I\-N\-S\-\_\-vect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{rotary_encoder_8c_a8f88a6646683a5aaa20215f77b716a90}
+Pin change interrupt handler which runs when the encoder increments. R\-O\-T\-A\-R\-Y\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-I\-S\-R is defined in the header file as an I\-S\-R macro (interrupt handler) To use this library in your program you need to include R\-O\-T\-A\-R\-Y\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-I\-S\-R in your source file 

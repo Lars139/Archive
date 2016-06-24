@@ -1,0 +1,9 @@
+vhdtdtfi -lang verilog -prj Section_6 -o "Z:/Windows.Documents/My Documents/Sophomore/Section_6/ClockDivider.tfi" -lib work "Z:/Windows.Documents/My Documents/Sophomore/Section_6//clock_divider.v" -module ClockDivider -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/Section_6/ClockDivider.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/Section_6/ClockDivider.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-10 "ClockDivider.ngc" ClockDivider.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper ClockDivider.ngd 
+XSLTProcess ClockDivider_build.xml 
+tsim -intstyle ise ClockDivider ClockDivider.nga 
+taengine -intstyle ise -f ClockDivider -w --format html1 -l ClockDivider_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n ClockDivider -i ClockDivider 
+vhdtdtfi -lang verilog -prj Section_6 -o "Z:/Windows.Documents/My Documents/Sophomore/Section_6/ClockDivider.tfi" -lib work "Z:/Windows.Documents/My Documents/Sophomore/Section_6//clock_divider.v" -module ClockDivider -template C:/Xilinx/14.1/ISE_DS/ISE//data/tfi.tft -deleteonerror 

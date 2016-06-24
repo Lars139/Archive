@@ -1,0 +1,112 @@
+\hypertarget{servo__ctl_8c}{\section{T\-:/students/phillir2/\-Tiny261/libraries/servo\-\_\-ctl.c File Reference}
+\label{servo__ctl_8c}\index{T\-:/students/phillir2/\-Tiny261/libraries/servo\-\_\-ctl.\-c@{T\-:/students/phillir2/\-Tiny261/libraries/servo\-\_\-ctl.\-c}}
+}
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}adc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}motor\-\_\-ctl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}servo\-\_\-ctl.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{servo__ctl_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\-\_\-\-C\-P\-U}~1000000\-U\-L
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{servo__ctl_8c_a5d3830fc0d077d49df335a50a6d7f3f9}{Set\-Motor\-Direction} (int dir)
+\item 
+int \hyperlink{servo__ctl_8c_a0a696ea38f1e98715d125a2bf9629ecb}{Servo\-Error} (uint8\-\_\-t \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination})
+\item 
+void \hyperlink{servo__ctl_8c_a0727842682167a853fc9357fb8764e52}{Update\-Servo} (uint8\-\_\-t \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination})
+\item 
+void \hyperlink{servo__ctl_8c_a7017cb34a52a8b8b85d7f3457e0a8e9e}{set\-Servo\-Position} (uint8\-\_\-t \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination}, uint16\-\_\-t seek\-Time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Robert L. Phillips I\-I\-I 
+
+Scott Rosenbalm 
+
+Joey Tomlinson 
+
+Dan Albert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Last updated 8/24/12 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-2
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Includes functions for sending and receiving data to and from the computer and moving the motor accordingly\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y261 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{servo__ctl_8c_a43bafb28b29491ec7f871319b5a3b2f8}{\index{servo\-\_\-ctl.\-c@{servo\-\_\-ctl.\-c}!F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}}
+\index{F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}!servo_ctl.c@{servo\-\_\-ctl.\-c}}
+\subsubsection[{F\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-\_\-\-C\-P\-U~1000000\-U\-L}}\label{servo__ctl_8c_a43bafb28b29491ec7f871319b5a3b2f8}
+The Tiny261 C\-P\-U speed 
+
+\subsection{Function Documentation}
+\hypertarget{servo__ctl_8c_a0a696ea38f1e98715d125a2bf9629ecb}{\index{servo\-\_\-ctl.\-c@{servo\-\_\-ctl.\-c}!Servo\-Error@{Servo\-Error}}
+\index{Servo\-Error@{Servo\-Error}!servo_ctl.c@{servo\-\_\-ctl.\-c}}
+\subsubsection[{Servo\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int Servo\-Error (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{destination}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8c_a0a696ea38f1e98715d125a2bf9629ecb}
+Checks the current position of the servo and calculates the error from its destination. 
+\begin{DoxyParams}{Parameters}
+{\em destination} & The destination of the servo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error between the servo's current position and its destination. 
+\end{DoxyReturn}
+\hypertarget{servo__ctl_8c_a5d3830fc0d077d49df335a50a6d7f3f9}{\index{servo\-\_\-ctl.\-c@{servo\-\_\-ctl.\-c}!Set\-Motor\-Direction@{Set\-Motor\-Direction}}
+\index{Set\-Motor\-Direction@{Set\-Motor\-Direction}!servo_ctl.c@{servo\-\_\-ctl.\-c}}
+\subsubsection[{Set\-Motor\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Motor\-Direction (
+\begin{DoxyParamCaption}
+\item[{int}]{dir}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8c_a5d3830fc0d077d49df335a50a6d7f3f9}
+Changes the direction of the servo motor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & Direction of motor motion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{servo__ctl_8c_a7017cb34a52a8b8b85d7f3457e0a8e9e}{\index{servo\-\_\-ctl.\-c@{servo\-\_\-ctl.\-c}!set\-Servo\-Position@{set\-Servo\-Position}}
+\index{set\-Servo\-Position@{set\-Servo\-Position}!servo_ctl.c@{servo\-\_\-ctl.\-c}}
+\subsubsection[{set\-Servo\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Servo\-Position (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{destination, }
+\item[{uint16\-\_\-t}]{seek\-Time}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8c_a7017cb34a52a8b8b85d7f3457e0a8e9e}
+Moves the servo to the desired position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & The position that the servo should move to. \\
+\hline
+{\em seek\-Time} & The time that the servo spends locking on to its destination in milliseconds (roughly). \\
+\hline
+\end{DoxyParams}
+\hypertarget{servo__ctl_8c_a0727842682167a853fc9357fb8764e52}{\index{servo\-\_\-ctl.\-c@{servo\-\_\-ctl.\-c}!Update\-Servo@{Update\-Servo}}
+\index{Update\-Servo@{Update\-Servo}!servo_ctl.c@{servo\-\_\-ctl.\-c}}
+\subsubsection[{Update\-Servo}]{\setlength{\rightskip}{0pt plus 5cm}void Update\-Servo (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{destination}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8c_a0727842682167a853fc9357fb8764e52}
+Updates the servo to turn clockwise or counter-\/clockwise to reach its destination. 

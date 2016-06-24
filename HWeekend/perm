@@ -1,0 +1,3 @@
+#!/bin/bash
+
+setfacl -m u:sawaspar:rwx ./*

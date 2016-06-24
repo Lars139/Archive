@@ -1,0 +1,3 @@
+nohup ./server &
+nohup ./player1 &
+nohup ./player2 &

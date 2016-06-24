@@ -1,0 +1,47 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega128"</DEVICE>
+ <WORKING_DIR>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m128def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Debug/Lab6_TheFinale.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab6_TheFinale.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab6_TheFinale.map</FILE>
+  <FILE>Lab6_TheFinale.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>82</LINE></INIT>
+  <BUMPR><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>196</LINE></BUMPR>
+  <BUMPL><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>224</LINE></BUMPL>
+  <USART_RECIEVE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>273</LINE></USART_RECIEVE>
+  <FINISH_USART_SEND><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>186</LINE></FINISH_USART_SEND>
+  <MAIN><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>130</LINE></MAIN>
+  <TRANSMIT_FREEZE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>156</LINE></TRANSMIT_FREEZE>
+  <HALT_PERM><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>141</LINE></HALT_PERM>
+  <WAIT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>252</LINE></WAIT>
+  <OLOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>255</LINE></OLOOP>
+  <MLOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>257</LINE></MLOOP>
+  <ILOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>259</LINE></ILOOP>
+  <DONE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>346</LINE></DONE>
+  <GOT_FROZEN><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>357</LINE></GOT_FROZEN>
+  <DECODE_COMMAND><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>300</LINE></DECODE_COMMAND>
+  <RECIEVED_ID><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>296</LINE></RECIEVED_ID>
+  <DO_BACK><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>318</LINE></DO_BACK>
+  <DO_FORWARD><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>323</LINE></DO_FORWARD>
+  <DO_TURN_RIGHT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>328</LINE></DO_TURN_RIGHT>
+  <DO_TURN_LEFT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>333</LINE></DO_TURN_LEFT>
+  <DO_HALT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>338</LINE></DO_HALT>
+  <DO_FUTURE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6_TheFinale\Lab6_TheFinale\Lab6_Battlebot.asm</FILE><LINE>343</LINE></DO_FUTURE>
+ </LABELS>
+</ASSEMBLER_INFO>

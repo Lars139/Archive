@@ -1,0 +1,77 @@
+\hypertarget{_lab_013_01_signals_01_systems_2code_2_lab__3_8c}{\section{T\-:/students/phillir2/\-Tiny261/\-Lab 3 Signals Systems/code/\-Lab\-\_\-3.c File Reference}
+\label{_lab_013_01_signals_01_systems_2code_2_lab__3_8c}\index{T\-:/students/phillir2/\-Tiny261/\-Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c@{T\-:/students/phillir2/\-Tiny261/\-Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+include Lab\-\_\-3 h \hyperlink{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_ab09192b22a0348be04f9db9414efea3c}{S\-I\-G\-N\-A\-L} (S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A)
+\item 
+\hypertarget{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a840291bc02cba5474a4cb46a9b9566fe}{int {\bfseries main} (void)}\label{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\item 
+void \hyperlink{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a7dfd9b79bc5a37d7df40207afbc5431f}{setup} (void)
+\item 
+void \hyperlink{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a347c132d6ed757267e8c9a9266bfd72a}{play\-Sequence} (char $\ast$sequence, length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Scott Rosenbalm 
+
+Joey Tomlinson 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+This program reads the resistance across a strip of graphite, and plays a tone on a speaker which depends on the resistance of the graphite. By moving a probe along the graphite strip, the resistance changes, which in turn changes the tone.
+
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L
+
+Hardware\-: Small speaker connected between any pin on P\-O\-R\-T\-A and G\-N\-D Graphite strip voltage devider connected to P\-B4 Switch on P\-B1 plays zelda T\-O\-D\-O\-: active high/low? 
+
+\subsection{Function Documentation}
+\hypertarget{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a347c132d6ed757267e8c9a9266bfd72a}{\index{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c@{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}!play\-Sequence@{play\-Sequence}}
+\index{play\-Sequence@{play\-Sequence}!Lab 3 Signals Systems/code/Lab_3.c@{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}}
+\subsubsection[{play\-Sequence}]{\setlength{\rightskip}{0pt plus 5cm}void play\-Sequence (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sequence, }
+\item[{length}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a347c132d6ed757267e8c9a9266bfd72a}
+Plays a sequence of notes when the user taps the piano.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & pointer to the start of a char array which represents the sequence of a song. \\
+\hline
+{\em length} & length of the sequence \\
+\hline
+\end{DoxyParams}
+\hypertarget{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a7dfd9b79bc5a37d7df40207afbc5431f}{\index{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c@{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}!setup@{setup}}
+\index{setup@{setup}!Lab 3 Signals Systems/code/Lab_3.c@{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}void setup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_a7dfd9b79bc5a37d7df40207afbc5431f}
+Sets up Data Direction Registers, A\-D\-C and timers \hypertarget{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_ab09192b22a0348be04f9db9414efea3c}{\index{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c@{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}!S\-I\-G\-N\-A\-L@{S\-I\-G\-N\-A\-L}}
+\index{S\-I\-G\-N\-A\-L@{S\-I\-G\-N\-A\-L}!Lab 3 Signals Systems/code/Lab_3.c@{Lab 3 Signals Systems/code/\-Lab\-\_\-3.\-c}}
+\subsubsection[{S\-I\-G\-N\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}include Lab\-\_\-3 h S\-I\-G\-N\-A\-L (
+\begin{DoxyParamCaption}
+\item[{S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_013_01_signals_01_systems_2code_2_lab__3_8c_ab09192b22a0348be04f9db9414efea3c}
+S\-I\-G\-N\-A\-L is a special function which runs every time the specified hardware interrupt is triggered. T\-O\-D\-O -\/ specifics, link to avr-\/gcc doc
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A} & specifies that we are handling the C\-O\-M\-P\-A\-R\-E1\-A interupt \\
+\hline
+\end{DoxyParams}

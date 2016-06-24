@@ -1,0 +1,10 @@
+V3 12
+FL "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/section3_schematic.vhf" 2013/05/09.13:16:14 P.15xf
+EN work/section3_schematic 1368132520 \
+      FL "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/section3_schematic.vhf" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/section3_schematic/BEHAVIORAL 1368132521 \
+      FL "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/section3_schematic.vhf" \
+      EN work/section3_schematic 1368132520 CP IBUF CP AND2B2 CP AND3 CP OR2 \
+      CP AND3B2 CP AND2B1 CP AND3B3 CP AND2

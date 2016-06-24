@@ -1,0 +1,178 @@
+NDS Database:  version P.15xf
+
+NDS_INFO | xc9500xl | 9572XL44VQ | XC9572XL-10-VQ44
+
+DEVICE | 9572XL | 9572XL44VQ | 
+
+NETWORK | Section3_Schematic | 0 | 0 | 16391
+
+INPUT_INSTANCE | 0 | 0 | NULL | XLXN_24 | Section3_Schematic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | C | 183 | PI | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | XLXN_20 | Section3_Schematic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | B | 184 | PI | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | XLXN_20 | 173 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_20 | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | XLXN_17 | Section3_Schematic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A | 185 | PI | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | OptxMapped | Le_OBUF | Section3_Schematic_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_20 | 173 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_20 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Le_OBUF | 175 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Le_OBUF.Q | Le_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Le_OBUF.SI | Le_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_20 | 173 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_20 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Le_OBUF.D1 | 187 | ? | 0 | 4096 | Le_OBUF | NULL | NULL | Le_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Le_OBUF.D2 | 188 | ? | 0 | 4096 | Le_OBUF | NULL | NULL | Le_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | XLXN_24 | IV_FALSE | XLXN_20
+SPPTERM | 2 | IV_FALSE | XLXN_20 | IV_TRUE | XLXN_17
+
+SRFF_INSTANCE | Le_OBUF.REG | Le_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Le_OBUF.D | 186 | ? | 0 | 0 | Le_OBUF | NULL | NULL | Le_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Le_OBUF.Q | 189 | ? | 0 | 0 | Le_OBUF | NULL | NULL | Le_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Re_OBUF | Section3_Schematic_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_20 | 173 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_20 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Re_OBUF | 176 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Re_OBUF.Q | Re_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Re_OBUF.SI | Re_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_20 | 173 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_20 | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Re_OBUF.D1 | 191 | ? | 0 | 4096 | Re_OBUF | NULL | NULL | Re_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Re_OBUF.D2 | 192 | ? | 0 | 4096 | Re_OBUF | NULL | NULL | Re_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | XLXN_24 | IV_FALSE | XLXN_20
+SPPTERM | 2 | IV_FALSE | XLXN_20 | IV_FALSE | XLXN_17
+
+SRFF_INSTANCE | Re_OBUF.REG | Re_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Re_OBUF.D | 190 | ? | 0 | 0 | Re_OBUF | NULL | NULL | Re_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Re_OBUF.Q | 193 | ? | 0 | 0 | Re_OBUF | NULL | NULL | Re_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Ld_OBUF | Section3_Schematic_COPY_0_COPY_0 | 2155872256 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Ld_OBUF | 177 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Ld_OBUF.Q | Ld_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Ld_OBUF.SI | Ld_OBUF | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_17 | 174 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_17 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Ld_OBUF.D1 | 195 | ? | 0 | 4096 | Ld_OBUF | NULL | NULL | Ld_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Ld_OBUF.D2 | 196 | ? | 0 | 4096 | Ld_OBUF | NULL | NULL | Ld_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | XLXN_17
+
+SRFF_INSTANCE | Ld_OBUF.REG | Ld_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Ld_OBUF.D | 194 | ? | 0 | 0 | Ld_OBUF | NULL | NULL | Ld_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Ld_OBUF.Q | 197 | ? | 0 | 0 | Ld_OBUF | NULL | NULL | Ld_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Rd_OBUF | Section3_Schematic_COPY_0_COPY_0 | 2155872256 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Rd_OBUF | 178 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Rd_OBUF.Q | Rd_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Rd_OBUF.SI | Rd_OBUF | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | XLXN_24 | 172 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | XLXN_24 | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Rd_OBUF.D1 | 199 | ? | 0 | 4096 | Rd_OBUF | NULL | NULL | Rd_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Rd_OBUF.D2 | 200 | ? | 0 | 4096 | Rd_OBUF | NULL | NULL | Rd_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | XLXN_24
+
+SRFF_INSTANCE | Rd_OBUF.REG | Rd_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Rd_OBUF.D | 198 | ? | 0 | 0 | Rd_OBUF | NULL | NULL | Rd_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Rd_OBUF.Q | 201 | ? | 0 | 0 | Rd_OBUF | NULL | NULL | Rd_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Le | Section3_Schematic_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Le_OBUF | 175 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Le_OBUF.Q | Le_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Le | 179 | PO | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | Le | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Re | Section3_Schematic_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Re_OBUF | 176 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Re_OBUF.Q | Re_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Re | 180 | PO | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | Re | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Ld | Section3_Schematic_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Ld_OBUF | 177 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Ld_OBUF.Q | Ld_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Ld | 181 | PO | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | Ld | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Rd | Section3_Schematic_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Rd_OBUF | 178 | ? | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | Rd_OBUF.Q | Rd_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Rd | 182 | PO | 0 | 0 | Section3_Schematic_COPY_0_COPY_0 | NULL | NULL | Rd | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | Section3_Schematic_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Ld_OBUF | 1 | NULL | 0 | Ld | 1 | 39 | 49152
+FBPIN | 5 | Le_OBUF | 1 | NULL | 0 | Le | 1 | 40 | 49152
+FBPIN | 6 | Rd_OBUF | 1 | NULL | 0 | Rd | 1 | 41 | 49152
+FBPIN | 8 | Re_OBUF | 1 | NULL | 0 | Re | 1 | 42 | 49152
+
+FB_INSTANCE | FOOBAR2_ | Section3_Schematic_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 11 | NULL | 0 | XLXN_20 | 1 | NULL | 0 | 34 | 53248
+FBPIN | 14 | NULL | 0 | XLXN_17 | 1 | NULL | 0 | 36 | 53248
+FBPIN | 17 | NULL | 0 | XLXN_24 | 1 | NULL | 0 | 38 | 49152
+
+FB_INSTANCE | FOOBAR3_ | Section3_Schematic_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | Section3_Schematic_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | Section3_Schematic_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 2 | B | 34 | 19 | C | 38 | 22 | A | 36
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | 92 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 104 | -1 | -1 | 98 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+

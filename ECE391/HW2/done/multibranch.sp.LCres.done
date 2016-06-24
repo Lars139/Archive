@@ -1,0 +1,65 @@
+Multibranched T line
+*
+*Ugly, multibranched T-line. One line branches into two lines.
+*The branch lines have one load on one and two on the other line.
+*
+.include o_buffer_soic.inc      ; soic package
+.include input_struct_soic.inc  ; input buffer structure in soic
+
+*connect power and input
+VDD tie0  0 3.3
+VSS tie1  0 0
+
+*inductance in Vdd supply
+Lvdd tie0 VDD_pin  50nh
+
+*inductance in Vss supply
+Lvss tie1 VSS_pin  20nh
+
+*use only with buffer models
+Vin input_pin 0 3.3 PULSE(0 3.3 5e-9 100p 100p 20e-9 40e-9)
+
+*instantiate output buffer
+X_test_buffer input_pin output_pin VDD_pin VSS_pin o_buffer_soic
+
+*This is the source termination resistor at the driver output
+rsrc output_pin tl_in  37    
+
+*Getting rid of noises on the VDD_pin
+c0 VDD_pin 	0 .1u 
+
+*the transmission lines  
+*insert resistor(s) as desired between lines
+t1 tl_in   0 junct0  0  z0=50  td=1.0ns
+t2 junct0  0 endpt1  0  z0=50  td=0.5ns
+t3 junct0  0 endpt2  0  z0=50  td=0.8ns
+
+*limiting max freq
+l2 endpt1 blah0 25p
+*limiting min freq
+c2 blah0   0    15p 
+
+l3 endpt2 blah2 25p
+c3 blah2   0	5p 
+
+*subcircuits for the endpoint loads
+*.SUBCKT input_struct  vin pair_output e_vdd e_vss
+xinput_struct3  endpt1  out2  vdd  0  input_struct_soic
+xinput_struct4  endpt2  out3  vdd  0  input_struct_soic
+xinput_struct5  endpt2  out4  vdd  0  input_struct_soic
+
+.control
+  *set hcopydevtype=postscript
+  *set hcopydev=kec3112-clr
+  *color0 is background color, color1: grid and text color, 2-15 are for the vectors
+  set color0 = rgb:f/f/f
+  set color1 = rgb:0/0/0
+  set color2 = rgb:f/0/0
+  op
+  tran 100ps 40ns
+  plot   V(VDD_pin) V(endpt1) V(endpt2) xl 1ns 40ns
+  hardcopy  circuit_LC.ps  V(VDD_pin) V(endpt1) V(endpt2) xl 1ns 40ns 
+.endc
+
+.end
+

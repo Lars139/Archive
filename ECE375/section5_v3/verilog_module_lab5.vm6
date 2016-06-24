@@ -1,0 +1,249 @@
+NDS Database:  version P.15xf
+
+NDS_INFO | xc9500xl | 9572XL44VQ | XC9572XL-10-VQ44
+
+DEVICE | 9572XL | 9572XL44VQ | 
+
+NETWORK | verilog_module_lab5 | 0 | 0 | 16391
+
+INPUT_INSTANCE | 0 | 0 | NULL | UUT/PINC | verilog_module_lab5_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | C | 315 | PI | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | UUT/PINB | verilog_module_lab5_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | B | 316 | PI | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | UUT/PINA | verilog_module_lab5_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A | 317 | PI | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Ar_IBUF | verilog_module_lab5_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Ar | 318 | PI | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Al_IBUF | verilog_module_lab5_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Al | 319 | PI | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | OptxMapped | Ld_OBUF | verilog_module_lab5_COPY_0_COPY_0 | 2155872256 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Ld_OBUF | 307 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Ld_OBUF.Q | Ld_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Ld_OBUF.SI | Ld_OBUF | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Ld_OBUF.D1 | 321 | ? | 0 | 4096 | Ld_OBUF | NULL | NULL | Ld_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Ld_OBUF.D2 | 322 | ? | 0 | 4096 | Ld_OBUF | NULL | NULL | Ld_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | UUT/PINC | IV_TRUE | UUT/PINA
+SPPTERM | 2 | IV_TRUE | Ar_IBUF | IV_TRUE | Al_IBUF
+SPPTERM | 3 | IV_TRUE | UUT/PINC | IV_FALSE | UUT/PINB | IV_FALSE | UUT/PINA
+
+SRFF_INSTANCE | Ld_OBUF.REG | Ld_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Ld_OBUF.D | 320 | ? | 0 | 0 | Ld_OBUF | NULL | NULL | Ld_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Ld_OBUF.Q | 323 | ? | 0 | 0 | Ld_OBUF | NULL | NULL | Ld_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Rd_OBUF | verilog_module_lab5_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Rd_OBUF | 308 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Rd_OBUF.Q | Rd_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Rd_OBUF.SI | Rd_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Rd_OBUF.D1 | 325 | ? | 0 | 4096 | Rd_OBUF | NULL | NULL | Rd_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Rd_OBUF.D2 | 326 | ? | 0 | 4096 | Rd_OBUF | NULL | NULL | Rd_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | UUT/PINC | IV_FALSE | Ar_IBUF
+SPPTERM | 2 | IV_FALSE | UUT/PINC | IV_FALSE | Al_IBUF
+
+SRFF_INSTANCE | Rd_OBUF.REG | Rd_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Rd_OBUF.D | 324 | ? | 0 | 0 | Rd_OBUF | NULL | NULL | Rd_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Rd_OBUF.Q | 327 | ? | 0 | 0 | Rd_OBUF | NULL | NULL | Rd_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Le_OBUF | verilog_module_lab5_COPY_0_COPY_0 | 2155872256 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Le_OBUF | 309 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Le_OBUF.Q | Le_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Le_OBUF.SI | Le_OBUF | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Le_OBUF.D1 | 329 | ? | 0 | 4096 | Le_OBUF | NULL | NULL | Le_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Le_OBUF.D2 | 330 | ? | 0 | 4096 | Le_OBUF | NULL | NULL | Le_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | UUT/PINC | IV_TRUE | UUT/PINB | IV_FALSE | Ar_IBUF
+SPPTERM | 3 | IV_TRUE | UUT/PINC | IV_TRUE | UUT/PINB | IV_FALSE | Al_IBUF
+SPPTERM | 4 | IV_FALSE | UUT/PINC | IV_FALSE | UUT/PINB | IV_FALSE | UUT/PINA | IV_FALSE | Ar_IBUF
+SPPTERM | 4 | IV_FALSE | UUT/PINC | IV_FALSE | UUT/PINB | IV_FALSE | UUT/PINA | IV_FALSE | Al_IBUF
+
+SRFF_INSTANCE | Le_OBUF.REG | Le_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Le_OBUF.D | 328 | ? | 0 | 0 | Le_OBUF | NULL | NULL | Le_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Le_OBUF.Q | 331 | ? | 0 | 0 | Le_OBUF | NULL | NULL | Le_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Re_OBUF | verilog_module_lab5_COPY_0_COPY_0 | 2155872256 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Re_OBUF | 310 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Re_OBUF.Q | Re_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Re_OBUF.SI | Re_OBUF | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINC | 302 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINC | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINB | 303 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINB | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Al_IBUF | 306 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Al_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Ar_IBUF | 305 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ar_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | UUT/PINA | 304 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | UUT/PINA | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Re_OBUF.D1 | 333 | ? | 0 | 4096 | Re_OBUF | NULL | NULL | Re_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Re_OBUF.D2 | 334 | ? | 0 | 4096 | Re_OBUF | NULL | NULL | Re_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | UUT/PINC | IV_FALSE | UUT/PINB | IV_FALSE | Ar_IBUF
+SPPTERM | 3 | IV_FALSE | UUT/PINC | IV_FALSE | UUT/PINB | IV_FALSE | Al_IBUF
+SPPTERM | 4 | IV_TRUE | UUT/PINC | IV_TRUE | UUT/PINB | IV_TRUE | UUT/PINA | IV_FALSE | Ar_IBUF
+SPPTERM | 4 | IV_TRUE | UUT/PINC | IV_TRUE | UUT/PINB | IV_TRUE | UUT/PINA | IV_FALSE | Al_IBUF
+
+SRFF_INSTANCE | Re_OBUF.REG | Re_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Re_OBUF.D | 332 | ? | 0 | 0 | Re_OBUF | NULL | NULL | Re_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Re_OBUF.Q | 335 | ? | 0 | 0 | Re_OBUF | NULL | NULL | Re_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Ld | verilog_module_lab5_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Ld_OBUF | 307 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Ld_OBUF.Q | Ld_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Ld | 311 | PO | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Ld | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Rd | verilog_module_lab5_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Rd_OBUF | 308 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Rd_OBUF.Q | Rd_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Rd | 312 | PO | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Rd | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Le | verilog_module_lab5_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Le_OBUF | 309 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Le_OBUF.Q | Le_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Le | 313 | PO | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Le | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Re | verilog_module_lab5_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Re_OBUF | 310 | ? | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | Re_OBUF.Q | Re_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Re | 314 | PO | 0 | 0 | verilog_module_lab5_COPY_0_COPY_0 | NULL | NULL | Re | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | verilog_module_lab5_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Ld_OBUF | 1 | NULL | 0 | Ld | 1 | 39 | 49152
+FBPIN | 8 | Rd_OBUF | 1 | NULL | 0 | Rd | 1 | 42 | 49152
+
+FB_INSTANCE | FOOBAR2_ | verilog_module_lab5_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Le_OBUF | 1 | NULL | 0 | Le | 1 | 29 | 49152
+FBPIN | 6 | NULL | 0 | Al_IBUF | 1 | NULL | 0 | 31 | 49152
+FBPIN | 9 | NULL | 0 | Ar_IBUF | 1 | NULL | 0 | 33 | 51200
+FBPIN | 11 | NULL | 0 | UUT/PINB | 1 | NULL | 0 | 34 | 53248
+
+FB_INSTANCE | FOOBAR3_ | verilog_module_lab5_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Re_OBUF | 1 | NULL | 0 | Re | 1 | 5 | 49152
+
+FB_INSTANCE | FOOBAR4_ | verilog_module_lab5_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 8 | NULL | 0 | UUT/PINC | 1 | NULL | 0 | 21 | 49152
+FBPIN | 17 | NULL | 0 | UUT/PINA | 1 | NULL | 0 | 28 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | verilog_module_lab5_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | A | 28 | 10 | Al | 31 | 40 | Ar | 33 | 41 | C | 21 | 49 | B | 34
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 73 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 82 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 86 | 101 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 92 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | A | 28 | 10 | Al | 31 | 40 | Ar | 33 | 41 | C | 21 | 49 | B | 34
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 73 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 82 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 86 | 101 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 92 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 1 | A | 28 | 10 | Al | 31 | 40 | Ar | 33 | 41 | C | 21 | 49 | B | 34
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | 73 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 82 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 86 | 101 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 92 | -1 | -1 | -1 | -1
+

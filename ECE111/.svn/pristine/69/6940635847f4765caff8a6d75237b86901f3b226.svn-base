@@ -1,0 +1,6 @@
+EXPORTS
+    UpdateServoPosition @1
+    UsbCloseDevice @2
+    UsbEstablishConnection @3
+    UsbOpenDevice @4
+    UsbSendData @5

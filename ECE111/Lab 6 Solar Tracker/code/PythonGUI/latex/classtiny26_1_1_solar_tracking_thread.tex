@@ -1,0 +1,86 @@
+\hypertarget{classtiny26_1_1_solar_tracking_thread}{\section{tiny26.\-Solar\-Tracking\-Thread Class Reference}
+\label{classtiny26_1_1_solar_tracking_thread}\index{tiny26.\-Solar\-Tracking\-Thread@{tiny26.\-Solar\-Tracking\-Thread}}
+}
+
+
+Contains the definition for the background thread that polls the A\-D\-C input from the solar panel and sends that value to the G\-U\-I to be displayed to the user.  
+
+
+Inheritance diagram for tiny26.\-Solar\-Tracking\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtiny26_1_1_solar_tracking_thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a4c08b8abae1040b50dcd96f8f2386e40}{def \hyperlink{classtiny26_1_1_solar_tracking_thread_a4c08b8abae1040b50dcd96f8f2386e40}{\-\_\-\-\_\-init\-\_\-\-\_\-}}\label{classtiny26_1_1_solar_tracking_thread_a4c08b8abae1040b50dcd96f8f2386e40}
+
+\begin{DoxyCompactList}\small\item\em Constructor for the solar tracking thread. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_solar_tracking_thread_a006529500ed94214eef1c856cc6cbc5b}{run}
+\begin{DoxyCompactList}\small\item\em Called when the thread is started. \end{DoxyCompactList}\item 
+def \hyperlink{classtiny26_1_1_solar_tracking_thread_a068e98629f1f0a139914e4d7a41d134b}{Quit\-Thread}
+\begin{DoxyCompactList}\small\item\em Sets the stop flag to stop the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a4b7452fd152929e399adf0e263c6e472}{\hyperlink{classtiny26_1_1_solar_tracking_thread_a4b7452fd152929e399adf0e263c6e472}{usb}}\label{classtiny26_1_1_solar_tracking_thread_a4b7452fd152929e399adf0e263c6e472}
+
+\begin{DoxyCompactList}\small\item\em The usb interface associated with the thread. \end{DoxyCompactList}\item 
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a806015811adc26b8af26f48ce2c1de78}{\hyperlink{classtiny26_1_1_solar_tracking_thread_a806015811adc26b8af26f48ce2c1de78}{event}}\label{classtiny26_1_1_solar_tracking_thread_a806015811adc26b8af26f48ce2c1de78}
+
+\begin{DoxyCompactList}\small\item\em The event that needs to be fired when the G\-U\-I needs to be updated. \end{DoxyCompactList}\item 
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a96bd262571f5cefa8f5fcb05256745cb}{\hyperlink{classtiny26_1_1_solar_tracking_thread_a96bd262571f5cefa8f5fcb05256745cb}{parent}}\label{classtiny26_1_1_solar_tracking_thread_a96bd262571f5cefa8f5fcb05256745cb}
+
+\begin{DoxyCompactList}\small\item\em The parent frame that should be updated when a new solar measurement is received. \end{DoxyCompactList}\item 
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a03b6d1de5dd4ebf8d64450d248ad0fe9}{\hyperlink{classtiny26_1_1_solar_tracking_thread_a03b6d1de5dd4ebf8d64450d248ad0fe9}{stop}}\label{classtiny26_1_1_solar_tracking_thread_a03b6d1de5dd4ebf8d64450d248ad0fe9}
+
+\begin{DoxyCompactList}\small\item\em The stop flag for the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the definition for the background thread that polls the A\-D\-C input from the solar panel and sends that value to the G\-U\-I to be displayed to the user. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a068e98629f1f0a139914e4d7a41d134b}{\index{tiny26\-::\-Solar\-Tracking\-Thread@{tiny26\-::\-Solar\-Tracking\-Thread}!Quit\-Thread@{Quit\-Thread}}
+\index{Quit\-Thread@{Quit\-Thread}!tiny26::SolarTrackingThread@{tiny26\-::\-Solar\-Tracking\-Thread}}
+\subsubsection[{Quit\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-Solar\-Tracking\-Thread.\-Quit\-Thread (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_solar_tracking_thread_a068e98629f1f0a139914e4d7a41d134b}
+
+
+Sets the stop flag to stop the thread. 
+
+Sets the stop flag, which causes the loop in the thread to stop if it was running
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtiny26_1_1_solar_tracking_thread_a006529500ed94214eef1c856cc6cbc5b}{\index{tiny26\-::\-Solar\-Tracking\-Thread@{tiny26\-::\-Solar\-Tracking\-Thread}!run@{run}}
+\index{run@{run}!tiny26::SolarTrackingThread@{tiny26\-::\-Solar\-Tracking\-Thread}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}def tiny26.\-Solar\-Tracking\-Thread.\-run (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classtiny26_1_1_solar_tracking_thread_a006529500ed94214eef1c856cc6cbc5b}
+
+
+Called when the thread is started. 
+
+As long as the stop flag is not set, the thread sends a request to the Tiny for solar measurements. When the computer receives a response from the Tiny, it fires a \hyperlink{classtiny26_1_1_solar_event}{Solar\-Event}, which tells the G\-U\-I to update itself with the latest solar measurements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tiny26.\-py\end{DoxyCompactItemize}

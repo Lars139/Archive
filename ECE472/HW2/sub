@@ -1,0 +1,11 @@
+subtraction:
+1) mask off bits and save to a long
+2) add an effective 1 to the mantissa bits (put a one at bit #52 or w/e)
+3) find which exponent of the 2 dominates, then set the other exponent to it, right shifting an equal amount
+5) find out if the new result is negative, make it positive, but set the sign bit
+6) normalize it by shifting to the right or left till there is a 1 again in bit #53, with only zeros to the left of it
+7) delete that leading one
+8) write it out to however you convert it, and yeah, the idea there is that if its a-b, but b is negative, it would add the 2
+oh, and if both exponents are the same, then what I do is add one to each exponent, and divide the mantissa's by 2, as there is some weird things that happen when you don't do that for some reason?
+4) multiply these mantissa's by the sign, and subtract them
+(if you don't just reconfigure to avoid the situation where that's necessary)

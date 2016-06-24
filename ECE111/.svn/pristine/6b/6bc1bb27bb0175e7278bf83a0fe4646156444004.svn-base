@@ -1,0 +1,36 @@
+\section{File List}
+Here is a list of all documented files with brief descriptions\-:\begin{DoxyCompactList}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/\hyperlink{example_8c}{example.\-c} }{\pageref{example_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/{\bfseries example.\-h} }{\pageref{example_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/2010 Research/{\bfseries A\-D\-C.\-h} }{\pageref{2010_01_research_2_a_d_c_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/2010 Research/{\bfseries com.\-h} }{\pageref{com_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/2010 Research/{\bfseries D\-A\-C.\-h} }{\pageref{_d_a_c_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/2010 Research/{\bfseries L\-C\-D.\-h} }{\pageref{_l_c_d_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/code/\hyperlink{code_2_lab__3_8c}{Lab\-\_\-3.\-c} }{\pageref{code_2_lab__3_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/code/\hyperlink{code_2main_8c}{main.\-c} \\*This is file is the the main for section 3, the pencil resistor lab }{\pageref{code_2main_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/\-Lab 3 Signals Systems/code/\hyperlink{_lab_013_01_signals_01_systems_2code_2_lab__3_8c}{Lab\-\_\-3.\-c} }{\pageref{_lab_013_01_signals_01_systems_2code_2_lab__3_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/\-Lab 3 Signals Systems/code/\hyperlink{_lab_013_01_signals_01_systems_2code_2main_8c}{main.\-c} \\*This is file is the the main for section 3, the pencil resistor lab }{\pageref{_lab_013_01_signals_01_systems_2code_2main_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/\-Lab 4 Energy Systems/code/\hyperlink{_lab_014_01_energy_01_systems_2code_2main_8c}{main.\-c} }{\pageref{_lab_014_01_energy_01_systems_2code_2main_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/\-Lab 5 Robotics and Control/code/\hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c}{main.\-c} }{\pageref{_lab_015_01_robotics_01and_01_control_2code_2main_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/\-Lab 6 Solar Tracker/code/\hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c}{main.\-c} }{\pageref{_lab_016_01_solar_01_tracker_2code_2main_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{adc_8c}{adc.\-c} }{\pageref{adc_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{libraries_2_a_d_c_8h}{adc.\-h} }{\pageref{libraries_2_a_d_c_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{delay_8c}{delay.\-c} }{\pageref{delay_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{delay_8h}{delay.\-h} }{\pageref{delay_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{motor__ctl_8c}{motor\-\_\-ctl.\-c} }{\pageref{motor__ctl_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{motor__ctl_8h}{motor\-\_\-ctl.\-h} }{\pageref{motor__ctl_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{pins_8h}{pins.\-h} }{\pageref{pins_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{rotary_encoder_8c}{rotary\-Encoder.\-c} }{\pageref{rotary_encoder_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{rotary_encoder_8h}{rotary\-Encoder.\-h} }{\pageref{rotary_encoder_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{servo__ctl_8c}{servo\-\_\-ctl.\-c} }{\pageref{servo__ctl_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{servo__ctl_8h}{servo\-\_\-ctl.\-h} }{\pageref{servo__ctl_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{sound_8c}{sound.\-c} }{\pageref{sound_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{sound_8h}{sound.\-h} \\*A local header file that defines note frequencies and function prototypes for speaker functionality }{\pageref{sound_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{speedometer_8c}{speedometer.\-c} }{\pageref{speedometer_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{speedometer_8h}{speedometer.\-h} }{\pageref{speedometer_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{stepper_8c}{stepper.\-c} }{\pageref{stepper_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/{\bfseries stepper.\-h} }{\pageref{stepper_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{types_8h}{types.\-h} }{\pageref{types_8h}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/\hyperlink{util_8c}{util.\-c} }{\pageref{util_8c}}{}
+\item\contentsline{section}{T\-:/students/phillir2/\-Tiny261/libraries/{\bfseries util.\-h} }{\pageref{util_8h}}{}
+\end{DoxyCompactList}

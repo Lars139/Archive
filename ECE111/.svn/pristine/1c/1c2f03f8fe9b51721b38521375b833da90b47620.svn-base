@@ -1,0 +1,169 @@
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c}{\section{T\-:/students/phillir2/\-Tiny261/\-Lab 6 Solar Tracker/code/main.c File Reference}
+\label{_lab_016_01_solar_01_tracker_2code_2main_8c}\index{T\-:/students/phillir2/\-Tiny261/\-Lab 6 Solar Tracker/code/main.\-c@{T\-:/students/phillir2/\-Tiny261/\-Lab 6 Solar Tracker/code/main.\-c}}
+}
+{\ttfamily \#include $<$avr/delay.\-h$>$}\\*
+{\ttfamily \#include $<$avr/pgmspace.\-h$>$}\\*
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\\*
+{\ttfamily \#include $<$avr/wdt.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}adc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}motor\-\_\-ctl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}servo\-\_\-ctl.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\-\_\-\-C\-P\-U}~1000000\-U\-L
+\item 
+\#define \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_aa07561dea3929df94ee2be7fe9186480}{S\-O\-L\-A\-R\-\_\-\-A\-D\-C}~6
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_ab91e5a4f54c46d098ebe3487dbb2bef3}{I\-S\-R} (U\-S\-I\-\_\-\-O\-V\-F\-\_\-vect)
+\item 
+void \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a681bfbee54f8d7a2cf15acb28100043f}{S\-P\-I\-\_\-\-Slave\-Init} ()
+\item 
+void \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a4bb5120381d87abf0f913937c864e414}{find\-Brightest\-Position} ()
+\item 
+int \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a7f772bee4d587a325a0903a1d4ced127}{connection} = 0
+\item 
+unsigned char \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a62e5b0cab34a72f7aae4310d6000abed}{count}
+\item 
+unsigned char \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_aa15050bbe044b9dfeff91dc698cf613c}{data} \mbox{[}6\mbox{]}
+\item 
+unsigned char \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a2cc9ae8fa959b3408e8fa855b5bc9734}{data\-\_\-out} = 0
+\item 
+unsigned char \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_ab61bff93081151133f2c1fafea01976b}{solar\-\_\-reading}
+\item 
+unsigned char \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_af173e2c1dec4bd9c17d5fe624a07ac8e}{position} = 255
+\item 
+unsigned char \hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_a6e415d57bfd23de0bdd8a875033529e3}{last} = 255
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Robert L. Phillips I\-I\-I 
+
+Scott Rosenbalm 
+
+Joey Tomlinson 
+
+Dan Albert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Last updated 8/24/12 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-1
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+This program implements a servo motor controller. It detects a motor's position using a potentiometer and uses a proportional-\/derivative control system to control the motor's speed in order to move the motor to its target position.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y261 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}}
+\index{F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{F\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-\_\-\-C\-P\-U~1000000\-U\-L}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}
+The Tiny261 C\-P\-U speed \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_aa07561dea3929df94ee2be7fe9186480}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!S\-O\-L\-A\-R\-\_\-\-A\-D\-C@{S\-O\-L\-A\-R\-\_\-\-A\-D\-C}}
+\index{S\-O\-L\-A\-R\-\_\-\-A\-D\-C@{S\-O\-L\-A\-R\-\_\-\-A\-D\-C}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{S\-O\-L\-A\-R\-\_\-\-A\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-O\-L\-A\-R\-\_\-\-A\-D\-C~6}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_aa07561dea3929df94ee2be7fe9186480}
+The solar panels A\-D\-C channel 
+
+\subsection{Function Documentation}
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a4bb5120381d87abf0f913937c864e414}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!find\-Brightest\-Position@{find\-Brightest\-Position}}
+\index{find\-Brightest\-Position@{find\-Brightest\-Position}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{find\-Brightest\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void find\-Brightest\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a4bb5120381d87abf0f913937c864e414}
+Finds the position of the solar panel that gives the highest A\-D\-C reading
+
+The Tiny loops through each position (L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D to U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D) in increments of 20 looking for the position with the highest A\-D\-C reading. When all the measurements have been taken, the motor moves the solar panel to the optimal position. While the Tiny is searching for the optimal position, interrupts are disabled until the process is finished.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_a09a147811ebf92632353c0b2927f1f39}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25} 
+
+\hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_aa07561dea3929df94ee2be7fe9186480}{S\-O\-L\-A\-R\-\_\-\-A\-D\-C} 
+
+\hyperlink{servo__ctl_8h_a44b4de4784f751e71fad94edd351ff41}{L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D} 
+
+\hyperlink{servo__ctl_8h_a2d37d1eb5ea11e4dbc41c369421c2e45}{U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D} 
+
+\hyperlink{servo__ctl_8h_a02a2dcde419161a54d0c8c994e2424cc}{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T} 
+\end{DoxySeeAlso}
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_ab91e5a4f54c46d098ebe3487dbb2bef3}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!I\-S\-R@{I\-S\-R}}
+\index{I\-S\-R@{I\-S\-R}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{U\-S\-I\-\_\-\-O\-V\-F\-\_\-vect}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_ab91e5a4f54c46d098ebe3487dbb2bef3}
+Interrupt to indicate the end of serial transmission
+
+The data buffer is updated with the latest S\-P\-I bytes. If a new packet is arriving, a new reading of the solar A\-D\-C is taken and sent back to the computer. The position variable is also updated, which signals the motors to move when the interrupt is finished.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_a09a147811ebf92632353c0b2927f1f39}{A\-D\-C\-\_\-\-R\-E\-F\-\_\-25} 
+
+\hyperlink{_lab_016_01_solar_01_tracker_2code_2main_8c_aa07561dea3929df94ee2be7fe9186480}{S\-O\-L\-A\-R\-\_\-\-A\-D\-C} 
+\end{DoxySeeAlso}
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!main@{main}}
+\index{main@{main}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+Initializes the Tiny to wait for commands from the computer and move the motor accordingly
+
+The position variable is continually polled to determine whether or not the position of the motor needs to be updated. The A\-D\-C, P\-W\-M, and S\-P\-I are also enabled at the beginning.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{libraries_2_a_d_c_8h_a7aec4350b204d9c8160ab7419e15d93e}{A\-D\-C\-\_\-\-P\-R\-E\-S\-C\-A\-L\-E\-R\-\_\-4} 
+
+\hyperlink{servo__ctl_8h_a02a2dcde419161a54d0c8c994e2424cc}{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T} 
+\end{DoxySeeAlso}
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a681bfbee54f8d7a2cf15acb28100043f}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!S\-P\-I\-\_\-\-Slave\-Init@{S\-P\-I\-\_\-\-Slave\-Init}}
+\index{S\-P\-I\-\_\-\-Slave\-Init@{S\-P\-I\-\_\-\-Slave\-Init}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{S\-P\-I\-\_\-\-Slave\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-P\-I\-\_\-\-Slave\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a681bfbee54f8d7a2cf15acb28100043f}
+Enables the Tiny to be an S\-P\-I slave 
+
+\subsection{Variable Documentation}
+\hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a7f772bee4d587a325a0903a1d4ced127}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!connection@{connection}}
+\index{connection@{connection}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{connection}]{\setlength{\rightskip}{0pt plus 5cm}int connection = 0}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a7f772bee4d587a325a0903a1d4ced127}
+Flag that is set when the connection command is received from the computer \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a62e5b0cab34a72f7aae4310d6000abed}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!count@{count}}
+\index{count@{count}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char count}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a62e5b0cab34a72f7aae4310d6000abed}
+Holds the index of the next S\-P\-I byte in the packet \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_aa15050bbe044b9dfeff91dc698cf613c}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!data@{data}}
+\index{data@{data}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char data\mbox{[}6\mbox{]}}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_aa15050bbe044b9dfeff91dc698cf613c}
+Holds the S\-P\-I packet \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a2cc9ae8fa959b3408e8fa855b5bc9734}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!data\-\_\-out@{data\-\_\-out}}
+\index{data\-\_\-out@{data\-\_\-out}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{data\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char data\-\_\-out = 0}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a2cc9ae8fa959b3408e8fa855b5bc9734}
+Holds the next value to be sent out via S\-P\-I \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_a6e415d57bfd23de0bdd8a875033529e3}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!last@{last}}
+\index{last@{last}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char last = 255}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_a6e415d57bfd23de0bdd8a875033529e3}
+Holds the last destination request for the motor from the computer \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_af173e2c1dec4bd9c17d5fe624a07ac8e}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!position@{position}}
+\index{position@{position}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char position = 255}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_af173e2c1dec4bd9c17d5fe624a07ac8e}
+Holds the current destination request for the motor from the computer \hypertarget{_lab_016_01_solar_01_tracker_2code_2main_8c_ab61bff93081151133f2c1fafea01976b}{\index{Lab 6 Solar Tracker/code/main.\-c@{Lab 6 Solar Tracker/code/main.\-c}!solar\-\_\-reading@{solar\-\_\-reading}}
+\index{solar\-\_\-reading@{solar\-\_\-reading}!Lab 6 Solar Tracker/code/main.c@{Lab 6 Solar Tracker/code/main.\-c}}
+\subsubsection[{solar\-\_\-reading}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char solar\-\_\-reading}}\label{_lab_016_01_solar_01_tracker_2code_2main_8c_ab61bff93081151133f2c1fafea01976b}
+Holds the latest A\-D\-C value from the solar panel 

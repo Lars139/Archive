@@ -1,0 +1,254 @@
+\hypertarget{motor__ctl_8h}{\section{T\-:/students/phillir2/\-Tiny261/libraries/motor\-\_\-ctl.h File Reference}
+\label{motor__ctl_8h}\index{T\-:/students/phillir2/\-Tiny261/libraries/motor\-\_\-ctl.\-h@{T\-:/students/phillir2/\-Tiny261/libraries/motor\-\_\-ctl.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{motor__ctl_8h_aa9c2075fa73015ea57084333aa3304f5}{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A}~0x01
+\item 
+\#define \hyperlink{motor__ctl_8h_a6b4d820cd4d1c1659864d440c647649b}{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B}~0x02
+\item 
+\#define \hyperlink{motor__ctl_8h_a3ea32653b4399f65cd8a9fbd3856a15d}{P\-W\-M\-A}~O\-C\-R1\-A
+\item 
+\#define \hyperlink{motor__ctl_8h_a8a1698a336f593db58ab114e61fa9c29}{P\-W\-M\-B}~O\-C\-R1\-D
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{motor__ctl_8h_a4ecaabd630bac4499a3e7473d9347a8e}{setup\-P\-W\-M} (unsigned char frequency\-Divider, unsigned char channel)
+\begin{DoxyCompactList}\small\item\em Sets up Timer/\-Counter1 for P\-W\-M. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_aab96962c001bf08893c9d693ec42f507}{set\-Duty\-Cycle\-A} (unsigned char value)
+\begin{DoxyCompactList}\small\item\em Sets the duty cycle for P\-W\-M channel A. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_a317498c6bfd6a4aa91147d6f99d3b99a}{set\-Duty\-Cycle\-B} (unsigned char value)
+\begin{DoxyCompactList}\small\item\em Sets the duty cycle for P\-W\-M channel B. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_ad73e01245ce566334d4ba20d1480f17e}{motor\-A} (unsigned char $\ast$forward\-Port, unsigned char forward\-Pin, unsigned char $\ast$reverse\-Port, unsigned char reverse\-Pin)
+\begin{DoxyCompactList}\small\item\em Sets up a motor for P\-W\-M channel A. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_a8c9ffa5ea9740cfed559d22c7980d4e5}{motor\-B} (unsigned char $\ast$forward\-Port, unsigned char forward\-Pin, unsigned char $\ast$reverse\-Port, unsigned char reverse\-Pin)
+\begin{DoxyCompactList}\small\item\em Sets up a motor for P\-W\-M channel B. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_aeb646d031ee2f44f281c97e3946a047e}{motor\-A\-\_\-\-Forward} (void)
+\begin{DoxyCompactList}\small\item\em Set's motor A's direction to forward. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_aefef6e2433e99648fa38796f6fe0b311}{motor\-A\-\_\-\-Reverse} (void)
+\begin{DoxyCompactList}\small\item\em Set's motor A's direction to reverse. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_aff4c3ef8797e50ae8159f78c70587405}{motor\-A\-\_\-\-Stop} (void)
+\begin{DoxyCompactList}\small\item\em Set's motor A's direction to none. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_afec17e2cffc413691fdfc3ac96d83edc}{motor\-B\-\_\-\-Forward} (void)
+\begin{DoxyCompactList}\small\item\em Set's motor B's direction to forward. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_a2905151cdb7a9021d5b352738d256ec9}{motor\-B\-\_\-\-Reverse} (void)
+\begin{DoxyCompactList}\small\item\em Set's motor B's direction to reverse. \end{DoxyCompactList}\item 
+void \hyperlink{motor__ctl_8h_ae7e78e1ddbfe5b6b1b188199877320c7}{motor\-B\-\_\-\-Stop} (void)
+\begin{DoxyCompactList}\small\item\em Set's motor B's direction to none. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joey Tomlinson 
+
+Dan Albert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Last updated 8/24/12 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-1
+\end{DoxyVersion}
+\begin{DoxyNote}{Note}
+Edited by Robert L. Phillips I\-I\-I
+\end{DoxyNote}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Includes functions for interfacing to the tekbots motor controller board and for generating P\-W\-M signals for controlling motor speed.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y261 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{motor__ctl_8h_aa9c2075fa73015ea57084333aa3304f5}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A@{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A}}
+\index{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A@{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A~0x01}}\label{motor__ctl_8h_aa9c2075fa73015ea57084333aa3304f5}
+Identifier flag for P\-W\-M channel A. \hypertarget{motor__ctl_8h_a6b4d820cd4d1c1659864d440c647649b}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B@{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B}}
+\index{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B@{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B~0x02}}\label{motor__ctl_8h_a6b4d820cd4d1c1659864d440c647649b}
+Identifier flag for P\-W\-M channel B. \hypertarget{motor__ctl_8h_a3ea32653b4399f65cd8a9fbd3856a15d}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!P\-W\-M\-A@{P\-W\-M\-A}}
+\index{P\-W\-M\-A@{P\-W\-M\-A}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{P\-W\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-W\-M\-A~O\-C\-R1\-A}}\label{motor__ctl_8h_a3ea32653b4399f65cd8a9fbd3856a15d}
+Alias for the output compare register used by P\-W\-M channel A. \hypertarget{motor__ctl_8h_a8a1698a336f593db58ab114e61fa9c29}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!P\-W\-M\-B@{P\-W\-M\-B}}
+\index{P\-W\-M\-B@{P\-W\-M\-B}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{P\-W\-M\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-W\-M\-B~O\-C\-R1\-D}}\label{motor__ctl_8h_a8a1698a336f593db58ab114e61fa9c29}
+Alias for the output compare register used by P\-W\-M channel B. 
+
+\subsection{Function Documentation}
+\hypertarget{motor__ctl_8h_ad73e01245ce566334d4ba20d1480f17e}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-A@{motor\-A}}
+\index{motor\-A@{motor\-A}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-A}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-A (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{forward\-Port, }
+\item[{unsigned char}]{forward\-Pin, }
+\item[{unsigned char $\ast$}]{reverse\-Port, }
+\item[{unsigned char}]{reverse\-Pin}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_ad73e01245ce566334d4ba20d1480f17e}
+
+
+Sets up a motor for P\-W\-M channel A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward\-Port} & Pointer to the register of the port motor A's forward pin is connected to. \\
+\hline
+{\em forward\-Pin} & Output pin that motor A's forward pin is connected to. \\
+\hline
+{\em reverse\-Port} & Pointer to the register of the port motor A's reverse pin is connected to. \\
+\hline
+{\em reverse\-Pin} & Output pin that motor A's reverse pin is connected to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{motor__ctl_8h_aeb646d031ee2f44f281c97e3946a047e}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-A\-\_\-\-Forward@{motor\-A\-\_\-\-Forward}}
+\index{motor\-A\-\_\-\-Forward@{motor\-A\-\_\-\-Forward}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-A\-\_\-\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-A\-\_\-\-Forward (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_aeb646d031ee2f44f281c97e3946a047e}
+
+
+Set's motor A's direction to forward. 
+
+Sets motor A's forward pin high, and its reverse pin low. \hypertarget{motor__ctl_8h_aefef6e2433e99648fa38796f6fe0b311}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-A\-\_\-\-Reverse@{motor\-A\-\_\-\-Reverse}}
+\index{motor\-A\-\_\-\-Reverse@{motor\-A\-\_\-\-Reverse}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-A\-\_\-\-Reverse}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-A\-\_\-\-Reverse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_aefef6e2433e99648fa38796f6fe0b311}
+
+
+Set's motor A's direction to reverse. 
+
+Sets motor A's forward pin low, and its reverse pin high. \hypertarget{motor__ctl_8h_aff4c3ef8797e50ae8159f78c70587405}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-A\-\_\-\-Stop@{motor\-A\-\_\-\-Stop}}
+\index{motor\-A\-\_\-\-Stop@{motor\-A\-\_\-\-Stop}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-A\-\_\-\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-A\-\_\-\-Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_aff4c3ef8797e50ae8159f78c70587405}
+
+
+Set's motor A's direction to none. 
+
+Sets motor A's forward and reverse pins low. \hypertarget{motor__ctl_8h_a8c9ffa5ea9740cfed559d22c7980d4e5}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-B@{motor\-B}}
+\index{motor\-B@{motor\-B}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-B}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-B (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{forward\-Port, }
+\item[{unsigned char}]{forward\-Pin, }
+\item[{unsigned char $\ast$}]{reverse\-Port, }
+\item[{unsigned char}]{reverse\-Pin}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_a8c9ffa5ea9740cfed559d22c7980d4e5}
+
+
+Sets up a motor for P\-W\-M channel B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward\-Port} & Pointer to the register of the port motor B's forward pin is connected to. \\
+\hline
+{\em forward\-Pin} & Output pin that motor B's forward pin is connected to. \\
+\hline
+{\em reverse\-Port} & Pointer to the register of the port motor B's reverse pin is connected to. \\
+\hline
+{\em reverse\-Pin} & Output pin that motor B's reverse pin is connected to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{motor__ctl_8h_afec17e2cffc413691fdfc3ac96d83edc}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-B\-\_\-\-Forward@{motor\-B\-\_\-\-Forward}}
+\index{motor\-B\-\_\-\-Forward@{motor\-B\-\_\-\-Forward}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-B\-\_\-\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-B\-\_\-\-Forward (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_afec17e2cffc413691fdfc3ac96d83edc}
+
+
+Set's motor B's direction to forward. 
+
+Sets motor B's forward pin high, and its reverse pin low. \hypertarget{motor__ctl_8h_a2905151cdb7a9021d5b352738d256ec9}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-B\-\_\-\-Reverse@{motor\-B\-\_\-\-Reverse}}
+\index{motor\-B\-\_\-\-Reverse@{motor\-B\-\_\-\-Reverse}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-B\-\_\-\-Reverse}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-B\-\_\-\-Reverse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_a2905151cdb7a9021d5b352738d256ec9}
+
+
+Set's motor B's direction to reverse. 
+
+Sets motor B's forward pin low, and its reverse pin high. \hypertarget{motor__ctl_8h_ae7e78e1ddbfe5b6b1b188199877320c7}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!motor\-B\-\_\-\-Stop@{motor\-B\-\_\-\-Stop}}
+\index{motor\-B\-\_\-\-Stop@{motor\-B\-\_\-\-Stop}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{motor\-B\-\_\-\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void motor\-B\-\_\-\-Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_ae7e78e1ddbfe5b6b1b188199877320c7}
+
+
+Set's motor B's direction to none. 
+
+Sets motor B's forward and reverse pins low. \hypertarget{motor__ctl_8h_aab96962c001bf08893c9d693ec42f507}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!set\-Duty\-Cycle\-A@{set\-Duty\-Cycle\-A}}
+\index{set\-Duty\-Cycle\-A@{set\-Duty\-Cycle\-A}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{set\-Duty\-Cycle\-A}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Duty\-Cycle\-A (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{value}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_aab96962c001bf08893c9d693ec42f507}
+
+
+Sets the duty cycle for P\-W\-M channel A. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The length of the duty cycle. 0 is off, 255 is full time. An alias for P\-W\-M\-A = value \\
+\hline
+\end{DoxyParams}
+\hypertarget{motor__ctl_8h_a317498c6bfd6a4aa91147d6f99d3b99a}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!set\-Duty\-Cycle\-B@{set\-Duty\-Cycle\-B}}
+\index{set\-Duty\-Cycle\-B@{set\-Duty\-Cycle\-B}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{set\-Duty\-Cycle\-B}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Duty\-Cycle\-B (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{value}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_a317498c6bfd6a4aa91147d6f99d3b99a}
+
+
+Sets the duty cycle for P\-W\-M channel B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The length of the duty cycle. 0 is off, 255 is full time. An alias for P\-W\-M\-B = value \\
+\hline
+\end{DoxyParams}
+\hypertarget{motor__ctl_8h_a4ecaabd630bac4499a3e7473d9347a8e}{\index{motor\-\_\-ctl.\-h@{motor\-\_\-ctl.\-h}!setup\-P\-W\-M@{setup\-P\-W\-M}}
+\index{setup\-P\-W\-M@{setup\-P\-W\-M}!motor_ctl.h@{motor\-\_\-ctl.\-h}}
+\subsubsection[{setup\-P\-W\-M}]{\setlength{\rightskip}{0pt plus 5cm}void setup\-P\-W\-M (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{frequency\-Divider, }
+\item[{unsigned char}]{channel}
+\end{DoxyParamCaption}
+)}}\label{motor__ctl_8h_a4ecaabd630bac4499a3e7473d9347a8e}
+
+
+Sets up Timer/\-Counter1 for P\-W\-M. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency\-Divider} & Prescaling factor for the timer clock. Refer to table 34 of the tiny26 data sheet for more information. \\
+\hline
+{\em channel} & Channel selector for P\-W\-M. To enable more than one channel, P\-W\-M channel flags may be combined using a bitwise O\-R.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{motor__ctl_8h_aa9c2075fa73015ea57084333aa3304f5}{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-A} 
+
+\hyperlink{motor__ctl_8h_a6b4d820cd4d1c1659864d440c647649b}{P\-W\-M\-\_\-\-C\-H\-A\-N\-N\-E\-L\-\_\-\-B}
+\end{DoxySeeAlso}
+Enables Timer/\-Counter1 compare A and overflow interrupts. 

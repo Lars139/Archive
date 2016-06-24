@@ -1,0 +1,566 @@
+
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. The IEEE's font choices and paper sizes can   ***
+% *** trigger bugs that do not appear when using other class files.       ***                          ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+\documentclass[journal]{IEEEtran}
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation
+% can be obtained at: 
+% http://www.ctan.org/pkg/graphicx
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found at:
+% http://www.ctan.org/pkg/epslatex
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics.
+%
+% Note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/amsmath
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as the IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/pkg/algorithms
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/pkg/algorithmicx
+
+
+
+
+%\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/pkg/array
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\ifCLASSOPTIONcompsoc
+%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+%  \usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
+% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
+% for subfigure.sty, the latter of which is no longer maintained and is
+% incompatible with some LaTeX packages including fixltx2e. However,
+% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
+% which will override IEEEtran.cls' handling of captions and this will result
+% in non-IEEE style figure/table captions. To prevent this problem, be sure
+% and invoke subfig.sty's "caption=false" package option (available since
+% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
+% handling of captions.
+% Note that the Computer Society format requires a larger sans serif font
+% than the serif footnote size font used in traditional IEEE formatting
+% and thus the need to invoke different subfig.sty package options depending
+% on whether compsoc mode has been enabled.
+%
+% The latest version and documentation of subfig.sty can be obtained at:
+% http://www.ctan.org/pkg/subfig
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure.
+% Be aware that LaTeX2e kernels dated 2015 and later have fixltx2e.sty's
+% corrections already built into the system in which case a warning will
+% be issued if an attempt is made to load fixltx2e.sty as it is no longer
+% needed.
+% The latest version and documentation can be found at:
+% http://www.ctan.org/pkg/fixltx2e
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/stfloats
+% Do not use the stfloats baselinefloat ability as the IEEE does not allow
+% \baselineskip to stretch. Authors submitting work to the IEEE should note
+% that the IEEE rarely uses double column equations and that authors should try
+% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
+% packages (also by Sigitas Tolusis) as the IEEE does not format its papers in
+% such ways.
+% Do not attempt to use stfloats with fixltx2e as they are incompatible.
+% Instead, use Morten Hogholm'a dblfloatfix which combines the features
+% of both fixltx2e and stfloats:
+%
+% \usepackage{dblfloatfix}
+% The latest version can be found at:
+% http://www.ctan.org/pkg/dblfloatfix
+
+
+%\ifCLASSOPTIONcaptionsoff
+%  \usepackage[nomarkers]{endfloat}
+% \let\MYoriglatexcaption\caption
+% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
+%\fi
+% endfloat.sty was written by James Darrell McCauley, Jeff Goldberg and 
+% Axel Sommerfeldt. This package may be useful when used in conjunction with 
+% IEEEtran.cls'  captionsoff option. Some IEEE journals/societies require that
+% submissions have lists of figures/tables at the end of the paper and that
+% figures/tables without any captions are placed on a page by themselves at
+% the end of the document. If needed, the draftcls IEEEtran class option or
+% \CLASSINPUTbaselinestretch interface can be used to increase the line
+% spacing as well. Be sure and use the nomarkers option of endfloat to
+% prevent endfloat from "marking" where the figures would have been placed
+% in the text. The two hack lines of code above are a slight modification of
+% that suggested by in the endfloat docs (section 8.4.1) to ensure that
+% the full captions always appear in the list of figures/tables - even if
+% the user used the short optional argument of \caption[]{}.
+% IEEE papers do not typically make use of \caption[]'s optional argument,
+% so this should not be an issue. A similar trick can be used to disable
+% captions of packages such as subfig.sty that lack options to turn off
+% the subcaptions:
+% For subfig.sty:
+% \let\MYorigsubfloat\subfloat
+% \renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}}
+% However, the above trick will not work if both optional arguments of
+% the \subfloat command are used. Furthermore, there needs to be a
+% description of each subfigure *somewhere* and endfloat does not add
+% subfigure captions to its list of figures. Thus, the best approach is to
+% avoid the use of subfigure captions (many IEEE journals avoid them anyway)
+% and instead reference/explain all the subfigures within the main caption.
+% The latest version of endfloat.sty and its documentation can obtained at:
+% http://www.ctan.org/pkg/endfloat
+%
+% The IEEEtran \ifCLASSOPTIONcaptionsoff conditional can also be used
+% later in the document, say, to conditionally put the References on a 
+% page by themselves.
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version and documentation can be obtained at:
+% http://www.ctan.org/pkg/url
+% Basically, \url{my_url_here}.
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+\title{ECE472: Computer Architecture\\ Homework 4: Part1}
+\author{Rattanai Sawaspanich}
+
+% make the title area
+\maketitle
+
+\section{Memory Optimization (PowerPoint)}
+ 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{I}{n} the past twenty years, the speed of a CPU has increased 
+apporximately 60\% per year while the memory speed has only increased by 
+about 10\% a year. To close the performance gap, the memory read/write needs
+to be optimized from a user persepctive.\\
+
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsection{Terminology}
+\textbf{Caches} is a local memory that can be access at a faster speed than
+a generic memory. There are two type of caches in general: Instruction cache
+and Data cache. \textbf{Instruction cache} is for instruction set and opcodes
+to be stored. \textbf{Data cahce} is for program data to be store. 
+\newline
+\newline
+\textbf{Cache Lines} are lines of memory where caches are divided into either32 or 64 byte sections.
+\textbf{Direct-Mapping} is a method to map a memory to a corresponding
+cache line.
+\textbf{N-way set-associative} is a way to map a logical cache line to the
+physical cache line (a bus).
+
+\subsection{Architecture Overview}
+Caches are typically divided into different levels e.g. L1, L2, and 
+main memory.
+\newline
+\newline
+\textbf{L1 cache} is the fastest not-on-CPU memory that a CPU can access. 
+Generally L1 cache has a fairly small storage size in the magnitude of ~8KB
+and takes about 1 clock cycle to access a memory in L1 cache. Note: the 
+smaller size storage is due to the physical hardware limitation.
+\newline
+\newline
+\textbf{L2 cache} is slower cache than L2. Though, it has a larger storage
+that can go up the magnitue of 8MB. On the average, it takes a CPU about
+5 to 20 clock cycles to access a memory in an L2 cache. 
+Let's assume the system is a 2-level cache heirachy. After all the caches 
+have been depleted, the CPU needs to access the main memory.
+\newline
+\newline
+\textbf{Main memory} or \textbf{system memory} is the biggest and slow source
+of memory. The storage magnitude of the system memory can be in the order of
+gigabyt to terabyte. It usually takes a CPU about 40 to 100 clock cycles to
+access the memory. 
+\newline
+\newline
+\subsection{Optimization}
+\subsubsection{Causes of cache misses}
+\begin{description}
+   \item\textbf{Compulsory Misses} are invitable cache misses occur when the
+      data is read for the first time.
+   \item\textbf{Capacity Misses} are cache misses occur when the active data
+      requires more memory than a cache storage. This type of miss usually
+      happens when there is too much data accessed.
+   \item\textbf{Conflict Misses} are cache misses due to the cache line 
+      conflict -- a cache mapped to the same cache line. Note: a cache line 
+      can only handle a set of data at a time.
+      \newline
+\end{description}
+
+\subsubsection{Key to Optimization}
+\begin{description}
+   \item\textbf{Reuse} the set of data (or variables) to 
+      increase the temporal and sparial locality which helps avoiding 
+      multiple compulsory cache misses.
+   \item\textbf{Rearrange} the order how the data is being stored to change
+      the layout and increase the spatial locality. The rearrangement helps
+      with the capacity cache misses.
+   \item\textbf{Reduce} the number of a cache line read to help with cache
+      conflict misses -- the lesser accessed data, the lesser cache collision
+      there will be.
+      \newline
+\end{description}
+
+\subsubsection{Optimization Techniques}
+\textbf{\\Reuse: Prefetch}
+\begin{description}
+   \item\textbf{Software Prefetching} -- use an arbitrary look-ahead to 
+      prefecth the data in cache before needed by CPU
+   \item\textbf{Greedy Prefetching} -- prefetch all the data that will be 
+      used in the next two instructions
+   \item\textbf{Preloading} -- ask for a data to be used and while it is 
+      waiting for the memory I/O has a CPU perform  other tasks first.
+\end{description}
+
+\textbf{Rearrange: Structures}
+\begin{description}
+   \item\textbf{Cache-conscious layout} -- rearrange the data that typically
+      access together next to each other i.e. declare the variables next to
+      each other, or using array declaration. 
+   \item\textbf{Use structures} -- use tree structure to increase spatial 
+      locality and reduce the size of pointer used by storing data relative
+      to the parent node e.g. Breadth-first order, Depth-frist order, Van 
+      Emde Boas layout, compact static k-d tree.
+      \newline
+      \newline
+   \item\textbf{Linearlized data} -- store and fetch data in a linear manner
+      using static memory pool. The method yields the best performance. The
+      linearization technique can be used on top of hierarchy data 
+      structures to prevent blocking overhead and keep data together with
+      minimal fragmentation. It is highly recommended to allocate memory 
+      pool from stack, free the block immediate if not needed, and reuse the
+      memory if possible. 
+\end{description}
+
+\subsection{Alising}
+\textbf{Alising} occurs when multiple references point to the same memory 
+location. This can prevent compiler from optimizing the code by prohibiting
+the reordering (badly impact instruction scheduling), eliminating of loads 
+(hinder looping optimization and subexpression elimination), 
+and storing of the data.
+
+\subsubsection{Causes of Alising}
+\begin{description}
+   \item\textbf{Pointers} are the major causes of alising specially shared 
+      pointers.  A compiler does not know how to optimize the program 
+      because the value stores in the pointed location can be changed 
+      any time at runtime. A compiler does not have access to the runtime
+      values; there is no optimization at compile time.
+      \newline
+
+   \item\textbf{Global variables/ Class Members} can cause aliasing because
+      at the end they can be resolved as shared pointers.\newline
+\end{description}
+
+\subsubsection{Aliasing Prevention}
+\begin{description}
+   \item\textbf{Program Better:} When a CPU fetch information from a cache,
+      the whole cache line is returned. Anti-aliasing can be done using the
+      fact, the data only needs to be fetched once for every values in the
+      same row (assuming a row major language).
+   \item\textbf{Lower Language Abstraction:} The more abstract, the more 
+      abstraction penalty there is. The code can only breakdown to at most
+      a generic code block which prevents any special customization. 
+      Moreover, an abstraction takes away the transparency of data and its 
+      operations e.g. temporary objects, implicit aliasing pointers, etc. 
+      This can introduce aliasing issues.
+   \item\textbf{Use a Better Compiler} some compiler is better at 
+      anti-aliasing than the other. Note: use –fstrict-aliasing in GCC
+      to turn on anti-aliasing feature. 
+      \newline
+   \item\textbf{Potpourri}
+      \begin{itemize}
+	 \item Minimize use of pointers and global variables.
+	 \item Use local variables as much as possible.
+	 \item Avoid operation that requires temporary variables.
+	 \item Declare variables close to where they are used.
+	 \item Use 'const'
+      \end{itemize}
+\end{description}
+%------------------------------------------------------- PAPER
+
+\section{What Every Programmer Should Know About Memory}
+\subsection{The Current Hardware}
+\textbf{Personal Computer System\\}
+In the past twenty years, personal computers have become more popular. 
+The chipset of such computer has divided into two parts: the Northbride and 
+the Southbride.  All the CPU are connected via a common bus to the 
+Northbridge. \textbf{The Northbride} takes part in memory control all 
+different type of RAM. \textbf{The Southbride} acts as an I/O bridge 
+handling the communication with different devices via peripheral buses e.g.
+PCI, PCIe, SATA, and USB buses.\newline
+
+It is worth note taking that all of the data communcation from CPU to CPU
+,and all RAM communication can only be done through Northbridge. This can 
+cause a bottleneck in the I/O data stream. This is not to mention that RAM
+in the system is a single full-duplex port. Instantly, there are two 
+bottleneck spots in the system. The first bottleneck occurs when RAM tries
+to communicate with the different devices via the bridges. The data has to 
+route through the CPU which can slow down the entire sytem. The second
+bottleneck occurs when a bus from the Northport tries to communicate with 
+RAM. \newline
+
+\textbf{Advanced Computer System\\}
+On the more expensive and advanced computer system, the Northbride does not
+contain only a single memory control; rather, a number of external memory
+controllers. The more memory controllers allow a higher bandwidth to be 
+used in the system. Though, multiple external memory controller is not the 
+only solution to increase the memory I/O bandwidth. Another way to increase
+the system bandwidth is by integrating the memory controller in the CPU 
+itself along with an integrated on-chip memory. \newline
+
+There is no free lunch in a more advanced system. The multi-memory 
+controllers system needs make all of its memory accessible to all the 
+processors. Moreover, not all of the memory can be accessed with the same
+constant time. The scheme name for this multi-memory controller is called
+\textbf{NUMA} or \textbf{Non-Uniform Memory Architecture}. The reason behind
+its non-uniform accessing time is because the on-chip local memory can be
+accessed with the usual speed while the memory that is attached to a 
+different processor needs to be transfer via the interconnect buses.
+
+\subsection{Types of RAM}
+There are basically two types of RAM: Static RAM (SRAM) and Dynamic RAM 
+(DRAM).  SRAM is a lot faster at accessing the memory than DRAM. The only
+reason why DRAM exists is because of the cost to produce SRAM.\newline 
+
+\textbf{Static RAM (SRAM)\\}
+A unit of SRAM is built off of six transistors that forms two cross-coupled
+inverters. Though, in some designs, only four transistors are needed.
+These cell state is ready to be read at almost instant given the cell state
+does not need a refresh cycle. There are some cons to this type of RAM is 
+that it requires a constant supply of power to maintain its state.\newline
+
+\textbf{Dynamic RAM (DRAM)\\}
+A unit of DRAM is comprised of one transistor and one capacitor. The 
+transistor is used to guard the access state. The reading process of DRAM
+is to discharge the memory cell. This task cannot be repeated indefinitely,
+the capacitor wears out and can have electrons leakage. Moreover DRAM 
+cannot be instantly read/write as if SRAM, it requires sensing amplifier to 
+translate the voltage into either 1 or 0.\newline
+
+%\subsubsection{Type of DRAM}
+
+\subsection{CPU Caches}
+To obtain a high performance system, the memory I/O should hypothetically 
+run at the same speed as CPU to yield the maximum performance. Though, it is
+not possible due to the law of physics -- a capacitor in DRAM takes 
+time to charge up.  Fortunately, SRAM can operate at a much faster speed than
+DRAM. In this case, SRAM can be use as a medium ground for a DRAM to 
+communicate with the CPU.  Though, it is not a viable option to have a 
+section of memory as SRAM and the rest DRAM due to the complication in 
+logical address mapping. So instead of hanving a giant pool of mixed 
+SRAM-DRAM memory under the control of an operating system or a user, SRAM
+can be used an internal memory for a processor to use. It is used to 
+make a temporary copies of data in main meory which is likely to be used
+soon by the processor.  The on-processor SRAM is called a cache. \newline
+
+Typically the size of SRAM caches is many times smaller than the system
+memory to keep the cost down and prevent crowded effects. In the cache 
+configuration module, CPU is no longer directly connected to main memory. 
+All the data needs to be loaded and go through caches first before entering
+the CPU. More recently, an instruction cache is introduced to maximize the 
+instruction decoding processes. At this point there is a huge speed gap 
+between an internal processor SRAM and system memory DRAM. To close the speed
+gap, more level of caches were introduces. The higher the bigger storage size
+, but the slower it is.\newline
+
+In the more recent design, each processor can have multiple cores and each
+core can have multiple threads. Note: the only different between thread and 
+core is that a separate cores
+have separate copies of all the hardware resources and can run completely
+independent from each other. On the other hand, threads shared almost all of
+the processor's resources. The cache storage needs to be able to 
+facilitate the needs of memory resources for all the threads and cores. 
+
+\subsection{Caches Operation}
+If the CPU needs a data word that cahes are searched first, the cache 
+cannot have the content of the entire memory, but since all the memory is 
+cacheable, each cahe entry is tagged using the address of the data word 
+in the main memory. Given the concept of spatial locality is one of the 
+principles on cahces, the neighbor memory is likely to be used together; 
+it should also be cached. When the data in cache is need by the processor,
+the entire cache line is loaded into the L1 cache which forwards the whole 
+thing to the processor. \newline
+
+In some cases, there is a chance that some information needed by the 
+processor is not stored in a cache (cache misses). The processor needs to
+fetch the entire new data from system memory. 
+
+\subsection{Associativity Cache}
+It is possible to have a cache where each cache line holds a copy of any 
+memory location (also known as \textbf{fully associative cache}) by tagging
+the entire part of the address which is not offset into the cache line. 
+The only cache to this method is the storage needs to store the tags lookup
+would be gigantic given the current standard size of L1 and L2.
+\newline
+
+\subsection{Measurement of Cache Effects}
+The simplest case is a simple walk over all the entires in the list. The list
+element are laid out sequentially. What needs to be measured here is how long
+does it take to access a single list element. The number of workload where
+there is a spike in the element accessed time is the point where the workload
+exceeds that cache level capacity, so the processor needs to fetch the 
+information from the next cache level which causes the increases in accessing
+time.
+
+
+
+
+
+
+
+
+\end{document}
+
+

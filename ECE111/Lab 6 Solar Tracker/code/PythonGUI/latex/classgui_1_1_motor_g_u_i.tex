@@ -1,0 +1,246 @@
+\hypertarget{classgui_1_1_motor_g_u_i}{\section{gui.\-Motor\-G\-U\-I Class Reference}
+\label{classgui_1_1_motor_g_u_i}\index{gui.\-Motor\-G\-U\-I@{gui.\-Motor\-G\-U\-I}}
+}
+
+
+Defines the main frame for the G\-U\-I.  
+
+
+Inheritance diagram for gui.\-Motor\-G\-U\-I\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1_motor_g_u_i}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgui_1_1_motor_g_u_i_a6095ad89d64af1d0b609562c63f7dc44}{def \hyperlink{classgui_1_1_motor_g_u_i_a6095ad89d64af1d0b609562c63f7dc44}{\-\_\-\-\_\-init\-\_\-\-\_\-}}\label{classgui_1_1_motor_g_u_i_a6095ad89d64af1d0b609562c63f7dc44}
+
+\begin{DoxyCompactList}\small\item\em Constructor for a wx\-Python frame. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_aa2d8e9800cfcf3bb0accbe3df3888216}{Start\-Update\-Thread}
+\begin{DoxyCompactList}\small\item\em Initiates the thread that polls the Tiny for the value of the solar panel A\-D\-C and then updates the G\-U\-I accordingly. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_a9a90f269ce5de4d5c2f234db8f984f02}{On\-Move\-Servo\-Request}
+\begin{DoxyCompactList}\small\item\em Handles the event that is fired when the \char`\"{}\-Move Servo\char`\"{} button is pressed. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_ac294c32d1139676f6adf61ccfcfdf07b}{On\-Solar\-Max\-Request}
+\begin{DoxyCompactList}\small\item\em Handles the event that is fired when the \char`\"{}\-Maximize Solar Efficiency\char`\"{} button is pressed. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_a387eaf79ea5f14461681d85559c6cc0d}{On\-Button\-Pressed}
+\begin{DoxyCompactList}\small\item\em Handles the event that is fired when the \char`\"{}\-Connect\char`\"{} button is pressed. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_a00bd7d29278fdd47773be526bd020bb1}{On\-Window\-Closed}
+\begin{DoxyCompactList}\small\item\em Handles the event that is called when the program is closed. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_a65167987294a1780a28b483821334fda}{On\-Solar\-Measure\-Update}
+\begin{DoxyCompactList}\small\item\em Handles the event that is called when a new A\-D\-C measurment from the solar panel connected to the tiny is received. \end{DoxyCompactList}\item 
+def \hyperlink{classgui_1_1_motor_g_u_i_af8d32eaef13c8826b0e07f7f4154ff10}{On\-About\-Requested}
+\begin{DoxyCompactList}\small\item\em Handles the event that is called when the about menu button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgui_1_1_motor_g_u_i_a92a05554565e2d7939459090a17c50d6}{\hyperlink{classgui_1_1_motor_g_u_i_a92a05554565e2d7939459090a17c50d6}{solar\-\_\-event}}\label{classgui_1_1_motor_g_u_i_a92a05554565e2d7939459090a17c50d6}
+
+\begin{DoxyCompactList}\small\item\em Holds the event type definition for the event that is called when the G\-U\-I needs to be updated with the latest solar panel measurement. \end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_motor_g_u_i_af9222ac373f1bf876de393043a37a14c}{\hyperlink{classgui_1_1_motor_g_u_i_af9222ac373f1bf876de393043a37a14c}{usb}}\label{classgui_1_1_motor_g_u_i_af9222ac373f1bf876de393043a37a14c}
+
+\begin{DoxyCompactList}\small\item\em Holds the usb connection variable that is used to interface with the Tiny261. \end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_motor_g_u_i_a077928e387639fcff3f7ce1067090c78}{\hyperlink{classgui_1_1_motor_g_u_i_a077928e387639fcff3f7ce1067090c78}{connect}}\label{classgui_1_1_motor_g_u_i_a077928e387639fcff3f7ce1067090c78}
+
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\-Connect\char`\"{} button. \end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_motor_g_u_i_ab7c6435d9f97f47d48dea18161533474}{\hyperlink{classgui_1_1_motor_g_u_i_ab7c6435d9f97f47d48dea18161533474}{find\-\_\-sun}}\label{classgui_1_1_motor_g_u_i_ab7c6435d9f97f47d48dea18161533474}
+
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\-Maximize Solar Efficiency\char`\"{} button. \end{DoxyCompactList}\item 
+\hyperlink{classgui_1_1_motor_g_u_i_acfe4b83245af20371a2c71e8997f8139}{position}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\-Position\char`\"{} text control (allows the user to specifiy a position to move the servo). \end{DoxyCompactList}\item 
+\hyperlink{classgui_1_1_motor_g_u_i_adcbde7aacf6312ceff8d675cc27b40fa}{display}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\-Display\char`\"{} text control (shows the solar panel measurements). \end{DoxyCompactList}\item 
+\hyperlink{classgui_1_1_motor_g_u_i_a142d48a338fab59d090ceb50e9e01748}{move}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}\-Move Servo\char`\"{} button. \end{DoxyCompactList}\item 
+\hyperlink{classgui_1_1_motor_g_u_i_ab0f241eaebfd0d70b12982ad52f8ea33}{gauge}
+\begin{DoxyCompactList}\small\item\em The solar measurements Gauge (displays the measurements in gauge form). \end{DoxyCompactList}\item 
+\hypertarget{classgui_1_1_motor_g_u_i_ad575070f85c5265bf2b2607aab5236fe}{\hyperlink{classgui_1_1_motor_g_u_i_ad575070f85c5265bf2b2607aab5236fe}{updater}}\label{classgui_1_1_motor_g_u_i_ad575070f85c5265bf2b2607aab5236fe}
+
+\begin{DoxyCompactList}\small\item\em Holds the object that corresponds to the solar panel measurements update thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the main frame for the G\-U\-I. 
+
+It provides a simple interface for the user to send commands to a Tiny261 microcontroller (that has the approriate firmware) via the O\-S\-Uisp2 Universal Programmer. The commands move a solar panel to certain positions and take measurements that correspond to the amount of light that is hitting the solar panel. Those measurements are echoed back to the computer, which are displayed on the G\-U\-I. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgui_1_1_motor_g_u_i_af8d32eaef13c8826b0e07f7f4154ff10}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!On\-About\-Requested@{On\-About\-Requested}}
+\index{On\-About\-Requested@{On\-About\-Requested}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{On\-About\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-On\-About\-Requested (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_af8d32eaef13c8826b0e07f7f4154ff10}
+
+
+Handles the event that is called when the about menu button is pressed. 
+
+Shows the user a message box containing information about the program
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em event,\-:} & The object that is associated with the event request \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgui_1_1_motor_g_u_i_a387eaf79ea5f14461681d85559c6cc0d}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!On\-Button\-Pressed@{On\-Button\-Pressed}}
+\index{On\-Button\-Pressed@{On\-Button\-Pressed}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{On\-Button\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-On\-Button\-Pressed (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_a387eaf79ea5f14461681d85559c6cc0d}
+
+
+Handles the event that is fired when the \char`\"{}\-Connect\char`\"{} button is pressed. 
+
+If a usb connection is not currently active, the G\-U\-I sends a request to the O\-S\-Uisp2 programmer to connect to the Tiny and verify that the correct firmware is installed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em event,\-:} & The object that is associated with the event request \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgui_1_1_motor_g_u_i_a9a90f269ce5de4d5c2f234db8f984f02}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!On\-Move\-Servo\-Request@{On\-Move\-Servo\-Request}}
+\index{On\-Move\-Servo\-Request@{On\-Move\-Servo\-Request}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{On\-Move\-Servo\-Request}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-On\-Move\-Servo\-Request (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_a9a90f269ce5de4d5c2f234db8f984f02}
+
+
+Handles the event that is fired when the \char`\"{}\-Move Servo\char`\"{} button is pressed. 
+
+If a usb connection is currently active, a request is sent to the Tiny to move the motor to the position that corresponds to value given by the user in the position text control. The solar measurement update thread is paused until the Tiny26 is finished repositioning the motor
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em event,\-:} & The object that is associated with the event request \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgui_1_1_motor_g_u_i_ac294c32d1139676f6adf61ccfcfdf07b}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!On\-Solar\-Max\-Request@{On\-Solar\-Max\-Request}}
+\index{On\-Solar\-Max\-Request@{On\-Solar\-Max\-Request}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{On\-Solar\-Max\-Request}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-On\-Solar\-Max\-Request (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_ac294c32d1139676f6adf61ccfcfdf07b}
+
+
+Handles the event that is fired when the \char`\"{}\-Maximize Solar Efficiency\char`\"{} button is pressed. 
+
+If a usb connection is currently active, a request to find the position that produces the highest voltage output from the solar panel is sent. The solar panel measurement update thread is paused until the Tiny had finished positioning the solar panel in the position that receives the most light.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em event,\-:} & The object that is associated with the event request \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgui_1_1_motor_g_u_i_a65167987294a1780a28b483821334fda}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!On\-Solar\-Measure\-Update@{On\-Solar\-Measure\-Update}}
+\index{On\-Solar\-Measure\-Update@{On\-Solar\-Measure\-Update}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{On\-Solar\-Measure\-Update}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-On\-Solar\-Measure\-Update (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_a65167987294a1780a28b483821334fda}
+
+
+Handles the event that is called when a new A\-D\-C measurment from the solar panel connected to the tiny is received. 
+
+Sets the value of the text control equal to the measurement that is contained in the event request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em event,\-:} & The object that is associated with the event request \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgui_1_1_motor_g_u_i_a00bd7d29278fdd47773be526bd020bb1}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!On\-Window\-Closed@{On\-Window\-Closed}}
+\index{On\-Window\-Closed@{On\-Window\-Closed}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{On\-Window\-Closed}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-On\-Window\-Closed (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_a00bd7d29278fdd47773be526bd020bb1}
+
+
+Handles the event that is called when the program is closed. 
+
+If a usb connection is currently active, the G\-U\-I sends a request to the O\-S\-Uisp2 programmer to close the connection to the Tiny and to end the thread that updates the G\-U\-I with the solar panel measurments
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+{\em event,\-:} & The object that is associated with the event request \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgui_1_1_motor_g_u_i_aa2d8e9800cfcf3bb0accbe3df3888216}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!Start\-Update\-Thread@{Start\-Update\-Thread}}
+\index{Start\-Update\-Thread@{Start\-Update\-Thread}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{Start\-Update\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}def gui.\-Motor\-G\-U\-I.\-Start\-Update\-Thread (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classgui_1_1_motor_g_u_i_aa2d8e9800cfcf3bb0accbe3df3888216}
+
+
+Initiates the thread that polls the Tiny for the value of the solar panel A\-D\-C and then updates the G\-U\-I accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self,\-:} & The object pointer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classgui_1_1_motor_g_u_i_adcbde7aacf6312ceff8d675cc27b40fa}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!display@{display}}
+\index{display@{display}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}gui.\-Motor\-G\-U\-I.\-display}}\label{classgui_1_1_motor_g_u_i_adcbde7aacf6312ceff8d675cc27b40fa}
+
+
+The \char`\"{}\-Display\char`\"{} text control (shows the solar panel measurements). 
+
+\hypertarget{classgui_1_1_motor_g_u_i_ab0f241eaebfd0d70b12982ad52f8ea33}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!gauge@{gauge}}
+\index{gauge@{gauge}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{gauge}]{\setlength{\rightskip}{0pt plus 5cm}gui.\-Motor\-G\-U\-I.\-gauge}}\label{classgui_1_1_motor_g_u_i_ab0f241eaebfd0d70b12982ad52f8ea33}
+
+
+The solar measurements Gauge (displays the measurements in gauge form). 
+
+\hypertarget{classgui_1_1_motor_g_u_i_a142d48a338fab59d090ceb50e9e01748}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!move@{move}}
+\index{move@{move}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}gui.\-Motor\-G\-U\-I.\-move}}\label{classgui_1_1_motor_g_u_i_a142d48a338fab59d090ceb50e9e01748}
+
+
+The \char`\"{}\-Move Servo\char`\"{} button. 
+
+\hypertarget{classgui_1_1_motor_g_u_i_acfe4b83245af20371a2c71e8997f8139}{\index{gui\-::\-Motor\-G\-U\-I@{gui\-::\-Motor\-G\-U\-I}!position@{position}}
+\index{position@{position}!gui::MotorGUI@{gui\-::\-Motor\-G\-U\-I}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}gui.\-Motor\-G\-U\-I.\-position}}\label{classgui_1_1_motor_g_u_i_acfe4b83245af20371a2c71e8997f8139}
+
+
+The \char`\"{}\-Position\char`\"{} text control (allows the user to specifiy a position to move the servo). 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+gui.\-py\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\begin{theindex}
+
+  \item {Close\discretionary {-}{}{}Connection}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {display}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {Find\discretionary {-}{}{}Most\discretionary {-}{}{}Sun}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {gauge}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+  \item {Get\discretionary {-}{}{}Value}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}Solar\discretionary {-}{}{}Event}, 
+		\hyperpage{15}
+  \item {gui}, \hyperpage{7}
+  \item {gui.\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Launcher}, 
+		\hyperpage{11}
+  \item {gui.\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{11}
+  \item {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}
+    \subitem {display}, \hyperpage{14}
+    \subitem {gauge}, \hyperpage{14}
+    \subitem {move}, \hyperpage{14}
+    \subitem {On\discretionary {-}{}{}About\discretionary {-}{}{}Requested}, 
+		\hyperpage{12}
+    \subitem {On\discretionary {-}{}{}Button\discretionary {-}{}{}Pressed}, 
+		\hyperpage{13}
+    \subitem {On\discretionary {-}{}{}Move\discretionary {-}{}{}Servo\discretionary {-}{}{}Request}, 
+		\hyperpage{13}
+    \subitem {On\discretionary {-}{}{}Solar\discretionary {-}{}{}Max\discretionary {-}{}{}Request}, 
+		\hyperpage{13}
+    \subitem {On\discretionary {-}{}{}Solar\discretionary {-}{}{}Measure\discretionary {-}{}{}Update}, 
+		\hyperpage{13}
+    \subitem {On\discretionary {-}{}{}Window\discretionary {-}{}{}Closed}, 
+		\hyperpage{13}
+    \subitem {position}, \hyperpage{14}
+    \subitem {Start\discretionary {-}{}{}Update\discretionary {-}{}{}Thread}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {Is\discretionary {-}{}{}Connected}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{17}
+
+  \indexspace
+
+  \item {launcher}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Measure\discretionary {-}{}{}Solar\discretionary {-}{}{}Panel}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{17}
+  \item {move}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {On\discretionary {-}{}{}About\discretionary {-}{}{}Requested}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{12}
+  \item {On\discretionary {-}{}{}Button\discretionary {-}{}{}Pressed}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{13}
+  \item {On\discretionary {-}{}{}Move\discretionary {-}{}{}Servo\discretionary {-}{}{}Request}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{13}
+  \item {On\discretionary {-}{}{}Solar\discretionary {-}{}{}Max\discretionary {-}{}{}Request}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{13}
+  \item {On\discretionary {-}{}{}Solar\discretionary {-}{}{}Measure\discretionary {-}{}{}Update}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{13}
+  \item {On\discretionary {-}{}{}Window\discretionary {-}{}{}Closed}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {position}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {Quit\discretionary {-}{}{}Thread}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}Solar\discretionary {-}{}{}Tracking\discretionary {-}{}{}Thread}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {run}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}Solar\discretionary {-}{}{}Tracking\discretionary {-}{}{}Thread}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {Set\discretionary {-}{}{}Solar\discretionary {-}{}{}Position}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{17}
+  \item {Show\discretionary {-}{}{}Error\discretionary {-}{}{}Msg}
+    \subitem {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{18}
+  \item {Start\discretionary {-}{}{}Update\discretionary {-}{}{}Thread}
+    \subitem {gui\discretionary {-}{}{}::\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {tiny26}, \hyperpage{8}
+    \subitem {vid}, \hyperpage{9}
+  \item {tiny26.\discretionary {-}{}{}Solar\discretionary {-}{}{}Event}, 
+		\hyperpage{14}
+  \item {tiny26.\discretionary {-}{}{}Solar\discretionary {-}{}{}Tracking\discretionary {-}{}{}Thread}, 
+		\hyperpage{15}
+  \item {tiny26.\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}, 
+		\hyperpage{16}
+  \item {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}Solar\discretionary {-}{}{}Event}
+    \subitem {Get\discretionary {-}{}{}Value}, \hyperpage{15}
+  \item {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}Solar\discretionary {-}{}{}Tracking\discretionary {-}{}{}Thread}
+    \subitem {Quit\discretionary {-}{}{}Thread}, \hyperpage{16}
+    \subitem {run}, \hyperpage{16}
+  \item {tiny26\discretionary {-}{}{}::\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}
+    \subitem {Close\discretionary {-}{}{}Connection}, \hyperpage{17}
+    \subitem {Find\discretionary {-}{}{}Most\discretionary {-}{}{}Sun}, 
+		\hyperpage{17}
+    \subitem {Is\discretionary {-}{}{}Connected}, \hyperpage{17}
+    \subitem {Measure\discretionary {-}{}{}Solar\discretionary {-}{}{}Panel}, 
+		\hyperpage{17}
+    \subitem {Set\discretionary {-}{}{}Solar\discretionary {-}{}{}Position}, 
+		\hyperpage{17}
+    \subitem {Show\discretionary {-}{}{}Error\discretionary {-}{}{}Msg}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {vid}
+    \subitem {tiny26}, \hyperpage{9}
+
+\end{theindex}

@@ -1,0 +1,28 @@
+Command line:
+   verilog_module_lab5_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50157
+
+Thu May 09 13:26:16 2013
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 827.249 Meg
+
+ Total Signals          : 124
+ Total Nets             : 105
+ Total Signal Drivers   : 31
+ Total Blocks           : 25
+ Total Primitive Blocks : 23
+ Total Processes        : 34
+ Total Traceable Variables  : 67
+ Total Scalar Nets and Variables : 1370
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 827.249 Meg
+
+Thu May 09 13:26:32 2013
+

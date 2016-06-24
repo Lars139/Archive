@@ -1,0 +1,35 @@
+Pin Freeze File:  version P.15xf
+
+9572XL44VQ XC9572XL-10-VQ44
+Clock S:PIN43
+Reset S:PIN33
+Clock_1024 S:PIN19
+Clock_128 S:PIN39
+Clock_16 S:PIN42
+Clock_256 S:PIN29
+Clock_2 S:PIN23
+Clock_32 S:PIN31
+Clock_4 S:PIN37
+Clock_512 S:PIN5
+Clock_64 S:PIN8
+Clock_8 S:PIN14
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 Clock_128_OBUF
+PARTITION FB1_8 Clock_16_OBUF
+
+PARTITION FB2_2 Clock_256_OBUF
+PARTITION FB2_6 Clock_32_OBUF
+PARTITION FB2_15 Clock_4_OBUF
+
+PARTITION FB3_2 Clock_512_OBUF
+PARTITION FB3_9 Clock_64_OBUF
+PARTITION FB3_15 Clock_8_OBUF
+
+PARTITION FB4_2 Clock_1024_OBUF
+PARTITION FB4_14 Clock_2_OBUF
+
+

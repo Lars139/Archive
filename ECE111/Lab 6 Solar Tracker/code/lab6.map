@@ -1,0 +1,651 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+                              ../../libraries/adc.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+led0_Pin            0x1               ../../libraries/speedometer.o
+led3_Port           0x2               ../../libraries/speedometer.o
+motorB_forwardPort  0x2               ../../libraries/motor_ctl.o
+motorB_forwardPin   0x1               ../../libraries/motor_ctl.o
+motorA_forwardPin   0x1               ../../libraries/motor_ctl.o
+motorB_reversePort  0x2               ../../libraries/motor_ctl.o
+led3_Pin            0x1               ../../libraries/speedometer.o
+led2_Pin            0x1               ../../libraries/speedometer.o
+motorB_reversePin   0x1               ../../libraries/motor_ctl.o
+solar_reading       0x1               main.o
+led0_Port           0x2               ../../libraries/speedometer.o
+data                0x6               main.o
+count               0x1               main.o
+motorA_reversePort  0x2               ../../libraries/motor_ctl.o
+led1_Pin            0x1               ../../libraries/speedometer.o
+led1_Port           0x2               ../../libraries/speedometer.o
+led2_Port           0x2               ../../libraries/speedometer.o
+motorA_forwardPort  0x2               ../../libraries/motor_ctl.o
+motorA_reversePin   0x1               ../../libraries/motor_ctl.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+LOAD main.o
+LOAD ../../libraries/adc.o
+LOAD ../../libraries/util.o
+LOAD ../../libraries/motor_ctl.o
+LOAD ../../libraries/speedometer.o
+LOAD ../../libraries/servo_ctl.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x7e6
+ *(.vectors)
+ .vectors       0x00000000       0x26 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000026                . = ALIGN (0x2)
+                0x00000026                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000026        0x0 linker stubs
+ *(.trampolines*)
+                0x00000026                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000026                __ctors_start = .
+ *(.ctors)
+                0x00000026                __ctors_end = .
+                0x00000026                __dtors_start = .
+ *(.dtors)
+                0x00000026                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000026        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+                0x00000026                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000026        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000002e       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+                0x0000002e                __do_copy_data
+ .init4         0x00000044       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x00000044                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000054        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ *(.init9)
+ *(.text)
+ .text          0x00000058        0x2 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+                0x00000058                __vector_1
+                0x00000058                __vector_12
+                0x00000058                __bad_interrupt
+                0x00000058                __vector_6
+                0x00000058                __vector_3
+                0x00000058                __vector_11
+                0x00000058                __vector_13
+                0x00000058                __vector_17
+                0x00000058                __vector_7
+                0x00000058                __vector_5
+                0x00000058                __vector_4
+                0x00000058                __vector_9
+                0x00000058                __vector_2
+                0x00000058                __vector_15
+                0x00000058                __vector_14
+                0x00000058                __vector_10
+                0x00000058                __vector_16
+                0x00000058                __vector_18
+ .text          0x0000005a      0x17e main.o
+                0x000000b2                main
+                0x00000064                findBrightestPosition
+                0x0000012c                __vector_8
+                0x0000005a                SPI_SlaveInit
+ .text          0x000001d8      0x144 ../../libraries/adc.o
+                0x0000023a                ADCDisable
+                0x00000232                ADCDisableInterrupt
+                0x000002e2                ReadPreciseADCAveraged
+                0x00000258                SetupADC
+                0x0000022e                ADCEnableInterrupt
+                0x00000242                ADCFinish
+                0x00000288                ReadADCAveraged
+                0x00000236                ADCEnable
+                0x000001d8                ADCSetChannel
+                0x00000246                ADCDone
+                0x0000026c                ReadADC
+                0x00000204                ADCSetFreeRunning
+                0x000001e8                ADCSetAdjust
+                0x000002c2                ReadPreciseADC
+                0x000001f4                ADCSetPrescaler
+                0x00000216                ADCSetReference
+                0x0000023e                ADCStart
+ .text          0x0000031c       0x12 ../../libraries/util.o
+                0x0000031c                maskedCopy
+ .text          0x0000032e      0x1f6 ../../libraries/motor_ctl.o
+                0x000003ee                motorA_Stop
+                0x0000032e                motorA
+                0x00000432                motorB_Forward
+                0x000004b6                motorB_Stop
+                0x00000362                setDutyCycleA
+                0x000003ac                motorA_Reverse
+                0x0000036a                motorA_Forward
+                0x000004fa                setupPWM
+                0x00000366                setDutyCycleB
+                0x00000474                motorB_Reverse
+                0x00000348                motorB
+ .text          0x00000524      0x1f8 ../../libraries/speedometer.o
+                0x0000056e                updateSpeedometer
+                0x00000524                speedometer
+ .text          0x0000071c       0x9e ../../libraries/servo_ctl.o
+                0x00000736                SetMotorDirection
+                0x0000071c                ServoError
+                0x0000077a                setServoPosition
+                0x00000756                UpdateServo
+ .text          0x000007ba        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+ .text          0x000007ba        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .text          0x000007ba        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+ .text          0x000007ba        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x000007ba                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000007ba       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+                0x000007ba                __udivmodhi4
+ .text.libgcc   0x000007e2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x000007e2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000007e2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x000007e2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000007e2        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                0x000007e2                exit
+                0x000007e2                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000007e2        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000007e6                _etext = .
+
+.data           0x00800060        0x2 load address 0x000007e6
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ .data          0x00800060        0x2 main.o
+                0x00800061                last
+                0x00800060                position
+ .data          0x00800062        0x0 ../../libraries/adc.o
+ .data          0x00800062        0x0 ../../libraries/util.o
+ .data          0x00800062        0x0 ../../libraries/motor_ctl.o
+ .data          0x00800062        0x0 ../../libraries/speedometer.o
+ .data          0x00800062        0x0 ../../libraries/servo_ctl.o
+ .data          0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+ .data          0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .data          0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+ .data          0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800062                . = ALIGN (0x2)
+                0x00800062                _edata = .
+                0x00800062                PROVIDE (__data_end, .)
+
+.bss            0x00800062       0x23
+                0x00800062                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ .bss           0x00800062        0x3 main.o
+                0x00800064                data_out
+                0x00800062                connection
+ .bss           0x00800065        0x0 ../../libraries/adc.o
+ .bss           0x00800065        0x0 ../../libraries/util.o
+ .bss           0x00800065        0x0 ../../libraries/motor_ctl.o
+ .bss           0x00800065        0x0 ../../libraries/speedometer.o
+ .bss           0x00800065        0x0 ../../libraries/servo_ctl.o
+ .bss           0x00800065        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800065        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .bss           0x00800065        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+ .bss           0x00800065        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800065        0x8 main.o
+                0x00800065                solar_reading
+                0x00800066                data
+                0x0080006c                count
+ COMMON         0x0080006d        0xc ../../libraries/motor_ctl.o
+                0x0080006d                motorB_forwardPort
+                0x0080006f                motorB_forwardPin
+                0x00800070                motorA_forwardPin
+                0x00800071                motorB_reversePort
+                0x00800073                motorB_reversePin
+                0x00800074                motorA_reversePort
+                0x00800076                motorA_forwardPort
+                0x00800078                motorA_reversePin
+ COMMON         0x00800079        0xc ../../libraries/speedometer.o
+                0x00800079                led0_Pin
+                0x0080007a                led3_Port
+                0x0080007c                led3_Pin
+                0x0080007d                led2_Pin
+                0x0080007e                led0_Port
+                0x00800080                led1_Pin
+                0x00800081                led1_Port
+                0x00800083                led2_Port
+                0x00800085                PROVIDE (__bss_end, .)
+                0x000007e6                __data_load_start = LOADADDR (.data)
+                0x000007e8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800085        0x0
+                0x00800085                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800085                PROVIDE (__noinit_end, .)
+                0x00800085                _end = .
+                0x00800085                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xc0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 ../../libraries/adc.o
+ .debug_aranges
+                0x00000040       0x20 ../../libraries/util.o
+ .debug_aranges
+                0x00000060       0x20 ../../libraries/motor_ctl.o
+ .debug_aranges
+                0x00000080       0x20 ../../libraries/speedometer.o
+ .debug_aranges
+                0x000000a0       0x20 ../../libraries/servo_ctl.o
+
+.debug_pubnames
+                0x00000000      0x488
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xad main.o
+ .debug_pubnames
+                0x000000ad      0x141 ../../libraries/adc.o
+ .debug_pubnames
+                0x000001ee       0x21 ../../libraries/util.o
+ .debug_pubnames
+                0x0000020f      0x179 ../../libraries/motor_ctl.o
+ .debug_pubnames
+                0x00000388       0xa4 ../../libraries/speedometer.o
+ .debug_pubnames
+                0x0000042c       0x5c ../../libraries/servo_ctl.o
+
+.debug_info     0x00000000      0xcfc
+ *(.debug_info)
+ .debug_info    0x00000000      0x22e main.o
+ .debug_info    0x0000022e      0x42e ../../libraries/adc.o
+ .debug_info    0x0000065c       0xb6 ../../libraries/util.o
+ .debug_info    0x00000712      0x29d ../../libraries/motor_ctl.o
+ .debug_info    0x000009af      0x18b ../../libraries/speedometer.o
+ .debug_info    0x00000b3a      0x1c2 ../../libraries/servo_ctl.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x50d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x12d main.o
+ .debug_abbrev  0x0000012d      0x175 ../../libraries/adc.o
+ .debug_abbrev  0x000002a2       0x6a ../../libraries/util.o
+ .debug_abbrev  0x0000030c       0x8e ../../libraries/motor_ctl.o
+ .debug_abbrev  0x0000039a       0x6e ../../libraries/speedometer.o
+ .debug_abbrev  0x00000408      0x105 ../../libraries/servo_ctl.o
+
+.debug_line     0x00000000      0xb34
+ *(.debug_line)
+ .debug_line    0x00000000      0x291 main.o
+ .debug_line    0x00000291      0x31c ../../libraries/adc.o
+ .debug_line    0x000005ad       0x78 ../../libraries/util.o
+ .debug_line    0x00000625      0x1d8 ../../libraries/motor_ctl.o
+ .debug_line    0x000007fd      0x167 ../../libraries/speedometer.o
+ .debug_line    0x00000964      0x1d0 ../../libraries/servo_ctl.o
+
+.debug_frame    0x00000000      0x2d0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x50 main.o
+ .debug_frame   0x00000050      0x120 ../../libraries/adc.o
+ .debug_frame   0x00000170       0x20 ../../libraries/util.o
+ .debug_frame   0x00000190       0xc0 ../../libraries/motor_ctl.o
+ .debug_frame   0x00000250       0x30 ../../libraries/speedometer.o
+ .debug_frame   0x00000280       0x50 ../../libraries/servo_ctl.o
+
+.debug_str      0x00000000      0x558
+ *(.debug_str)
+ .debug_str     0x00000000      0x11d main.o
+                                0x157 (size before relaxing)
+ .debug_str     0x0000011d      0x179 ../../libraries/adc.o
+                                0x1fd (size before relaxing)
+ .debug_str     0x00000296       0x33 ../../libraries/util.o
+                                 0xd0 (size before relaxing)
+ .debug_str     0x000002c9      0x148 ../../libraries/motor_ctl.o
+                                0x21a (size before relaxing)
+ .debug_str     0x00000411       0xd6 ../../libraries/speedometer.o
+                                0x119 (size before relaxing)
+ .debug_str     0x000004e7       0x71 ../../libraries/servo_ctl.o
+                                0x15b (size before relaxing)
+
+.debug_loc      0x00000000      0x457
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x7e main.o
+ .debug_loc     0x0000007e      0x171 ../../libraries/adc.o
+ .debug_loc     0x000001ef       0x1e ../../libraries/util.o
+ .debug_loc     0x0000020d       0x31 ../../libraries/motor_ctl.o
+ .debug_loc     0x0000023e      0x102 ../../libraries/speedometer.o
+ .debug_loc     0x00000340      0x117 ../../libraries/servo_ctl.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(lab6.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x48 main.o
+ .debug_ranges  0x00000048       0x48 ../../libraries/servo_ctl.o
+
+Cross Reference Table
+
+Symbol                                            File
+ADCDisable                                        ../../libraries/adc.o
+ADCDisableInterrupt                               ../../libraries/adc.o
+ADCDone                                           ../../libraries/adc.o
+ADCEnable                                         ../../libraries/adc.o
+                                                  main.o
+ADCEnableInterrupt                                ../../libraries/adc.o
+ADCFinish                                         ../../libraries/adc.o
+ADCSetAdjust                                      ../../libraries/adc.o
+ADCSetChannel                                     ../../libraries/adc.o
+ADCSetFreeRunning                                 ../../libraries/adc.o
+ADCSetPrescaler                                   ../../libraries/adc.o
+ADCSetReference                                   ../../libraries/adc.o
+                                                  ../../libraries/servo_ctl.o
+                                                  main.o
+ADCStart                                          ../../libraries/adc.o
+ReadADC                                           ../../libraries/adc.o
+                                                  ../../libraries/servo_ctl.o
+                                                  main.o
+ReadADCAveraged                                   ../../libraries/adc.o
+ReadPreciseADC                                    ../../libraries/adc.o
+ReadPreciseADCAveraged                            ../../libraries/adc.o
+SPI_SlaveInit                                     main.o
+ServoError                                        ../../libraries/servo_ctl.o
+SetMotorDirection                                 ../../libraries/servo_ctl.o
+SetupADC                                          ../../libraries/adc.o
+                                                  main.o
+UpdateServo                                       ../../libraries/servo_ctl.o
+__bad_interrupt                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__bss_end                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+__data_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                                                  ../../libraries/speedometer.o
+                                                  ../../libraries/motor_ctl.o
+                                                  main.o
+__do_copy_data                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_copy_data.o)
+                                                  main.o
+__heap_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__init                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__stack                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__udivmodhi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+                                                  ../../libraries/adc.o
+__vector_1                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_10                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_11                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_12                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_13                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_14                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_15                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_16                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_17                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_18                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_3                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_4                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_5                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_6                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_7                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_8                                        main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_9                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+_exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+connection                                        main.o
+count                                             main.o
+data                                              main.o
+data_out                                          main.o
+exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+findBrightestPosition                             main.o
+last                                              main.o
+led0_Pin                                          ../../libraries/speedometer.o
+led0_Port                                         ../../libraries/speedometer.o
+led1_Pin                                          ../../libraries/speedometer.o
+led1_Port                                         ../../libraries/speedometer.o
+led2_Pin                                          ../../libraries/speedometer.o
+led2_Port                                         ../../libraries/speedometer.o
+led3_Pin                                          ../../libraries/speedometer.o
+led3_Port                                         ../../libraries/speedometer.o
+main                                              main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+maskedCopy                                        ../../libraries/util.o
+                                                  ../../libraries/motor_ctl.o
+motorA                                            ../../libraries/motor_ctl.o
+motorA_Forward                                    ../../libraries/motor_ctl.o
+motorA_Reverse                                    ../../libraries/motor_ctl.o
+motorA_Stop                                       ../../libraries/motor_ctl.o
+motorA_forwardPin                                 ../../libraries/motor_ctl.o
+motorA_forwardPort                                ../../libraries/motor_ctl.o
+motorA_reversePin                                 ../../libraries/motor_ctl.o
+motorA_reversePort                                ../../libraries/motor_ctl.o
+motorB                                            ../../libraries/motor_ctl.o
+                                                  main.o
+motorB_Forward                                    ../../libraries/motor_ctl.o
+                                                  ../../libraries/servo_ctl.o
+motorB_Reverse                                    ../../libraries/motor_ctl.o
+                                                  ../../libraries/servo_ctl.o
+motorB_Stop                                       ../../libraries/motor_ctl.o
+                                                  ../../libraries/servo_ctl.o
+                                                  main.o
+motorB_forwardPin                                 ../../libraries/motor_ctl.o
+motorB_forwardPort                                ../../libraries/motor_ctl.o
+motorB_reversePin                                 ../../libraries/motor_ctl.o
+motorB_reversePort                                ../../libraries/motor_ctl.o
+position                                          main.o
+setDutyCycleA                                     ../../libraries/motor_ctl.o
+setDutyCycleB                                     ../../libraries/motor_ctl.o
+setServoPosition                                  ../../libraries/servo_ctl.o
+                                                  main.o
+setupPWM                                          ../../libraries/motor_ctl.o
+                                                  main.o
+solar_reading                                     main.o
+speedometer                                       ../../libraries/speedometer.o
+updateSpeedometer                                 ../../libraries/speedometer.o

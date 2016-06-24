@@ -1,0 +1,9 @@
+vhdtdtfi -lang verilog -prj section5_v3 -o "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/Section3_Schematic.vhi" -lib work F:/Section3//Section3_Schematic.v -module Section3_Schematic -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj section5_v3 -o "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/Section3_Schematic.vhi" -lib work F:/Section3//Section3_Schematic.v -module Section3_Schematic -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj section5_v3 -o "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/Section3_Schematic.vhi" -lib work F:/Section3//Section3_Schematic.v -module Section3_Schematic -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+sch2vhdl -intstyle ise -family xc9500xl -tionly -w {Z:/Windows.Documents/My Documents/Sophomore/section3/section3_schematic.sch} section3_schematic.vhi 
+sch2hdl -intstyle ise -family xc9500xl -flat -suppress -vhdl section3_schematic.vhf -w {Z:/Windows.Documents/My Documents/Sophomore/section3/section3_schematic.sch} 
+sch2vhdl -intstyle ise -family xc9500xl -tionly -w {Z:/Windows.Documents/My Documents/Sophomore/section3/section3_schematic.sch} section3_schematic.vhi 
+sch2vhdl -intstyle ise -family xc9500xl -tionly -w {Z:/Windows.Documents/My Documents/Sophomore/section3/section3_schematic.sch} section3_schematic.vhi 
+sch2vhdl -intstyle ise -family xc9500xl -tionly -w {Z:/Windows.Documents/My Documents/Sophomore/section3/section3_schematic.sch} section3_schematic.vhi 
+sch2verilog -intstyle ise -family xc9500xl -tionly {} -tiext tfi -w {Z:/Windows.Documents/My Documents/Sophomore/section3/section3_schematic.sch} section3_schematic.tfi 

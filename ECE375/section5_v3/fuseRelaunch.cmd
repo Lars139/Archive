@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "uni9000_ver" -lib "aim_ver" -lib "cpld_ver" -lib "xilinxcorelib_ver" -o "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest_isim_beh.exe" -prj "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest_beh.prj" "work.VerilogTest" "work.glbl" 

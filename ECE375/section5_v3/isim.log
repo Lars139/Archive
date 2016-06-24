@@ -1,0 +1,22 @@
+ISim log file
+Running: Z:\Windows.Documents\My Documents\Sophomore\section5_v3\VerilogTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest_isim_beh.wdb 
+ISim P.15xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 38.  For instance uut/mux1/, width 4 of formal port Bi1 is not equal to width 1 of actual signal GND.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 34.  For instance uut/mux1/, width 4 of formal port Bi2 is not equal to width 1 of actual signal len.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 27.  For instance uut/mux1/, width 4 of formal port Q is not equal to width 1 of actual signal Le.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 25.  For instance uut/mux2/, width 4 of formal port Bi1 is not equal to width 1 of actual signal Al.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 35.  For instance uut/mux2/, width 4 of formal port Bi2 is not equal to width 1 of actual signal ldir.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 28.  For instance uut/mux2/, width 4 of formal port Q is not equal to width 1 of actual signal Ld.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 38.  For instance uut/mux3/, width 4 of formal port Bi1 is not equal to width 1 of actual signal GND.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 36.  For instance uut/mux3/, width 4 of formal port Bi2 is not equal to width 1 of actual signal ren.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 29.  For instance uut/mux3/, width 4 of formal port Q is not equal to width 1 of actual signal Re.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 26.  For instance uut/mux0/, width 4 of formal port Bi1 is not equal to width 1 of actual signal Ar.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 37.  For instance uut/mux0/, width 4 of formal port Bi2 is not equal to width 1 of actual signal rdir.
+WARNING: File "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 30.  For instance uut/mux0/, width 4 of formal port Q is not equal to width 1 of actual signal Rd.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

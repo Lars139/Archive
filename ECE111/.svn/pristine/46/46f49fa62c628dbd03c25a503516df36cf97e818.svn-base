@@ -1,0 +1,41 @@
+\hypertarget{struct_report_out}{\section{Report\-Out Struct Reference}
+\label{struct_report_out}\index{Report\-Out@{Report\-Out}}
+}
+
+
+{\ttfamily \#include $<$usb.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_report_out_a7e495799a2cbc227338692249bd7fb5f}{report\-I\-D}
+\item 
+unsigned char \hyperlink{struct_report_out_a80766537651200632fcc7a7f53ac3c37}{report\-Size}
+\item 
+unsigned char \hyperlink{struct_report_out_aafdebc7810beb564bfa15f331a8d4053}{command}
+\item 
+unsigned char \hyperlink{struct_report_out_a70c17b3d6112d466fd3a910b632f06ca}{data} \mbox{[}248\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Output Report Structure 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_report_out_aafdebc7810beb564bfa15f331a8d4053}{\index{Report\-Out@{Report\-Out}!command@{command}}
+\index{command@{command}!ReportOut@{Report\-Out}}
+\subsubsection[{command}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-Out\-::command}}\label{struct_report_out_aafdebc7810beb564bfa15f331a8d4053}
+The command to be sent \hypertarget{struct_report_out_a70c17b3d6112d466fd3a910b632f06ca}{\index{Report\-Out@{Report\-Out}!data@{data}}
+\index{data@{data}!ReportOut@{Report\-Out}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-Out\-::data\mbox{[}248\mbox{]}}}\label{struct_report_out_a70c17b3d6112d466fd3a910b632f06ca}
+The data out buffer \hypertarget{struct_report_out_a7e495799a2cbc227338692249bd7fb5f}{\index{Report\-Out@{Report\-Out}!report\-I\-D@{report\-I\-D}}
+\index{report\-I\-D@{report\-I\-D}!ReportOut@{Report\-Out}}
+\subsubsection[{report\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-Out\-::report\-I\-D}}\label{struct_report_out_a7e495799a2cbc227338692249bd7fb5f}
+The I\-D of the report \hypertarget{struct_report_out_a80766537651200632fcc7a7f53ac3c37}{\index{Report\-Out@{Report\-Out}!report\-Size@{report\-Size}}
+\index{report\-Size@{report\-Size}!ReportOut@{Report\-Out}}
+\subsubsection[{report\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-Out\-::report\-Size}}\label{struct_report_out_a80766537651200632fcc7a7f53ac3c37}
+The size of the report 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Robert/\-Documents/\-Porn/\-Summer 2012/\-E\-C\-E111/tiny26usb/\hyperlink{usb_8h}{usb.\-h}\end{DoxyCompactItemize}

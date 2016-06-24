@@ -1,0 +1,4 @@
+vhdl work "section3_schematic.vhf"
+verilog work "verilog_module_lab5.v"
+verilog work "VerilogTest.v"
+verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

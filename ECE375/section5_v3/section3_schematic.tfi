@@ -1,0 +1,15 @@
+// Verilog instantiation template created from schematic Z:\Windows.Documents\My Documents\Sophomore\section3\section3_schematic.sch - Thu May 09 13:10:31 2013
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   section3_schematic UUT (
+		.Re(    ), 
+		.Ld(    ), 
+		.Rd(    ), 
+		.Le(    ), 
+		.B(    ), 
+		.C(    ), 
+		.A(    )
+   );

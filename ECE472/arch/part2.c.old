@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include "part2.h"
+
+uint64_t get_CPU_UTC(){
+   uint32_t eax;
+   uint32_t edx;
+   __asm__ __volatile__("RDTSC;"
+	 :"=a"(eax), "=d"(edx)
+	 );
+   return ((uint64_t)eax) | ((uint64_t)edx << 32);
+}
+
+struct blob {
+   struct blob *next;
+   long padding[31]; 	//To make a blob size of 256 bytes
+};
+
+
+void part2(void){
+   uint64_t t_start;
+   uint64_t t_end;
+   uint64_t t_delta;
+   uint64_t blob_size;
+
+   printf("Blob size: %li bytes\n",blob_size = sizeof(struct blob));
+   t_start = get_CPU_UTC();
+   for(int i=0; i < 10 ;++i){
+
+   }
+   t_end = get_CPU_UTC();
+
+   t_delta = t_end - t_start;
+   printf("Part2: %li \n",t_delta);
+
+   
+   return ;
+}

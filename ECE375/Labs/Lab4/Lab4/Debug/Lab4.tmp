@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega128"</DEVICE>
+ <WORKING_DIR>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m128def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Debug/Lab4.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab4.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab4.map</FILE>
+  <FILE>Lab4.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>54</LINE></INIT>
+  <MAIN><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>69</LINE></MAIN>
+  <ADD16><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>139</LINE></ADD16>
+  <MUL24><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>189</LINE></MUL24>
+  <DONE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>124</LINE></DONE>
+  <MUL24_OLOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>217</LINE></MUL24_OLOOP>
+  <MUL24_ILOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>224</LINE></MUL24_ILOOP>
+  <MUL16><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>274</LINE></MUL16>
+  <MUL16_OLOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>302</LINE></MUL16_OLOOP>
+  <MUL16_ILOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>309</LINE></MUL16_ILOOP>
+  <FUNC><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab4\Lab4\Lab4.asm</FILE><LINE>353</LINE></FUNC>
+ </LABELS>
+</ASSEMBLER_INFO>

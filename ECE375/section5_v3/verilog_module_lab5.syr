@@ -1,0 +1,214 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: verilog_module_lab5.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "verilog_module_lab5.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "verilog_module_lab5"
+Output Format                      : NGC
+Target Device                      : XC9500XL CPLDs
+
+---- Source Options
+Top Module Name                    : verilog_module_lab5
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/section3_schematic.vhf" in Library work.
+Architecture behavioral of Entity section3_schematic is up to date.
+Compiling verilog file "verilog_module_lab5.v" in library work
+Module <verilog_module_lab5> compiled
+Module <Sc5> compiled
+No errors in compilation
+Analysis of file <"verilog_module_lab5.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <verilog_module_lab5> in library <work>.
+
+Analyzing hierarchy for entity <section3_schematic> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for module <Sc5> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <verilog_module_lab5>.
+Module <verilog_module_lab5> is correct for synthesis.
+ 
+Analyzing Entity <section3_schematic> in library <work> (Architecture <behavioral>).
+Entity <section3_schematic> analyzed. Unit <section3_schematic> generated.
+
+Analyzing module <Sc5> in library <work>.
+Module <Sc5> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Sc5>.
+    Related source file is "verilog_module_lab5.v".
+Unit <Sc5> synthesized.
+
+
+Synthesizing Unit <section3_schematic>.
+    Related source file is "//stak.engr.oregonstate.edu/students/g/galec/Windows.Documents/My Documents/Sophomore/section5_v3/section3_schematic.vhf".
+Unit <section3_schematic> synthesized.
+
+
+Synthesizing Unit <verilog_module_lab5>.
+    Related source file is "verilog_module_lab5.v".
+Unit <verilog_module_lab5> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <verilog_module_lab5> ...
+
+Optimizing unit <Sc5> ...
+
+Optimizing unit <section3_schematic> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : verilog_module_lab5.ngr
+Top Level Output File Name         : verilog_module_lab5
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500XL CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 19
+#      AND2                        : 9
+#      AND3                        : 1
+#      INV                         : 4
+#      OR2                         : 5
+# IO Buffers                       : 9
+#      IBUF                        : 5
+#      OBUF                        : 4
+# Others                           : 4
+#      AND2B1                      : 1
+#      AND2B2                      : 1
+#      AND3B2                      : 1
+#      AND3B3                      : 1
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.04 secs
+ 
+--> 
+
+Total memory usage is 218860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

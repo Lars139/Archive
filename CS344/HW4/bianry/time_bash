@@ -1,0 +1,10 @@
+#!/bin/bash
+x=1
+nt=10
+while [ $x -le 4 ]
+do
+	./sieve -q -t 1000 -n 100 -p $(($nt * $x)) --color=always | less -r
+	wait
+	x=$(($x+1))
+wait
+done

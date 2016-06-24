@@ -1,0 +1,49 @@
+\hypertarget{delay_8h}{\section{T\-:/students/phillir2/\-Tiny261/libraries/delay.h File Reference}
+\label{delay_8h}\index{T\-:/students/phillir2/\-Tiny261/libraries/delay.\-h@{T\-:/students/phillir2/\-Tiny261/libraries/delay.\-h}}
+}
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{delay_8h_aadc4540eac008b25ebb9ca83a91fe94d}{void {\bfseries delay} (int ms)}\label{delay_8h_aadc4540eac008b25ebb9ca83a91fe94d}
+
+\item 
+void \hyperlink{delay_8h_ad5ad2501028696cd90d32d1e0dfd5dac}{delay\-\_\-us} (long us)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joey Tomlinson 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+This library uses for loops to create long, blocking delays using \-\_\-delay\-\_\-us and \-\_\-delay\-\_\-us. This blocks all processor cycles during the delay. Consider using hardware timers for applications which need to use the processor during delays.
+
+For Example\-: \#define F\-\_\-\-C\-P\-U 1000000\-U\-L should be used if the system clock is set to 1000000\-U\-L\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: All Atmel A\-V\-R devices 
+
+\subsection{Function Documentation}
+\hypertarget{delay_8h_ad5ad2501028696cd90d32d1e0dfd5dac}{\index{delay.\-h@{delay.\-h}!delay\-\_\-us@{delay\-\_\-us}}
+\index{delay\-\_\-us@{delay\-\_\-us}!delay.h@{delay.\-h}}
+\subsubsection[{delay\-\_\-us}]{\setlength{\rightskip}{0pt plus 5cm}void delay\-\_\-us (
+\begin{DoxyParamCaption}
+\item[{long}]{us}
+\end{DoxyParamCaption}
+)}}\label{delay_8h_ad5ad2501028696cd90d32d1e0dfd5dac}
+Blocking delay. Works for simple applications but blocks all processor cycles during delay. Consider using hardware timers for more complex applications.
+
+The time argument of \-\_\-delay\-\_\-us() is limited to 255, so a for loop is used to repeat this delay function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em us} & number of microseconds to delay \\
+\hline
+\end{DoxyParams}

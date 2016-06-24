@@ -1,0 +1,260 @@
+\hypertarget{code_2main_8c}{\section{T\-:/students/phillir2/\-Tiny261/code/main.c File Reference}
+\label{code_2main_8c}\index{T\-:/students/phillir2/\-Tiny261/code/main.\-c@{T\-:/students/phillir2/\-Tiny261/code/main.\-c}}
+}
+
+
+This is file is the the main for section 3, the pencil resistor lab.  
+
+
+{\ttfamily \#include \char`\"{}sound.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}adc.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\-\_\-\-C\-P\-U}~1000000\-U\-L
+\begin{DoxyCompactList}\small\item\em The system clock frequency is defined as specified in the tiny26 datasheet. \end{DoxyCompactList}\item 
+\hypertarget{code_2main_8c_aa1ccb7d49214e628affd03e47718d877}{\#define {\bfseries M\-I\-C\-R\-O\-\_\-\-D\-E\-L\-A\-Y}~5}\label{code_2main_8c_aa1ccb7d49214e628affd03e47718d877}
+
+\item 
+\#define \hyperlink{code_2main_8c_a7c034962522e1f421dd8ca3ffe0ab154}{W\-H\-O\-L\-E}~(11719/\hyperlink{_lab_013_01_signals_01_systems_2code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}{tempo})
+\begin{DoxyCompactList}\small\item\em This is the number of clock cycles required to equal one whole note/rest for a given tempo. \end{DoxyCompactList}\item 
+\#define \hyperlink{code_2main_8c_a37c4c48ff47f0838f64b5a1fb3c803b2}{H\-A\-L\-F}~(23438/\hyperlink{_lab_013_01_signals_01_systems_2code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}{tempo})
+\begin{DoxyCompactList}\small\item\em This is the number of clock cycles required to equal one half note/rest for a given tempo. \end{DoxyCompactList}\item 
+\#define \hyperlink{code_2main_8c_a641d13af9fb651f951b55064ab61d5bd}{Q\-U\-A\-R\-T\-E\-R}~(11719/\hyperlink{_lab_013_01_signals_01_systems_2code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}{tempo})
+\begin{DoxyCompactList}\small\item\em This is the number of clock cycles required to equal one quarter note/rest for a given tempo. \end{DoxyCompactList}\item 
+\#define \hyperlink{code_2main_8c_a7b75b0b5f442398526030599aef15216}{E\-I\-G\-H\-T\-H}~(5859/\hyperlink{_lab_013_01_signals_01_systems_2code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}{tempo})
+\begin{DoxyCompactList}\small\item\em This is the number of clock cycles required to equal one eighth note/rest for a given tempo. \end{DoxyCompactList}\item 
+\hypertarget{code_2main_8c_adf9ed36b6fa813f76768b37e18929773}{\#define {\bfseries T\-O\-G\-G\-L\-E\-\_\-\-S\-P\-K\-R}()~P\-O\-R\-T\-B $^\wedge$= 0b01000000}\label{code_2main_8c_adf9ed36b6fa813f76768b37e18929773}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{code_2main_8c_aef5d97cb5f7cc2fddef2a6b7dbd1f859}{setup\-I\-O} (void)
+\begin{DoxyCompactList}\small\item\em Sets the data direction registers for the I\-O ports with an inital value. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{code_2main_8c_a6720da636ae40acc31cc47deaeb26695}{choose\-Frequency} (unsigned char adc\-Value)
+\begin{DoxyCompactList}\small\item\em Chooses a note in the c major scale based on A\-D\-C readings from the graphite strip on our piano. \end{DoxyCompactList}\item 
+\hypertarget{code_2main_8c_a75fd68fe129a64a54f4f8b3423d5d655}{void {\bfseries play\-Sequence} (unsigned char $\ast$, unsigned char)}\label{code_2main_8c_a75fd68fe129a64a54f4f8b3423d5d655}
+
+\item 
+\hypertarget{code_2main_8c_a8586eca4491ee8f7a01a344c7908b1d3}{void {\bfseries timing\-Delay} (unsigned char iterate)}\label{code_2main_8c_a8586eca4491ee8f7a01a344c7908b1d3}
+
+\item 
+\hyperlink{code_2main_8c_a68f9faef8625c9d36cbdc7df710b4463}{I\-S\-R} (T\-I\-M\-E\-R0\-\_\-\-O\-V\-F0\-\_\-vect)
+\begin{DoxyCompactList}\small\item\em This function controls what happens eacht time the timer/counter0 overflow vector is called. \end{DoxyCompactList}\item 
+\hyperlink{code_2main_8c_a497d0c60543359fa032d1775250688c1}{I\-S\-R} (T\-I\-M\-E\-R1\-\_\-\-C\-M\-P\-A\-\_\-vect)
+\begin{DoxyCompactList}\small\item\em This function controls what happens each time timer/counter1 has a compare match with O\-C\-R1\-A vector is called. \end{DoxyCompactList}\item 
+void \hyperlink{code_2main_8c_a4daeb026f7eea15ed53b4e71624bd6ab}{Quarter\-Note} (unsigned char note)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function plays a specified note for the duration of a quarter beat. \end{DoxyCompactList}\item 
+void \hyperlink{code_2main_8c_a2eb918b9eaacf11ca438aa7612e45a81}{Quarter\-Rest} (void)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function turns the speaker off for the duration of a quarter beat. \end{DoxyCompactList}\item 
+void \hyperlink{code_2main_8c_ac4c2280456dad886472bec44283fbb68}{Eighth\-Note} (unsigned char note)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function plays a specified note for the duration of an eighth beat. \end{DoxyCompactList}\item 
+void \hyperlink{code_2main_8c_afe74a1bc145456c941597ba9296651d4}{Eighth\-Rest} (void)
+\begin{DoxyCompactList}\small\item\em For the set tempo, this function turns the speaker off for the duration of a eighth beat. \end{DoxyCompactList}\item 
+\hypertarget{code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{int \hyperlink{code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)}\label{code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\begin{DoxyCompactList}\small\item\em This controls which functions are executed and in what order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}{unsigned int \hyperlink{code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}{tempo}}\label{code_2main_8c_a765b6830693553d7ff92f2c57bd217e9}
+
+\begin{DoxyCompactList}\small\item\em This variable sets the tempo for the Mario theme song in beats per minute. \end{DoxyCompactList}\item 
+\hypertarget{code_2main_8c_a00f1232bdfbcf571f247b7c1b1fb0b16}{volatile unsigned int \hyperlink{code_2main_8c_a00f1232bdfbcf571f247b7c1b1fb0b16}{timer\-Count} = 0}\label{code_2main_8c_a00f1232bdfbcf571f247b7c1b1fb0b16}
+
+\begin{DoxyCompactList}\small\item\em This variable is used when calculating the timing for the Mario theme song. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is file is the the main for section 3, the pencil resistor lab. \begin{DoxyAuthor}{Author}
+Scott Rosenbalm 
+
+Joey Tomlinson 
+
+David Overgaard 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\-0 
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L
+
+Small speaker connected between P\-B6 and G\-N\-D Graphite strip voltage devider connected to P\-B4 Active low switch input on P\-B5 used to play the Mario theme song\hypertarget{_lab_013_01_signals_01_systems_2code_2main_8c_DETAILS}{}\subsection{D\-E\-T\-A\-I\-L\-S}\label{_lab_013_01_signals_01_systems_2code_2main_8c_DETAILS}
+This program reads the resistance across a strip of graphite, and plays a tone on a speaker which depends on the resistance of the graphite. By moving a probe along the graphite strip, the resistance changes, which in turn changes the tone.
+
+\href{http://www.mariopiano.com/mario-sheet-music-overworld-main-theme.html}{\tt Mario main theme sheet music} 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{code_2main_8c_a7b75b0b5f442398526030599aef15216}{\index{code/main.\-c@{code/main.\-c}!E\-I\-G\-H\-T\-H@{E\-I\-G\-H\-T\-H}}
+\index{E\-I\-G\-H\-T\-H@{E\-I\-G\-H\-T\-H}!code/main.c@{code/main.\-c}}
+\subsubsection[{E\-I\-G\-H\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-I\-G\-H\-T\-H~(5859/{\bf tempo})}}\label{code_2main_8c_a7b75b0b5f442398526030599aef15216}
+
+
+This is the number of clock cycles required to equal one eighth note/rest for a given tempo. 
+
+The number is defined by calculating the number of cycles per second of T\-I\-M\-E\-R/\-C\-O\-U\-N\-T\-E\-R0 and then multiplying by the number of seconds per beat. \par
+  (60/(tempo$\ast$2))$\ast$(1000000/1024) \hypertarget{code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{\index{code/main.\-c@{code/main.\-c}!F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}}
+\index{F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}!code/main.c@{code/main.\-c}}
+\subsubsection[{F\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-\_\-\-C\-P\-U~1000000\-U\-L}}\label{code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}
+
+
+The system clock frequency is defined as specified in the tiny26 datasheet. 
+
+The default clock frequency for the tiny26 is 1\-M\-Hz. This define is used by the \-\_\-ms\-\_\-delay() function in \hyperlink{delay_8h}{delay.\-h} to introduce accurate delays. \hypertarget{code_2main_8c_a37c4c48ff47f0838f64b5a1fb3c803b2}{\index{code/main.\-c@{code/main.\-c}!H\-A\-L\-F@{H\-A\-L\-F}}
+\index{H\-A\-L\-F@{H\-A\-L\-F}!code/main.c@{code/main.\-c}}
+\subsubsection[{H\-A\-L\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-A\-L\-F~(23438/{\bf tempo})}}\label{code_2main_8c_a37c4c48ff47f0838f64b5a1fb3c803b2}
+
+
+This is the number of clock cycles required to equal one half note/rest for a given tempo. 
+
+The number is defined by calculating the number of cycles per second of T\-I\-M\-E\-R/\-C\-O\-U\-N\-T\-E\-R0 and then multiplying by the number of seconds per beat. \par
+  (60/(tempo/2))$\ast$(1000000/1024) \hypertarget{code_2main_8c_a641d13af9fb651f951b55064ab61d5bd}{\index{code/main.\-c@{code/main.\-c}!Q\-U\-A\-R\-T\-E\-R@{Q\-U\-A\-R\-T\-E\-R}}
+\index{Q\-U\-A\-R\-T\-E\-R@{Q\-U\-A\-R\-T\-E\-R}!code/main.c@{code/main.\-c}}
+\subsubsection[{Q\-U\-A\-R\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define Q\-U\-A\-R\-T\-E\-R~(11719/{\bf tempo})}}\label{code_2main_8c_a641d13af9fb651f951b55064ab61d5bd}
+
+
+This is the number of clock cycles required to equal one quarter note/rest for a given tempo. 
+
+The number is defined by calculating the number of cycles per second of T\-I\-M\-E\-R/\-C\-O\-U\-N\-T\-E\-R0 and then multiplying by the number of seconds per beat. \par
+  (60/tempo)$\ast$(1000000/1024) \hypertarget{code_2main_8c_a7c034962522e1f421dd8ca3ffe0ab154}{\index{code/main.\-c@{code/main.\-c}!W\-H\-O\-L\-E@{W\-H\-O\-L\-E}}
+\index{W\-H\-O\-L\-E@{W\-H\-O\-L\-E}!code/main.c@{code/main.\-c}}
+\subsubsection[{W\-H\-O\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-H\-O\-L\-E~(11719/{\bf tempo})}}\label{code_2main_8c_a7c034962522e1f421dd8ca3ffe0ab154}
+
+
+This is the number of clock cycles required to equal one whole note/rest for a given tempo. 
+
+The number is defined by calculating the number of cycles per second of T\-I\-M\-E\-R/\-C\-O\-U\-N\-T\-E\-R0 and then multiplying by the number of seconds per beat. \par
+  (60/(tempo/4))$\ast$(1000000/1024) 
+
+\subsection{Function Documentation}
+\hypertarget{code_2main_8c_a6720da636ae40acc31cc47deaeb26695}{\index{code/main.\-c@{code/main.\-c}!choose\-Frequency@{choose\-Frequency}}
+\index{choose\-Frequency@{choose\-Frequency}!code/main.c@{code/main.\-c}}
+\subsubsection[{choose\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char choose\-Frequency (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{adc\-Value}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_a6720da636ae40acc31cc47deaeb26695}
+
+
+Chooses a note in the c major scale based on A\-D\-C readings from the graphite strip on our piano. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char\-: A value between 0 and 255 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned char\-: The number of clock cycles before the speaker toggles to generate the corresponding wave freqeuncy
+\end{DoxyReturn}
+A small input value will output a higher note (smaller timer ticks, creating a higher frequency) when compared to a larger input value. \hypertarget{code_2main_8c_ac4c2280456dad886472bec44283fbb68}{\index{code/main.\-c@{code/main.\-c}!Eighth\-Note@{Eighth\-Note}}
+\index{Eighth\-Note@{Eighth\-Note}!code/main.c@{code/main.\-c}}
+\subsubsection[{Eighth\-Note}]{\setlength{\rightskip}{0pt plus 5cm}void Eighth\-Note (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{note}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_ac4c2280456dad886472bec44283fbb68}
+
+
+For the set tempo, this function plays a specified note for the duration of an eighth beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{code_2main_8c_afe74a1bc145456c941597ba9296651d4}{\index{code/main.\-c@{code/main.\-c}!Eighth\-Rest@{Eighth\-Rest}}
+\index{Eighth\-Rest@{Eighth\-Rest}!code/main.c@{code/main.\-c}}
+\subsubsection[{Eighth\-Rest}]{\setlength{\rightskip}{0pt plus 5cm}void Eighth\-Rest (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_afe74a1bc145456c941597ba9296651d4}
+
+
+For the set tempo, this function turns the speaker off for the duration of a eighth beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{code_2main_8c_a68f9faef8625c9d36cbdc7df710b4463}{\index{code/main.\-c@{code/main.\-c}!I\-S\-R@{I\-S\-R}}
+\index{I\-S\-R@{I\-S\-R}!code/main.c@{code/main.\-c}}
+\subsubsection[{I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{T\-I\-M\-E\-R0\-\_\-\-O\-V\-F0\-\_\-vect}]{}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_a68f9faef8625c9d36cbdc7df710b4463}
+
+
+This function controls what happens eacht time the timer/counter0 overflow vector is called. 
+
+This vector is used to control the timing of the notes and rests used in the Mario song demo. \hypertarget{code_2main_8c_a497d0c60543359fa032d1775250688c1}{\index{code/main.\-c@{code/main.\-c}!I\-S\-R@{I\-S\-R}}
+\index{I\-S\-R@{I\-S\-R}!code/main.c@{code/main.\-c}}
+\subsubsection[{I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{T\-I\-M\-E\-R1\-\_\-\-C\-M\-P\-A\-\_\-vect}]{}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_a497d0c60543359fa032d1775250688c1}
+
+
+This function controls what happens each time timer/counter1 has a compare match with O\-C\-R1\-A vector is called. 
+
+How often this vector is called is set by O\-C\-R1\-A, which is defined each time a new note is selected \hypertarget{code_2main_8c_a4daeb026f7eea15ed53b4e71624bd6ab}{\index{code/main.\-c@{code/main.\-c}!Quarter\-Note@{Quarter\-Note}}
+\index{Quarter\-Note@{Quarter\-Note}!code/main.c@{code/main.\-c}}
+\subsubsection[{Quarter\-Note}]{\setlength{\rightskip}{0pt plus 5cm}void Quarter\-Note (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{note}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_a4daeb026f7eea15ed53b4e71624bd6ab}
+
+
+For the set tempo, this function plays a specified note for the duration of a quarter beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{code_2main_8c_a2eb918b9eaacf11ca438aa7612e45a81}{\index{code/main.\-c@{code/main.\-c}!Quarter\-Rest@{Quarter\-Rest}}
+\index{Quarter\-Rest@{Quarter\-Rest}!code/main.c@{code/main.\-c}}
+\subsubsection[{Quarter\-Rest}]{\setlength{\rightskip}{0pt plus 5cm}void Quarter\-Rest (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_a2eb918b9eaacf11ca438aa7612e45a81}
+
+
+For the set tempo, this function turns the speaker off for the duration of a quarter beat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & char \-: Typically this parameter is one of the pre-\/defined notes found in \hyperlink{sound_8h}{sound.\-h} \\
+\hline
+\end{DoxyParams}
+\hypertarget{code_2main_8c_aef5d97cb5f7cc2fddef2a6b7dbd1f859}{\index{code/main.\-c@{code/main.\-c}!setup\-I\-O@{setup\-I\-O}}
+\index{setup\-I\-O@{setup\-I\-O}!code/main.c@{code/main.\-c}}
+\subsubsection[{setup\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}void setup\-I\-O (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{code_2main_8c_aef5d97cb5f7cc2fddef2a6b7dbd1f859}
+
+
+Sets the data direction registers for the I\-O ports with an inital value. 
+
+Sets data direction registers and initializes I\-O pins.
+
+This function runs once at the start of the program.
+
+Sets P\-A0 to input, and P\-A1-\/\-P\-A7 to output. Sets P\-B0-\/\-P\-B7 to output. Initializes P\-O\-R\-T\-A to 0. Initializes P\-O\-R\-T\-B to 0. 

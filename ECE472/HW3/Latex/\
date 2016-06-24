@@ -1,0 +1,147 @@
+\documentclass[letterpaper,10pt,titlepage,fleqn]{article}
+
+%example of setting the fleqn parameter to the article class -- the below sets the offset from flush left (fl)
+\setlength{\mathindent}{1cm}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+%the following sets the geometry of the page
+\usepackage{geometry}
+\geometry{textheight=9in, textwidth=6.5in}
+
+% random comment
+
+\newcommand{\cred}[1]{{\color{red}#1}}
+\newcommand{\cblue}[1]{{\color{blue}#1}}
+
+\usepackage{hyperref}
+
+\usepackage{textcomp}
+\usepackage{listings}
+
+\usepackage{tabularx}
+\def\name{Rattanai Sawaspanich}
+
+%% The following metadata will show up in the PDF properties
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {ECE472 Advance Computer Architecture},
+  pdftitle = {ECE472 Homework 1},
+  pdfsubject = {ECE472 Homework 1},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+\section*{ECE472 Advance Computer Architecture - Homework 3}
+Assignment 3
+
+Rattanai Sawaspanich
+\end{center}
+
+%\rule[0 in]{6.5 in}{0.01 in}
+
+\section*{For a 4KB page, and a 32 bit address space, calculate the amount of memory needed to store a process's page tables. Assume each entry in the page table requires 10 bytes. Show all calculations.}
+
+
+\section*{For a 4KB page, and a 64 bit address space, calculate the amount of memory needed to store a process's page tables. Assume each entry in the page table requires 10 bytes. Show all calculations.}
+
+
+\section*{For a 8KB page, and a 32 bit address space, calculate the amount of memory needed to store a process's page tables. Assume each entry in the page table requires 10 bytes. Show all calculations.}
+
+
+\section*{For a 8KB page, and a 64 bit address space, calculate the amount of memory needed to store a process's page tables. Assume each entry in the page table requires 10 bytes. Show all calculations.}
+
+
+\section*{Describe the concept of pipelining, and why it is useful.}
+
+
+\section*{Describe the IA-32e paging structure, in detail.}
+\subsection*{Overview}
+Accroding to Intel Architectures Developer's Manual, there are four levels of system data structures including 
+\textbf{the Page Map Level 4, A set of page direcotry pointer tables, Sets of page directories, Sets of Page tables.}
+\newline
+\begin{tabular}{l p{8cm}}
+   \textbf{The Page Map Level4 (PML4)} & An entry in PML4 contains a paddr of the base of a Page Directory Pointer Table. 
+   The base physical address of the PML4 is stored in CR3\\
+   \textbf{A set of Page Directory Pointer Table} & An entry in PDPT contains paddr point to base of Page Directory Table.\\
+   \textbf{Sets of Page Directories} & An entry in Page Directory table contains the physical address of the Page Table\\
+   \textbf{Sets of Page Table} & An entry in a Page Table contains the paddr of a Page (page frame). 
+\end{tabular}
+\newline
+\newline
+\textbf{NOTE: } The addressses in each data layer are 64 bits physical address value. In order for the system to be
+able to keep track of all the addresses, four system-descriptor registers are required: GDTR, IDTR, LDTR, and TR.  
+The registers are expanded in hardware to handle the 64 bit addressing.
+
+Furthermore, the paging system arhitecture also follows the Operating System Instruction, Performance-monitoring counter
+and Internal Caches and Buffers. The Performance-noitoring counter are event counters that counts processor event. 
+Generally, a processor has multiple internal caches and buffers. The caches are used to store both data and instructions. 
+The buffers are used to stored decoded addresses to the program segment and write operations waiting to be processed. 
+
+\subsection*{Memory Management Registers}
+GDTR, LDTR, IDTR, and TR are four system memory-management registers that contain physical addresses of the data
+structures which control segmented memory mamangement. The figure below shows the format of the register layout. 
+\newline
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{system_table_reg.eps}
+\end{center}
+
+\textbf{Global Descriptor Table Rekgister (GDTR)} \newline
+GDTR register contains base physical address (64 bits in IA-32e mode) and the 16-bits table limit (offset). 
+The physical address points to byte 0 of GDT and the table limit (an offset) specifies the number of byte in the table. 
+\newline
+\newline
+\textbf{Local Descriptor Table Register (LDTR)} \newline
+LDTR contains the 16-bit segment selector: base address, segment limit, and descriptor attributes for the LDT. 
+The base address specifies the linear address of byte 0 of LDT segment annd the segment limit specifies the number of byte 
+in thesegment. 
+\newline
+\newline
+\textbf{IDTR Interrupt Descriptor Table Register} \newline
+IDTR register contains base address and 16-bit table limit for the IDT. The base address specifies the linear address of
+byte 0 of the IDT and the table limit specifies the number of bytes in the table.
+\newline
+\newline
+\textbf{Task Register (TR)} \newline
+TR holds 16-bits segment selector, base address, segment limit, and descriptor attributes for the TSS of teh current task. 
+The selector references the TSS descriptor in the GDT. The base address specifies the address of byte 0 of the TSS and the
+segment limit specifies the number of bytes in the TSS. 
+\newline
+\newline
+\textbf{Note: }All the register listed above are reset (set to defualt value of 0) upon power up. 
+
+(Figure goes here)
+
+see P.2022, and Section 3.1
+\section*{What are some examples of pipeline hazards, and what are some ways of dealing with them?}
+
+
+\end{document}
+

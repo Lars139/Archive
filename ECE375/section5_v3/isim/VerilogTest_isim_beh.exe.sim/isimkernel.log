@@ -1,0 +1,28 @@
+Command line:
+   VerilogTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50167
+
+Thu May 09 13:49:50 2013
+
+
+ Elaboration Time: 0.109201 sec
+
+ Current Memory Usage: 827.052 Meg
+
+ Total Signals          : 128
+ Total Nets             : 105
+ Total Signal Drivers   : 36
+ Total Blocks           : 26
+ Total Primitive Blocks : 23
+ Total Processes        : 40
+ Total Traceable Variables  : 72
+ Total Scalar Nets and Variables : 1375
+
+ Total Simulation Time: 0.265201 sec
+
+ Current Memory Usage: 1143.2 Meg
+
+Thu May 09 13:50:41 2013
+

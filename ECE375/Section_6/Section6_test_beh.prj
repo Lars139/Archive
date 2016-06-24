@@ -1,0 +1,4 @@
+verilog work "clock_divider.v"
+verilog work "section_6_source.v"
+verilog work "Section6_test.v"
+verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

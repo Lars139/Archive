@@ -1,0 +1,175 @@
+\relax 
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Packages}{1}{section.1.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Namespace Documentation}{7}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}gui Namespace Reference}{7}{section.4.1}}
+\newlabel{namespacegui}{{4.1}{7}{gui Namespace Reference\relax }{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}launcher Namespace Reference}{7}{section.4.2}}
+\newlabel{namespacelauncher}{{4.2}{7}{launcher Namespace Reference\relax }{section.4.2}{}}
+\newlabel{namespacelauncher_ae89ee08b571448a6c7d24b325e6c4c15}{{4.2}{7}{Variables\relax }{section*.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{7}{subsection.4.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}tiny26 Namespace Reference}{8}{section.4.3}}
+\newlabel{namespacetiny26}{{4.3}{8}{tiny26 Namespace Reference\relax }{section.4.3}{}}
+\newlabel{namespacetiny26_a01d4b1912be2d083b56f6076ef877fa0}{{4.3}{8}{Variables\relax }{section*.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{8}{subsection.4.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Variable Documentation}{9}{subsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2.1}vid}{9}{subsubsection.4.3.2.1}}
+\newlabel{namespacetiny26_abc82c52a7ef052100f1d62dd9513dde2}{{4.3.2.1}{9}{vid\relax }{subsubsection.4.3.2.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Class Documentation}{11}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}gui.\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Launcher Class Reference}{11}{section.5.1}}
+\newlabel{classgui_1_1_g_u_i___launcher}{{5.1}{11}{gui.\-G\-U\-I\-\_\-\-Launcher Class Reference\relax }{section.5.1}{}}
+\newlabel{classgui_1_1_g_u_i___launcher_a7ea6192bf60d4c6ed780d05859ad3682}{{5.1}{11}{Public Member Functions\relax }{section*.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{11}{subsection.5.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}gui.\discretionary {-}{}{}Motor\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I Class Reference}{11}{section.5.2}}
+\newlabel{classgui_1_1_motor_g_u_i}{{5.2}{11}{gui.\-Motor\-G\-U\-I Class Reference\relax }{section.5.2}{}}
+\newlabel{classgui_1_1_motor_g_u_i_a6095ad89d64af1d0b609562c63f7dc44}{{5.2}{11}{Public Member Functions\relax }{section*.7}{}}
+\gdef \LT@i {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\newlabel{classgui_1_1_motor_g_u_i_a92a05554565e2d7939459090a17c50d6}{{5.2}{12}{Public Attributes\relax }{section*.8}{}}
+\newlabel{classgui_1_1_motor_g_u_i_af9222ac373f1bf876de393043a37a14c}{{5.2}{12}{Public Attributes\relax }{section*.8}{}}
+\newlabel{classgui_1_1_motor_g_u_i_a077928e387639fcff3f7ce1067090c78}{{5.2}{12}{Public Attributes\relax }{section*.8}{}}
+\newlabel{classgui_1_1_motor_g_u_i_ab7c6435d9f97f47d48dea18161533474}{{5.2}{12}{Public Attributes\relax }{section*.8}{}}
+\newlabel{classgui_1_1_motor_g_u_i_ad575070f85c5265bf2b2607aab5236fe}{{5.2}{12}{Public Attributes\relax }{section*.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{12}{subsection.5.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Member Function Documentation}{12}{subsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.1}On\discretionary {-}{}{}About\discretionary {-}{}{}Requested}{12}{subsubsection.5.2.2.1}}
+\newlabel{classgui_1_1_motor_g_u_i_af8d32eaef13c8826b0e07f7f4154ff10}{{5.2.2.1}{12}{On\-About\-Requested\relax }{subsubsection.5.2.2.1}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@iii {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@iv {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@v {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.2}On\discretionary {-}{}{}Button\discretionary {-}{}{}Pressed}{13}{subsubsection.5.2.2.2}}
+\newlabel{classgui_1_1_motor_g_u_i_a387eaf79ea5f14461681d85559c6cc0d}{{5.2.2.2}{13}{On\-Button\-Pressed\relax }{subsubsection.5.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.3}On\discretionary {-}{}{}Move\discretionary {-}{}{}Servo\discretionary {-}{}{}Request}{13}{subsubsection.5.2.2.3}}
+\newlabel{classgui_1_1_motor_g_u_i_a9a90f269ce5de4d5c2f234db8f984f02}{{5.2.2.3}{13}{On\-Move\-Servo\-Request\relax }{subsubsection.5.2.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.4}On\discretionary {-}{}{}Solar\discretionary {-}{}{}Max\discretionary {-}{}{}Request}{13}{subsubsection.5.2.2.4}}
+\newlabel{classgui_1_1_motor_g_u_i_ac294c32d1139676f6adf61ccfcfdf07b}{{5.2.2.4}{13}{On\-Solar\-Max\-Request\relax }{subsubsection.5.2.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.5}On\discretionary {-}{}{}Solar\discretionary {-}{}{}Measure\discretionary {-}{}{}Update}{13}{subsubsection.5.2.2.5}}
+\newlabel{classgui_1_1_motor_g_u_i_a65167987294a1780a28b483821334fda}{{5.2.2.5}{13}{On\-Solar\-Measure\-Update\relax }{subsubsection.5.2.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.6}On\discretionary {-}{}{}Window\discretionary {-}{}{}Closed}{13}{subsubsection.5.2.2.6}}
+\newlabel{classgui_1_1_motor_g_u_i_a00bd7d29278fdd47773be526bd020bb1}{{5.2.2.6}{13}{On\-Window\-Closed\relax }{subsubsection.5.2.2.6}{}}
+\gdef \LT@vi {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@vii {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.7}Start\discretionary {-}{}{}Update\discretionary {-}{}{}Thread}{14}{subsubsection.5.2.2.7}}
+\newlabel{classgui_1_1_motor_g_u_i_aa2d8e9800cfcf3bb0accbe3df3888216}{{5.2.2.7}{14}{Start\-Update\-Thread\relax }{subsubsection.5.2.2.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Member Data Documentation}{14}{subsection.5.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3.1}display}{14}{subsubsection.5.2.3.1}}
+\newlabel{classgui_1_1_motor_g_u_i_adcbde7aacf6312ceff8d675cc27b40fa}{{5.2.3.1}{14}{display\relax }{subsubsection.5.2.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3.2}gauge}{14}{subsubsection.5.2.3.2}}
+\newlabel{classgui_1_1_motor_g_u_i_ab0f241eaebfd0d70b12982ad52f8ea33}{{5.2.3.2}{14}{gauge\relax }{subsubsection.5.2.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3.3}move}{14}{subsubsection.5.2.3.3}}
+\newlabel{classgui_1_1_motor_g_u_i_a142d48a338fab59d090ceb50e9e01748}{{5.2.3.3}{14}{move\relax }{subsubsection.5.2.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3.4}position}{14}{subsubsection.5.2.3.4}}
+\newlabel{classgui_1_1_motor_g_u_i_acfe4b83245af20371a2c71e8997f8139}{{5.2.3.4}{14}{position\relax }{subsubsection.5.2.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}tiny26.\discretionary {-}{}{}Solar\discretionary {-}{}{}Event Class Reference}{14}{section.5.3}}
+\newlabel{classtiny26_1_1_solar_event}{{5.3}{14}{tiny26.\-Solar\-Event Class Reference\relax }{section.5.3}{}}
+\newlabel{classtiny26_1_1_solar_event_aeda315c23993c95cb7df7361f88ba4ec}{{5.3}{14}{Public Member Functions\relax }{section*.9}{}}
+\gdef \LT@viii {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{15}{subsection.5.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Member Function Documentation}{15}{subsection.5.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.1}Get\discretionary {-}{}{}Value}{15}{subsubsection.5.3.2.1}}
+\newlabel{classtiny26_1_1_solar_event_a0d404d7b007e93b998a57f1bad88dcac}{{5.3.2.1}{15}{Get\-Value\relax }{subsubsection.5.3.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}tiny26.\discretionary {-}{}{}Solar\discretionary {-}{}{}Tracking\discretionary {-}{}{}Thread Class Reference}{15}{section.5.4}}
+\newlabel{classtiny26_1_1_solar_tracking_thread}{{5.4}{15}{tiny26.\-Solar\-Tracking\-Thread Class Reference\relax }{section.5.4}{}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a4c08b8abae1040b50dcd96f8f2386e40}{{5.4}{15}{Public Member Functions\relax }{section*.10}{}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a4b7452fd152929e399adf0e263c6e472}{{5.4}{15}{Public Attributes\relax }{section*.11}{}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a806015811adc26b8af26f48ce2c1de78}{{5.4}{15}{Public Attributes\relax }{section*.11}{}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a96bd262571f5cefa8f5fcb05256745cb}{{5.4}{15}{Public Attributes\relax }{section*.11}{}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a03b6d1de5dd4ebf8d64450d248ad0fe9}{{5.4}{15}{Public Attributes\relax }{section*.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{15}{subsection.5.4.1}}
+\gdef \LT@ix {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@x {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Member Function Documentation}{16}{subsection.5.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.1}Quit\discretionary {-}{}{}Thread}{16}{subsubsection.5.4.2.1}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a068e98629f1f0a139914e4d7a41d134b}{{5.4.2.1}{16}{Quit\-Thread\relax }{subsubsection.5.4.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2.2}run}{16}{subsubsection.5.4.2.2}}
+\newlabel{classtiny26_1_1_solar_tracking_thread_a006529500ed94214eef1c856cc6cbc5b}{{5.4.2.2}{16}{run\relax }{subsubsection.5.4.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}tiny26.\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface Class Reference}{16}{section.5.5}}
+\newlabel{classtiny26_1_1_u_s_b___interface}{{5.5}{16}{tiny26.\-U\-S\-B\-\_\-\-Interface Class Reference\relax }{section.5.5}{}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a7f215a18e8b642c3fbdd85034341bfec}{{5.5}{16}{Public Member Functions\relax }{section*.12}{}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a52e6b805c40277c871717f365de8dd16}{{5.5}{16}{Public Attributes\relax }{section*.13}{}}
+\gdef \LT@xi {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@xii {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@xiii {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@xiv {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a2625b065c6150108c013f35773de24f2}{{5.5}{17}{Public Attributes\relax }{section*.13}{}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a41e15534c462ecca4c4df61572e4b9ee}{{5.5}{17}{Public Attributes\relax }{section*.13}{}}
+\newlabel{classtiny26_1_1_u_s_b___interface_ae04d38cc27318c29dd28bd3ee4c28e96}{{5.5}{17}{Public Attributes\relax }{section*.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{17}{subsection.5.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Member Function Documentation}{17}{subsection.5.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.1}Close\discretionary {-}{}{}Connection}{17}{subsubsection.5.5.2.1}}
+\newlabel{classtiny26_1_1_u_s_b___interface_af674dcd1942eb31f15280d41b5f0e4d3}{{5.5.2.1}{17}{Close\-Connection\relax }{subsubsection.5.5.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.2}Find\discretionary {-}{}{}Most\discretionary {-}{}{}Sun}{17}{subsubsection.5.5.2.2}}
+\newlabel{classtiny26_1_1_u_s_b___interface_aafc201d921ed8e71f6068f130e47b5e9}{{5.5.2.2}{17}{Find\-Most\-Sun\relax }{subsubsection.5.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.3}Is\discretionary {-}{}{}Connected}{17}{subsubsection.5.5.2.3}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a4253137584b496ee45353b5a3c061bfb}{{5.5.2.3}{17}{Is\-Connected\relax }{subsubsection.5.5.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.4}Measure\discretionary {-}{}{}Solar\discretionary {-}{}{}Panel}{17}{subsubsection.5.5.2.4}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a77bb39d15835e15e5ff0dcfc1de4bbda}{{5.5.2.4}{17}{Measure\-Solar\-Panel\relax }{subsubsection.5.5.2.4}{}}
+\gdef \LT@xv {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\gdef \LT@xvi {\LT@entry 
+    {1}{78.18367pt}\LT@entry 
+    {1}{380.5249pt}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.5}Set\discretionary {-}{}{}Solar\discretionary {-}{}{}Position}{18}{subsubsection.5.5.2.5}}
+\newlabel{classtiny26_1_1_u_s_b___interface_ad469c3dcb16971e83b5f6827999da033}{{5.5.2.5}{18}{Set\-Solar\-Position\relax }{subsubsection.5.5.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2.6}Show\discretionary {-}{}{}Error\discretionary {-}{}{}Msg}{18}{subsubsection.5.5.2.6}}
+\newlabel{classtiny26_1_1_u_s_b___interface_a2b0699d9fc55586245706cf07fb2361c}{{5.5.2.6}{18}{Show\-Error\-Msg\relax }{subsubsection.5.5.2.6}{}}
+\@writefile{toc}{\contentsline {part}{Index}{18}{table.5.16}}

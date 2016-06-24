@@ -1,0 +1,171 @@
+\hypertarget{sound_8c}{\section{T\-:/students/phillir2/\-Tiny261/libraries/sound.c File Reference}
+\label{sound_8c}\index{T\-:/students/phillir2/\-Tiny261/libraries/sound.\-c@{T\-:/students/phillir2/\-Tiny261/libraries/sound.\-c}}
+}
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}sound.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{sound_8c_a1475632608fbda7b36bb92aa08ec1717}{\#define {\bfseries S\-P\-K\-R\-\_\-\-L\-O\-W}()~$\ast$speaker\-Port \&= $\sim$(1 $<$$<$ speaker\-Pin)}\label{sound_8c_a1475632608fbda7b36bb92aa08ec1717}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sound_8c_a953501d1c175ff5bdd6ec7d02f76e81f}{setup\-Speaker} (unsigned char $\ast$spkr\-Port, unsigned char spkr\-Pin)
+\item 
+void \hyperlink{sound_8c_a657ae4c0cd323f6bb6f7e0364c964861}{set\-Frequency} (unsigned char frequency)
+\begin{DoxyCompactList}\small\item\em Sets the value to compare with timer/counter1. This sets the frequency generated on the square wave output for the speaker. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8c_a6db3401bf7e8dfba801a50364f8ff652}{speaker\-On} ()
+\begin{DoxyCompactList}\small\item\em Enables speaker output by enabling the compare match interrupt. \end{DoxyCompactList}\item 
+void \hyperlink{sound_8c_a30e99799331221be8119a5f006994b89}{disable\-Speaker} ()
+\begin{DoxyCompactList}\small\item\em Disables speaker output by disabling the compare match interrupt for timer/counter1. \end{DoxyCompactList}\item 
+\hypertarget{sound_8c_ad543f9307298e39f4d63b98a9bb0a4a0}{void {\bfseries Measure\-One} (void)}\label{sound_8c_ad543f9307298e39f4d63b98a9bb0a4a0}
+
+\item 
+\hypertarget{sound_8c_aee93b30ceec1a58df5faf4a10df9c574}{void {\bfseries Measure\-Two} (void)}\label{sound_8c_aee93b30ceec1a58df5faf4a10df9c574}
+
+\item 
+\hypertarget{sound_8c_ade7215e26d1bf79c9d1c7e6993bd4b93}{void {\bfseries Measure\-Three} (void)}\label{sound_8c_ade7215e26d1bf79c9d1c7e6993bd4b93}
+
+\item 
+\hypertarget{sound_8c_aa0ca09190611627997a58726144746d9}{void {\bfseries Measure\-Four} (void)}\label{sound_8c_aa0ca09190611627997a58726144746d9}
+
+\item 
+\hypertarget{sound_8c_a021d003115a3cb5303b38cb78da06137}{void {\bfseries Measure\-Five} (void)}\label{sound_8c_a021d003115a3cb5303b38cb78da06137}
+
+\item 
+\hypertarget{sound_8c_a3185e1b1547d4651a332416d3e8b9bb4}{void {\bfseries Measure\-Six} (void)}\label{sound_8c_a3185e1b1547d4651a332416d3e8b9bb4}
+
+\item 
+\hypertarget{sound_8c_ab90a1dd4bd49238f4120d562b39a6a2a}{void {\bfseries Measure\-Seven} (void)}\label{sound_8c_ab90a1dd4bd49238f4120d562b39a6a2a}
+
+\item 
+\hypertarget{sound_8c_ae9c59f6e32c873458088b30eaa4f1be1}{void {\bfseries Measure\-Eight} (void)}\label{sound_8c_ae9c59f6e32c873458088b30eaa4f1be1}
+
+\item 
+\hypertarget{sound_8c_abb2542d0c1cc680e42d05f28edaee788}{void {\bfseries Measure\-Nine} (void)}\label{sound_8c_abb2542d0c1cc680e42d05f28edaee788}
+
+\item 
+\hypertarget{sound_8c_a6ff5ffccdc4bdee8d617216a55e9279c}{void {\bfseries Measure\-Ten} (void)}\label{sound_8c_a6ff5ffccdc4bdee8d617216a55e9279c}
+
+\item 
+\hypertarget{sound_8c_a42ed4754bab7c8f40a5afc5287b69339}{void {\bfseries Measure\-Eleven} (void)}\label{sound_8c_a42ed4754bab7c8f40a5afc5287b69339}
+
+\item 
+\hypertarget{sound_8c_a0513b9184e565901df099454a8c5204b}{void {\bfseries Measure\-Twelve} (void)}\label{sound_8c_a0513b9184e565901df099454a8c5204b}
+
+\item 
+\hypertarget{sound_8c_a154315eb87e69563b1d4bf6a39deeed2}{void {\bfseries Measure\-Thirteen} (void)}\label{sound_8c_a154315eb87e69563b1d4bf6a39deeed2}
+
+\item 
+\hypertarget{sound_8c_a4a72fd9ceac99cff05b5d56e1571caaf}{void {\bfseries Measure\-Fourteen} (void)}\label{sound_8c_a4a72fd9ceac99cff05b5d56e1571caaf}
+
+\item 
+\hypertarget{sound_8c_aa5beff7a89fb6f25fd33ca087c681c42}{void {\bfseries Measure\-Fifteen} (void)}\label{sound_8c_aa5beff7a89fb6f25fd33ca087c681c42}
+
+\item 
+\hypertarget{sound_8c_aa50722ad1444c85b4976f69134c138da}{void {\bfseries Measure\-Sixteen} (void)}\label{sound_8c_aa50722ad1444c85b4976f69134c138da}
+
+\item 
+\hypertarget{sound_8c_a7b1f559c7529104f5d079b4f9bc55cb6}{void {\bfseries Measure\-Seventeen} (void)}\label{sound_8c_a7b1f559c7529104f5d079b4f9bc55cb6}
+
+\item 
+\hypertarget{sound_8c_a074b030806e006f10d8c54287e15d5db}{void {\bfseries Measure\-Eighteen} (void)}\label{sound_8c_a074b030806e006f10d8c54287e15d5db}
+
+\item 
+\hypertarget{sound_8c_a88fc66fb0d7c4b3da5f84737bf012164}{void {\bfseries Measure\-Nineteen} (void)}\label{sound_8c_a88fc66fb0d7c4b3da5f84737bf012164}
+
+\item 
+\hypertarget{sound_8c_a5c8ee3206d676c6fd530c55c78b15d13}{void {\bfseries Measure\-Twenty} (void)}\label{sound_8c_a5c8ee3206d676c6fd530c55c78b15d13}
+
+\item 
+\hypertarget{sound_8c_a65e4c59f814e63ace41ad44dc5f9dd63}{void {\bfseries Measure\-Twenty\-One} (void)}\label{sound_8c_a65e4c59f814e63ace41ad44dc5f9dd63}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{sound_8c_a1bf74284ae8a6ff277308e5c60e19ceb}{unsigned char $\ast$ {\bfseries speaker\-Port}}\label{sound_8c_a1bf74284ae8a6ff277308e5c60e19ceb}
+
+\item 
+\hypertarget{sound_8c_ae3e3a5a397bbe46bd59f38dbe97a8b31}{unsigned char {\bfseries speaker\-Pin}}\label{sound_8c_ae3e3a5a397bbe46bd59f38dbe97a8b31}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Scott Rosenbalm 
+
+Joey Tomlinson 
+
+David Overgaard 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+This library provides functionality for generating sound with the A\-T\-T\-I\-N\-Y26 microcontroller
+
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L
+
+Hardware Description\-: Small speaker connected between P\-B6 and G\-N\-D (speaker pin configurable with \#defines below) 
+
+\subsection{Function Documentation}
+\hypertarget{sound_8c_a30e99799331221be8119a5f006994b89}{\index{sound.\-c@{sound.\-c}!disable\-Speaker@{disable\-Speaker}}
+\index{disable\-Speaker@{disable\-Speaker}!sound.c@{sound.\-c}}
+\subsubsection[{disable\-Speaker}]{\setlength{\rightskip}{0pt plus 5cm}void disable\-Speaker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sound_8c_a30e99799331221be8119a5f006994b89}
+
+
+Disables speaker output by disabling the compare match interrupt for timer/counter1. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{sound_8c_a657ae4c0cd323f6bb6f7e0364c964861}{\index{sound.\-c@{sound.\-c}!set\-Frequency@{set\-Frequency}}
+\index{set\-Frequency@{set\-Frequency}!sound.c@{sound.\-c}}
+\subsubsection[{set\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Frequency (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{char}
+\end{DoxyParamCaption}
+)}}\label{sound_8c_a657ae4c0cd323f6bb6f7e0364c964861}
+
+
+Sets the value to compare with timer/counter1. This sets the frequency generated on the square wave output for the speaker. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{sound_8c_a953501d1c175ff5bdd6ec7d02f76e81f}{\index{sound.\-c@{sound.\-c}!setup\-Speaker@{setup\-Speaker}}
+\index{setup\-Speaker@{setup\-Speaker}!sound.c@{sound.\-c}}
+\subsubsection[{setup\-Speaker}]{\setlength{\rightskip}{0pt plus 5cm}void setup\-Speaker (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{spkr\-Port, }
+\item[{unsigned char}]{spkr\-Pin}
+\end{DoxyParamCaption}
+)}}\label{sound_8c_a953501d1c175ff5bdd6ec7d02f76e81f}
+Sets up T\-I\-M\-E\-R1 and S\-I\-G\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-C\-O\-M\-P\-A\-R\-E1\-A interrupt to use for speaker functionality. \hypertarget{sound_8c_a6db3401bf7e8dfba801a50364f8ff652}{\index{sound.\-c@{sound.\-c}!speaker\-On@{speaker\-On}}
+\index{speaker\-On@{speaker\-On}!sound.c@{sound.\-c}}
+\subsubsection[{speaker\-On}]{\setlength{\rightskip}{0pt plus 5cm}void speaker\-On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{sound_8c_a6db3401bf7e8dfba801a50364f8ff652}
+
+
+Enables speaker output by enabling the compare match interrupt. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

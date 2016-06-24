@@ -1,0 +1,90 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%opening
+\title{\LaTeX Example}
+\author{Rattanai Sawaspanich (Bear)}
+\date{\today}
+
+\begin{document}
+
+\section{Written Section}
+\begin{enumerate}
+%Question 1
+	\item Describe at least 2 ways of transferring file from a remote sever to a local machine.
+		\begin{enumerate}
+			\item \textbf{FTP} or \textbf{Internet File Transfer Program} is an internet standard file transfer protocol. The program let user transfer file between local and remote machine.
+				\\ 
+				\textbf{Synopsis}: ftp [-46pinegvd] [host [port]]
+			\item \textbf{SFTP} or \textbf{Safe File Transfer Program} is pretty much the same as FTP, except it operates on encrypted ssh transport. 
+				\\			
+				\textbf{Synopsis}: sftp [-1246Cpqrv] [user@] host[:file]
+		\end{enumerate}
+%Question 2
+	\item What are revision control systems? Why are they useful?\\ 
+		\\
+		 \textbf{RCS} or \textbf{VCS} or\textbf{Revision Control Systems} or \textbf{Vision Control} is a system that keep track of the changes that has done to a file. 
+		It allows you to revert files back to a previous version, review change made over time, see who last modified the file, etc..
+		There are many types of revision control system:
+		\begin{enumerate}
+			\item \textbf{Local Version Control} -- the VCS keeps the history of file changes in a simple database on the local computer.
+			\item \textbf{centralized Version Control} -- the VCS keeps the file changes in a central VCS, a sever, along with keeping track of who is checking out the file.
+			\item \textbf{Distributed Version Control} -- the clients doesn't check out only the lastest snapshot of teh file: they fully mirror the repository. Thus, if the server dies, any of the client repositories can be opied back up to the sever to restore it. 
+		\end{enumerate}
+
+%Question 3
+	\item What is the difference between redirecting and piping? Describe each.
+		\begin{itemize}
+			\item \textbf{Redirecting} is like changing the output file of a program to be the input of another program. (Program A creates a single output file, then Program B reads from it)
+			\item \textbf{Piping} is changing the output flow of a program to be the input of another program. So instead of the output of the first program being the input of the second program, you are going to have the data of the output flows into the input of the second program. (Program A writes to the Pipe, and Program B then reads from the Pipe)
+
+		\end{itemize}
+
+%Question 4
+	\item What is make, and how is it useful?
+		\\
+		\textit{make} is a unix command that will search the current working directory for \textit{makefile}, or \textit{Makefile} (in order) and goes through a descriptor file starting from \textbf{target}, looking for \textbf{dependencies}, and chain of dependencies until it reaches the end of the chain.
+\\
+\textbf{Synopsis}: make [-f makefile] [-bBdeiknpqrsSt] [macro name=value] [names]
+
+%Question 5
+	\item Describe, in detail, the syntax of a make file.
+	\\ 
+	\textbf{Syntax}: \textit{target: dependencies}\\
+	\lbrack tab\rbrack  system command
+	\begin{itemize}
+		\item \textbf{target} -  a set of instrunctions on how to generates a file. 
+		\item \textbf{dependencies} - a baby \textit{target}.
+			\\ Note it is very useful to use different targets because it allows you to compile a part that has been changed, rather than recompiling the whole program.
+		\item \textbf{variable} - it is a variable for system command. (Conventionally, variables are named in all caps)
+		\item \textbf{comment} - comment. Anything on the same line as \# is a comment and will not be execute once the make is called.	
+	\end{itemize}
+\textbf{Example}:\\
+\\CC=g++
+\\CFLAGS=-c -Wall
+\\all: prog
+\\
+\\prog: main.o file1.o file2.o
+\\
+\hspace{1in}\$(CC)  main.o file1.o file2.o -o prog
+\\
+\\file1.o: file1.cpp\\  \# this is a comment for this part in makefile \\
+\hspace{1in}\$(CC) \$(CFLAGS) file1.cpp
+\\
+\\file2.o: file2.cpp\\
+\hspace{1in}\$(CC) \$(CFLAGS) file2.cpp
+\\
+\\clean:
+\hspace{1in}rm -rf *o prog
+
+%Question 6
+\item Give a \textit{find} command that will run the \textit{file} command on every regular file (NO DIRECTORIES) within the current filesystem subtree.\\
+	From EXAMPLES section of \textit{man find}, I think the closest anwer is \\ \textit{find . -type f -exec file '\{\}' \ ; } 
+
+\end{enumerate}
+
+\end{document}

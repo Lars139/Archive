@@ -1,0 +1,78 @@
+\hypertarget{example_8c}{\section{T\-:/students/phillir2/\-Tiny261/example.c File Reference}
+\label{example_8c}\index{T\-:/students/phillir2/\-Tiny261/example.\-c@{T\-:/students/phillir2/\-Tiny261/example.\-c}}
+}
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{example_8c_a7af849b4c64649f54f17090a5d6f27b4}{\#define {\bfseries D\-E\-N\-S\-I\-T\-Y\-\_\-\-O\-F\-\_\-\-S\-A\-L\-T\-\_\-\-W\-A\-T\-E\-R}~1027.\-2f}\label{example_8c_a7af849b4c64649f54f17090a5d6f27b4}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{example_8c_aeb84927467858d9c3580f4b864548304}{mass\-Of\-Tank} (int length, int width, int height, float fluid\-\_\-density)
+\item 
+void \hyperlink{example_8c_afab212f5f5e2e1ffccfce834a79d12d8}{alarm} ()
+\item 
+int \hyperlink{example_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joey Tomlinson 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+Here you can specify a licence which governs the use of the software in this file.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Write a short description of your file here. In this case, this program serves as a simple example of an embedded microcontroller application which measures the height of salt water in a tank, calculates the mass of the tank, and activates an alarm if the mass excededs a certine threshold. 
+
+\subsection{Function Documentation}
+\hypertarget{example_8c_afab212f5f5e2e1ffccfce834a79d12d8}{\index{example.\-c@{example.\-c}!alarm@{alarm}}
+\index{alarm@{alarm}!example.c@{example.\-c}}
+\subsubsection[{alarm}]{\setlength{\rightskip}{0pt plus 5cm}void alarm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{example_8c_afab212f5f5e2e1ffccfce834a79d12d8}
+Blinks Lights Connected to P\-O\-R\-T\-B 10 times, signaling an alarm \hypertarget{example_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{example.\-c@{example.\-c}!main@{main}}
+\index{main@{main}!example.c@{example.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{example_8c_a840291bc02cba5474a4cb46a9b9566fe}
+Put a short description of the function here. In this case the main function is where your program starts execution.
+
+\begin{DoxyReturn}{Returns}
+Describe the return value of the function here. In this case, the main function returns an int variable type. This is a convention in the C language. When a C program is run under an opperating system, the return value is returned to the opperating system and is often used to report sucess or failure of the program. In embedded software such as that written for the A\-T\-T\-I\-N\-Y26 which you use in lab, the return value of main is usually ignored 
+\end{DoxyReturn}
+\hypertarget{example_8c_aeb84927467858d9c3580f4b864548304}{\index{example.\-c@{example.\-c}!mass\-Of\-Tank@{mass\-Of\-Tank}}
+\index{mass\-Of\-Tank@{mass\-Of\-Tank}!example.c@{example.\-c}}
+\subsubsection[{mass\-Of\-Tank}]{\setlength{\rightskip}{0pt plus 5cm}float mass\-Of\-Tank (
+\begin{DoxyParamCaption}
+\item[{int}]{length, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{float}]{fluid\-Density}
+\end{DoxyParamCaption}
+)}}\label{example_8c_aeb84927467858d9c3580f4b864548304}
+Calculates the mass of the tank of saltwater
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & length of the tank in meters \\
+\hline
+{\em width} & width of the tank in meters \\
+\hline
+{\em height} & height of the water in the tank in meters \\
+\hline
+{\em fluid\-\_\-density} & density of the water in the tank \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mass of the tank 
+\end{DoxyReturn}

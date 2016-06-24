@@ -1,0 +1,182 @@
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c}{\section{T\-:/students/phillir2/\-Tiny261/\-Lab 5 Robotics and Control/code/main.c File Reference}
+\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c}\index{T\-:/students/phillir2/\-Tiny261/\-Lab 5 Robotics and Control/code/main.\-c@{T\-:/students/phillir2/\-Tiny261/\-Lab 5 Robotics and Control/code/main.\-c}}
+}
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}motor\-\_\-ctl.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}adc.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\-\_\-\-C\-P\-U}~1000000\-U\-L
+\begin{DoxyCompactList}\small\item\em The system clock frequency is defined as specified in the tiny26 datasheet. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_ae19b6bb2940d2fbe0a79852b070eeafd}{\#define \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_ae19b6bb2940d2fbe0a79852b070eeafd}{S\-T\-O\-P}~0}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_ae19b6bb2940d2fbe0a79852b070eeafd}
+
+\begin{DoxyCompactList}\small\item\em Stopped motor state. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a437ef08681e7210d6678427030446a54}{\#define \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a437ef08681e7210d6678427030446a54}{L\-E\-F\-T}~1}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a437ef08681e7210d6678427030446a54}
+
+\begin{DoxyCompactList}\small\item\em Left turn motor state. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a80fb826a684cf3f0d306b22aa100ddac}{\#define \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a80fb826a684cf3f0d306b22aa100ddac}{R\-I\-G\-H\-T}~2}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a80fb826a684cf3f0d306b22aa100ddac}
+
+\begin{DoxyCompactList}\small\item\em Right turn motor state. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a51be37616c6810a74b93072b50be652c}{\#define \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a51be37616c6810a74b93072b50be652c}{D\-E\-S\-T\-I\-N\-A\-T\-I\-O\-N\-\_\-\-A\-D\-C}~0}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a51be37616c6810a74b93072b50be652c}
+
+\begin{DoxyCompactList}\small\item\em A\-D\-C channel 0 (P\-A0) \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a5b65fa1c6775dd8e763990b69194af39}{\#define \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a5b65fa1c6775dd8e763990b69194af39}{F\-E\-E\-D\-B\-A\-C\-K\-\_\-\-A\-D\-C}~5}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a5b65fa1c6775dd8e763990b69194af39}
+
+\begin{DoxyCompactList}\small\item\em A\-D\-C channel 5 (P\-A6) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_aaa232eb62234b188b9d8457582098e10}{set\-Dir} (unsigned char dir)
+\begin{DoxyCompactList}\small\item\em Changes pins A2 and A3 to outputs to control the direction of the motor rotation. \end{DoxyCompactList}\item 
+void \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a6d9bbe93a9ab9986153332039ed53d72}{calculate\-Error} (void)
+\begin{DoxyCompactList}\small\item\em Checks the A\-D\-C to determine the current position of the motor. \end{DoxyCompactList}\item 
+void \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_ac7d63d07fd4b6d1ed3c50becd2e43869}{update\-Motors} (void)
+\begin{DoxyCompactList}\small\item\em Checks the A\-D\-C to determine the current position of the motor. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a7dfd9b79bc5a37d7df40207afbc5431f}{void \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a7dfd9b79bc5a37d7df40207afbc5431f}{setup} (void)}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a7dfd9b79bc5a37d7df40207afbc5431f}
+
+\begin{DoxyCompactList}\small\item\em Sets up data direction registers, A\-D\-C and Timers. \end{DoxyCompactList}\item 
+void \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_adf8e10e60c620680f1a6c2d7ee84fca3}{Adjust\-Parameters} (void)
+\begin{DoxyCompactList}\small\item\em This function changes the control loop parameters based on the voltage of P\-A4. (This voltage is typically controlled by a potentiometer) \end{DoxyCompactList}\item 
+int \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main function. Program execution starts here. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a4ba89b91c2e6befe6e518b57dad23c48}{unsigned char \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a4ba89b91c2e6befe6e518b57dad23c48}{K\-P}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a4ba89b91c2e6befe6e518b57dad23c48}
+
+\begin{DoxyCompactList}\small\item\em Proportional gain constant. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a478684657f58a68ec36d96747826ac41}{unsigned int \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a478684657f58a68ec36d96747826ac41}{K\-D}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a478684657f58a68ec36d96747826ac41}
+
+\begin{DoxyCompactList}\small\item\em Derivitive gain constant. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a999b1efc80a41ffc96b63367dae4fab7}{unsigned char \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a999b1efc80a41ffc96b63367dae4fab7}{D\-E\-A\-D\-B\-A\-N\-D}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a999b1efc80a41ffc96b63367dae4fab7}
+
+\begin{DoxyCompactList}\small\item\em This determines how close to the desired location is 'close enough'. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a7116868e63c1a86ff0da9ca83819d85e}{unsigned char \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a7116868e63c1a86ff0da9ca83819d85e}{parameters}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a7116868e63c1a86ff0da9ca83819d85e}
+
+\begin{DoxyCompactList}\small\item\em This variable is changed depending on the voltage read at a potentiometer and tells the program to adjust K\-P, K\-D, and D\-E\-A\-D\-B\-A\-N\-D parameters. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_af173e2c1dec4bd9c17d5fe624a07ac8e}{unsigned char \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_af173e2c1dec4bd9c17d5fe624a07ac8e}{position}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_af173e2c1dec4bd9c17d5fe624a07ac8e}
+
+\begin{DoxyCompactList}\small\item\em Stores the current position of the motor shaft. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{unsigned char \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}
+
+\begin{DoxyCompactList}\small\item\em Stores the target position of the motor shaft (set by user.) \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a11614f44ef4d939bdd984953346a7572}{int \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a11614f44ef4d939bdd984953346a7572}{error}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a11614f44ef4d939bdd984953346a7572}
+
+\begin{DoxyCompactList}\small\item\em Stores the error between the current position and the destination. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_aa4eab0a1ec935e4bbdf16be9c7963f3c}{unsigned char \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_aa4eab0a1ec935e4bbdf16be9c7963f3c}{speed}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_aa4eab0a1ec935e4bbdf16be9c7963f3c}
+
+\begin{DoxyCompactList}\small\item\em Stores the motor speed setting. \end{DoxyCompactList}\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a08842ae44158f949903e01a641e9e61a}{int {\bfseries previous\-Error} = 0}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a08842ae44158f949903e01a641e9e61a}
+
+\item 
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a8cd7da66ddbbd7bb256a67dc9942907b}{int {\bfseries delta\-Error}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a8cd7da66ddbbd7bb256a67dc9942907b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Scott Rosenbalm 
+
+Joey Tomlinson 
+
+David Overgaard 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\-0
+\end{DoxyVersion}
+\begin{DoxyNote}{Note}
+Edited by Robert L. Phillips I\-I\-I
+\end{DoxyNote}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+This program implements a servo motor controller. It detects a motor's position using a potentiometer and uses a proportional-\/derivative control system to control the motor's speed in order to move the motor to its target position.\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y26\-L 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{\index{Lab 5 Robotics and Control/code/main.\-c@{Lab 5 Robotics and Control/code/main.\-c}!F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}}
+\index{F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}!Lab 5 Robotics and Control/code/main.c@{Lab 5 Robotics and Control/code/main.\-c}}
+\subsubsection[{F\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-\_\-\-C\-P\-U~1000000\-U\-L}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}
+
+
+The system clock frequency is defined as specified in the tiny26 datasheet. 
+
+The default clock frequency for the tiny26 is 1\-M\-Hz. This define is used by the \-\_\-ms\-\_\-delay() function in \hyperlink{delay_8h}{delay.\-h} to introduce accurate delays. 
+
+\subsection{Function Documentation}
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_adf8e10e60c620680f1a6c2d7ee84fca3}{\index{Lab 5 Robotics and Control/code/main.\-c@{Lab 5 Robotics and Control/code/main.\-c}!Adjust\-Parameters@{Adjust\-Parameters}}
+\index{Adjust\-Parameters@{Adjust\-Parameters}!Lab 5 Robotics and Control/code/main.c@{Lab 5 Robotics and Control/code/main.\-c}}
+\subsubsection[{Adjust\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void Adjust\-Parameters (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_adf8e10e60c620680f1a6c2d7ee84fca3}
+
+
+This function changes the control loop parameters based on the voltage of P\-A4. (This voltage is typically controlled by a potentiometer) 
+
+The values range from a high K\-P with low deadband, to a low K\-P with high deadband. \hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a6d9bbe93a9ab9986153332039ed53d72}{\index{Lab 5 Robotics and Control/code/main.\-c@{Lab 5 Robotics and Control/code/main.\-c}!calculate\-Error@{calculate\-Error}}
+\index{calculate\-Error@{calculate\-Error}!Lab 5 Robotics and Control/code/main.c@{Lab 5 Robotics and Control/code/main.\-c}}
+\subsubsection[{calculate\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void calculate\-Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a6d9bbe93a9ab9986153332039ed53d72}
+
+
+Checks the A\-D\-C to determine the current position of the motor. 
+
+Checks the input from the binary switch to determine the requested destination \hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{Lab 5 Robotics and Control/code/main.\-c@{Lab 5 Robotics and Control/code/main.\-c}!main@{main}}
+\index{main@{main}!Lab 5 Robotics and Control/code/main.c@{Lab 5 Robotics and Control/code/main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+
+Main function. Program execution starts here. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_aaa232eb62234b188b9d8457582098e10}{\index{Lab 5 Robotics and Control/code/main.\-c@{Lab 5 Robotics and Control/code/main.\-c}!set\-Dir@{set\-Dir}}
+\index{set\-Dir@{set\-Dir}!Lab 5 Robotics and Control/code/main.c@{Lab 5 Robotics and Control/code/main.\-c}}
+\subsubsection[{set\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Dir (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{dir}
+\end{DoxyParamCaption}
+)}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_aaa232eb62234b188b9d8457582098e10}
+
+
+Changes pins A2 and A3 to outputs to control the direction of the motor rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & Direction of motor motion \\
+\hline
+\end{DoxyParams}
+\hypertarget{_lab_015_01_robotics_01and_01_control_2code_2main_8c_ac7d63d07fd4b6d1ed3c50becd2e43869}{\index{Lab 5 Robotics and Control/code/main.\-c@{Lab 5 Robotics and Control/code/main.\-c}!update\-Motors@{update\-Motors}}
+\index{update\-Motors@{update\-Motors}!Lab 5 Robotics and Control/code/main.c@{Lab 5 Robotics and Control/code/main.\-c}}
+\subsubsection[{update\-Motors}]{\setlength{\rightskip}{0pt plus 5cm}void update\-Motors (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{_lab_015_01_robotics_01and_01_control_2code_2main_8c_ac7d63d07fd4b6d1ed3c50becd2e43869}
+
+
+Checks the A\-D\-C to determine the current position of the motor. 
+
+Checks the input from the binary switch to determine the requested destination 

@@ -1,0 +1,28 @@
+Command line:
+   section3_schematic_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50153
+
+Thu May 09 13:25:56 2013
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 827.048 Meg
+
+ Total Signals          : 80
+ Total Nets             : 41
+ Total Signal Drivers   : 13
+ Total Blocks           : 19
+ Total Primitive Blocks : 18
+ Total Processes        : 16
+ Total Traceable Variables  : 49
+ Total Scalar Nets and Variables : 1226
+
+ Total Simulation Time: 0.0468 sec
+
+ Current Memory Usage: 827.048 Meg
+
+Thu May 09 13:26:00 2013
+

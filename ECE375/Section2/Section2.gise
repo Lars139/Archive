@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Section2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Section2_Schematic.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Section2_Schematic.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="Section2_Schematic.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="Section2_Schematic.jed"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="Section2_Schematic.jhd"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="Section2_Schematic.lfp"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Section2_Schematic.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="Section2_Schematic.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="Section2_Schematic.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Section2_Schematic.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Section2_Schematic.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Section2_Schematic.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Section2_Schematic.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="Section2_Schematic.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Section2_Schematic.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Section2_Schematic.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Section2_Schematic.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Section2_Schematic.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Section2_Schematic.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Section2_Schematic.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="Section2_Schematic.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Section2_Schematic.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Section2_Schematic.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Section2_Schematic.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Section2_Schematic_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Section2_Schematic_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Section2_Schematic_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Section2_Schematic_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Section2_Schematic_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Section2_Schematic_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Section2_Schematic_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1365639704" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1365639704">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1365639706" xil_pn:in_ck="1647701389689756355" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2642187983949697421" xil_pn:start_ts="1365639704">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Section2_Schematic.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1365639713" xil_pn:in_ck="1647701389689759785" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-1911346350449959532" xil_pn:start_ts="1365639706">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Section2_Schematic.jhd"/>
+      <outfile xil_pn:name="Section2_Schematic.lso"/>
+      <outfile xil_pn:name="Section2_Schematic.ngc"/>
+      <outfile xil_pn:name="Section2_Schematic.ngr"/>
+      <outfile xil_pn:name="Section2_Schematic.prj"/>
+      <outfile xil_pn:name="Section2_Schematic.stx"/>
+      <outfile xil_pn:name="Section2_Schematic.syr"/>
+      <outfile xil_pn:name="Section2_Schematic.xst"/>
+      <outfile xil_pn:name="Section2_Schematic_vhdl.prj"/>
+      <outfile xil_pn:name="Section2_Schematic_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1365641002" xil_pn:in_ck="1647701389689758531" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8801758316064396423" xil_pn:start_ts="1365641002">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1365641006" xil_pn:in_ck="1396471308762991872" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-736101761533034375" xil_pn:start_ts="1365641002">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Section2_Schematic.bld"/>
+      <outfile xil_pn:name="Section2_Schematic.ngd"/>
+      <outfile xil_pn:name="Section2_Schematic_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1365641132" xil_pn:in_ck="1647701389689751038" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-8196391501340251619" xil_pn:start_ts="1365641126">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Section2_Schematic.gyd"/>
+      <outfile xil_pn:name="Section2_Schematic.mfd"/>
+      <outfile xil_pn:name="Section2_Schematic.nga"/>
+      <outfile xil_pn:name="Section2_Schematic.pad"/>
+      <outfile xil_pn:name="Section2_Schematic.pnx"/>
+      <outfile xil_pn:name="Section2_Schematic.rpt"/>
+      <outfile xil_pn:name="Section2_Schematic.tim"/>
+      <outfile xil_pn:name="Section2_Schematic.tspec"/>
+      <outfile xil_pn:name="Section2_Schematic.vm6"/>
+      <outfile xil_pn:name="Section2_Schematic.xml"/>
+      <outfile xil_pn:name="Section2_Schematic_build.xml"/>
+      <outfile xil_pn:name="Section2_Schematic_html"/>
+      <outfile xil_pn:name="Section2_Schematic_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1365641134" xil_pn:in_ck="1647701389689759902" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1365641132">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Section2_Schematic.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1365641141" xil_pn:in_ck="1647701389689746616" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-4971510443586489938" xil_pn:start_ts="1365641136">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1365639729" xil_pn:in_ck="1647701389689759902" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1365639727">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

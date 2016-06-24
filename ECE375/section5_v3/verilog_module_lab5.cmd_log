@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-10 "verilog_module_lab5.ngc" verilog_module_lab5.ngd  
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-10 "verilog_module_lab5.ngc" verilog_module_lab5.ngd  
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-10 "verilog_module_lab5.ngc" verilog_module_lab5.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper verilog_module_lab5.ngd 
+XSLTProcess verilog_module_lab5_build.xml 
+tsim -intstyle ise verilog_module_lab5 verilog_module_lab5.nga 
+taengine -intstyle ise -f verilog_module_lab5 -w --format html1 -l verilog_module_lab5_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n verilog_module_lab5 -i verilog_module_lab5 
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-10 "verilog_module_lab5.ngc" verilog_module_lab5.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper verilog_module_lab5.ngd 
+XSLTProcess verilog_module_lab5_build.xml 
+tsim -intstyle ise verilog_module_lab5 verilog_module_lab5.nga 
+taengine -intstyle ise -f verilog_module_lab5 -w --format html1 -l verilog_module_lab5_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n verilog_module_lab5 -i verilog_module_lab5 

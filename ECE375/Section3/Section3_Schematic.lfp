@@ -1,0 +1,5 @@
+# begin LFP file Z:\Section3\Section3_Schematic.lfp
+designfile Section3_Schematic.v
+parttype xc9572xl-vq44-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

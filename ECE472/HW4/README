@@ -1,0 +1,15 @@
+PART2:
+By obeserving multiple execution of the code, it is very noticable the spike
+in latency around 32KB and between 4MB-8MB (specifically around 6MB). The
+latency on those spots are roughly greater than 50% of the previous allocated
+memory. This occurance indicates that on Flip server
+    L1 cache has a size of 32KB
+    L2 cache has a size of ~6MB
+Once the data size exceed the 6MB threshold, the process has to fetch the new
+information from  the memory
+
+PART3 & 4:
+printf("__BIG_ENDIAN__") and printf("__LITTLE_ENDIAN__")
+in macro/det_endiness() are intentinoally swapped. Not sure why
+the program executes __BIG_ENDIAN__ when it's little endian on Flip
+

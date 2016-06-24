@@ -1,0 +1,36 @@
+\hypertarget{struct_report_in}{\section{Report\-In Struct Reference}
+\label{struct_report_in}\index{Report\-In@{Report\-In}}
+}
+
+
+{\ttfamily \#include $<$usb.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_report_in_a5ac6450eb2bdc09493c844d52f00c8b9}{report\-I\-D}
+\item 
+unsigned char \hyperlink{struct_report_in_af74d0d71e8e8c003bc294fb81231133c}{report\-Size}
+\item 
+unsigned char \hyperlink{struct_report_in_aa433aa75905cee70155a03b77e99445b}{data} \mbox{[}249\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Input Report Structure 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_report_in_aa433aa75905cee70155a03b77e99445b}{\index{Report\-In@{Report\-In}!data@{data}}
+\index{data@{data}!ReportIn@{Report\-In}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-In\-::data\mbox{[}249\mbox{]}}}\label{struct_report_in_aa433aa75905cee70155a03b77e99445b}
+The data in buffer \hypertarget{struct_report_in_a5ac6450eb2bdc09493c844d52f00c8b9}{\index{Report\-In@{Report\-In}!report\-I\-D@{report\-I\-D}}
+\index{report\-I\-D@{report\-I\-D}!ReportIn@{Report\-In}}
+\subsubsection[{report\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-In\-::report\-I\-D}}\label{struct_report_in_a5ac6450eb2bdc09493c844d52f00c8b9}
+The I\-D of the report \hypertarget{struct_report_in_af74d0d71e8e8c003bc294fb81231133c}{\index{Report\-In@{Report\-In}!report\-Size@{report\-Size}}
+\index{report\-Size@{report\-Size}!ReportIn@{Report\-In}}
+\subsubsection[{report\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Report\-In\-::report\-Size}}\label{struct_report_in_af74d0d71e8e8c003bc294fb81231133c}
+The size of the report 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Robert/\-Documents/\-Porn/\-Summer 2012/\-E\-C\-E111/tiny26usb/\hyperlink{usb_8h}{usb.\-h}\end{DoxyCompactItemize}

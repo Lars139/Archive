@@ -1,0 +1,84 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.52</VERSION>
+ <DEVICE>"ATmega128"</DEVICE>
+ <WORKING_DIR>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1117\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1117\avrassembler\Include\m128def.inc</FILE>
+  <FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Debug/Lab3_test.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab3_test.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab3_test.map</FILE>
+  <FILE>Lab3_test.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>83</LINE></INIT>
+  <TIM0_OVF><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>233</LINE></TIM0_OVF>
+  <LCDInit><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>75</LINE></LCDInit>
+  <TXT0><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>279</LINE></TXT0>
+  <INIT_LINE1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>120</LINE></INIT_LINE1>
+  <LCDWrLn1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>180</LINE></LCDWrLn1>
+  <MAIN><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>133</LINE></MAIN>
+  <SWITCH><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>135</LINE></SWITCH>
+  <S_1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>136</LINE></S_1>
+  <S_2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>143</LINE></S_2>
+  <TXT1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>281</LINE></TXT1>
+  <WriteText><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>203</LINE></WriteText>
+  <S_3><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>150</LINE></S_3>
+  <TXT2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>283</LINE></TXT2>
+  <S_4><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>157</LINE></S_4>
+  <TXT3><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>285</LINE></TXT3>
+  <S_5><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>164</LINE></S_5>
+  <TXT4><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>287</LINE></TXT4>
+  <S_6><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>171</LINE></S_6>
+  <TXT5><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>289</LINE></TXT5>
+  <S_7><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>178</LINE></S_7>
+  <TXT6><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>291</LINE></TXT6>
+  <S_8><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>185</LINE></S_8>
+  <TXT7><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>293</LINE></TXT7>
+  <NEXT><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>189</LINE></NEXT>
+  <LCDClrLn2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>265</LINE></LCDClrLn2>
+  <WriteText_lp><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>213</LINE></WriteText_lp>
+  <LCDWrLn2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>205</LINE></LCDWrLn2>
+  <TIM0_OVF_DONE><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>270</LINE></TIM0_OVF_DONE>
+  <T0_L1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>246</LINE></T0_L1>
+  <Bin2ASCII><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>339</LINE></Bin2ASCII>
+  <T0_L2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\Lab3_test.asm</FILE><LINE>262</LINE></T0_L2>
+  <LCDWriteByte><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>302</LINE></LCDWriteByte>
+  <LCDINIT_L1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>139</LINE></LCDINIT_L1>
+  <LCDWait><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>492</LINE></LCDWait>
+  <LCDWriteCmd><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>436</LINE></LCDWriteCmd>
+  <LCDClr><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>230</LINE></LCDClr>
+  <LCDWrite><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>170</LINE></LCDWrite>
+  <LCDSetLine><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>388</LINE></LCDSetLine>
+  <LCDWriteLine><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>423</LINE></LCDWriteLine>
+  <LCDClrLn1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>240</LINE></LCDClrLn1>
+  <LCDClrLine><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>404</LINE></LCDClrLine>
+  <LCDWriteByte_3><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>323</LINE></LCDWriteByte_3>
+  <LCDWriteByte_1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>313</LINE></LCDWriteByte_1>
+  <LCDWriteByte_2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>318</LINE></LCDWriteByte_2>
+  <LCDWriteChar><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>457</LINE></LCDWriteChar>
+  <B2A_1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>352</LINE></B2A_1>
+  <B2A_3><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>360</LINE></B2A_3>
+  <B2A_2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>357</LINE></B2A_2>
+  <div10><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>515</LINE></div10>
+  <LCDClrLine_1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>407</LINE></LCDClrLine_1>
+  <LCDWriteLine_1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>425</LINE></LCDWriteLine_1>
+  <LCDWriteData><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>472</LINE></LCDWriteData>
+  <LCDWC_L1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>443</LINE></LCDWC_L1>
+  <LCDW_L1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>493</LINE></LCDW_L1>
+  <LCDW_L2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>494</LINE></LCDW_L2>
+  <div10_1><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>554</LINE></div10_1>
+  <div10_2><FILE>Z:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab3_test\Lab3_test\LCDDriver.asm</FILE><LINE>560</LINE></div10_2>
+ </LABELS>
+</ASSEMBLER_INFO>

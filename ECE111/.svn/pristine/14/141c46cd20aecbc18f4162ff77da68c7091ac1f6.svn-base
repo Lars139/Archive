@@ -1,0 +1,166 @@
+\hypertarget{servo__ctl_8h}{\section{T\-:/students/phillir2/\-Tiny261/libraries/servo\-\_\-ctl.h File Reference}
+\label{servo__ctl_8h}\index{T\-:/students/phillir2/\-Tiny261/libraries/servo\-\_\-ctl.\-h@{T\-:/students/phillir2/\-Tiny261/libraries/servo\-\_\-ctl.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{servo__ctl_8h_a996f7be338ccb40d1a2a5abc1ad61759}{A\-B\-S}(x)~((x $<$ 0) ? -\/x \-: x)
+\item 
+\#define \hyperlink{servo__ctl_8h_a44b4de4784f751e71fad94edd351ff41}{L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D}~0
+\item 
+\#define \hyperlink{servo__ctl_8h_a2d37d1eb5ea11e4dbc41c369421c2e45}{U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D}~255
+\item 
+\#define \hyperlink{servo__ctl_8h_a6ddfdda7a062d10cff4a72b76b44aeb8}{F\-O\-R\-W\-A\-R\-D}~1
+\item 
+\#define \hyperlink{servo__ctl_8h_a00548cec6d104932bf79a65bac1c47e8}{R\-E\-V\-E\-R\-S\-E}~0
+\item 
+\#define \hyperlink{servo__ctl_8h_ae19b6bb2940d2fbe0a79852b070eeafd}{S\-T\-O\-P}~0
+\item 
+\#define \hyperlink{servo__ctl_8h_a8a460b6555077a64fc97f2e7ef47b843}{C\-C\-W}~1
+\item 
+\#define \hyperlink{servo__ctl_8h_abe61b07c31c2a3e90576eb4c5d95b024}{C\-W}~2
+\item 
+\#define \hyperlink{servo__ctl_8h_ae2af80213d699a79be05671a827beaed}{S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D}~50
+\item 
+\#define \hyperlink{servo__ctl_8h_a196c194bd32527a119ac607d3b2330b6}{D\-E\-A\-D\-B\-A\-N\-D}~15
+\item 
+\#define \hyperlink{servo__ctl_8h_a02a2dcde419161a54d0c8c994e2424cc}{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T}~1000
+\item 
+\#define \hyperlink{servo__ctl_8h_a5cd2c638c2d03f35a615a209652b60ce}{P\-O\-T\-\_\-\-A\-D\-C}~5
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{servo__ctl_8h_a5d3830fc0d077d49df335a50a6d7f3f9}{Set\-Motor\-Direction} (int dir)
+\item 
+int \hyperlink{servo__ctl_8h_a0a696ea38f1e98715d125a2bf9629ecb}{Servo\-Error} (uint8\-\_\-t \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination})
+\item 
+void \hyperlink{servo__ctl_8h_a0727842682167a853fc9357fb8764e52}{Update\-Servo} (uint8\-\_\-t \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination})
+\item 
+void \hyperlink{servo__ctl_8h_a7017cb34a52a8b8b85d7f3457e0a8e9e}{set\-Servo\-Position} (uint8\-\_\-t \hyperlink{_lab_015_01_robotics_01and_01_control_2code_2main_8c_a44ea92fed619b05c3559615594534cab}{destination}, uint16\-\_\-t seek\-Time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Robert L. Phillips I\-I\-I 
+
+Scott Rosenbalm 
+
+Joey Tomlinson 
+
+Dan Albert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Last updated 8/24/12 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-2
+\end{DoxyVersion}
+\hypertarget{util_8c_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{util_8c_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, M\-A 02110-\/1301, U\-S\-A.\hypertarget{types_8h_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{types_8h_DESCRIPTION}
+Includes functions for sending and receiving data to and from the computer and moving the motor accordingly\hypertarget{stepper_8c_HARDWARE}{}\subsection{H\-A\-R\-D\-W\-A\-R\-E}\label{stepper_8c_HARDWARE}
+Target Device\-: A\-T\-T\-I\-N\-Y261 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{servo__ctl_8h_a996f7be338ccb40d1a2a5abc1ad61759}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!A\-B\-S@{A\-B\-S}}
+\index{A\-B\-S@{A\-B\-S}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{A\-B\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-B\-S(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~((x $<$ 0) ? -\/x \-: x)}}\label{servo__ctl_8h_a996f7be338ccb40d1a2a5abc1ad61759}
+Calculates the absolute value of the given number \hypertarget{servo__ctl_8h_a8a460b6555077a64fc97f2e7ef47b843}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!C\-C\-W@{C\-C\-W}}
+\index{C\-C\-W@{C\-C\-W}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{C\-C\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-C\-W~1}}\label{servo__ctl_8h_a8a460b6555077a64fc97f2e7ef47b843}
+The motor counter-\/clockwise motion command \hypertarget{servo__ctl_8h_abe61b07c31c2a3e90576eb4c5d95b024}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!C\-W@{C\-W}}
+\index{C\-W@{C\-W}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{C\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-W~2}}\label{servo__ctl_8h_abe61b07c31c2a3e90576eb4c5d95b024}
+The motor clockwise motion command \hypertarget{servo__ctl_8h_a196c194bd32527a119ac607d3b2330b6}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!D\-E\-A\-D\-B\-A\-N\-D@{D\-E\-A\-D\-B\-A\-N\-D}}
+\index{D\-E\-A\-D\-B\-A\-N\-D@{D\-E\-A\-D\-B\-A\-N\-D}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{D\-E\-A\-D\-B\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-A\-D\-B\-A\-N\-D~15}}\label{servo__ctl_8h_a196c194bd32527a119ac607d3b2330b6}
+The max error for the motor position that is considered acceptable \hypertarget{servo__ctl_8h_a6ddfdda7a062d10cff4a72b76b44aeb8}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!F\-O\-R\-W\-A\-R\-D@{F\-O\-R\-W\-A\-R\-D}}
+\index{F\-O\-R\-W\-A\-R\-D@{F\-O\-R\-W\-A\-R\-D}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{F\-O\-R\-W\-A\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-O\-R\-W\-A\-R\-D~1}}\label{servo__ctl_8h_a6ddfdda7a062d10cff4a72b76b44aeb8}
+The motor forward direction \hypertarget{servo__ctl_8h_a44b4de4784f751e71fad94edd351ff41}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D@{L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D}}
+\index{L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D@{L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-W\-E\-R\-\_\-\-B\-O\-U\-N\-D~0}}\label{servo__ctl_8h_a44b4de4784f751e71fad94edd351ff41}
+Lower bound for the motor position when the Tiny looks for the position where the solar panel receives the most light \hypertarget{servo__ctl_8h_a5cd2c638c2d03f35a615a209652b60ce}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!P\-O\-T\-\_\-\-A\-D\-C@{P\-O\-T\-\_\-\-A\-D\-C}}
+\index{P\-O\-T\-\_\-\-A\-D\-C@{P\-O\-T\-\_\-\-A\-D\-C}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{P\-O\-T\-\_\-\-A\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-O\-T\-\_\-\-A\-D\-C~5}}\label{servo__ctl_8h_a5cd2c638c2d03f35a615a209652b60ce}
+The potentiometer A\-D\-C channel \hypertarget{servo__ctl_8h_a00548cec6d104932bf79a65bac1c47e8}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!R\-E\-V\-E\-R\-S\-E@{R\-E\-V\-E\-R\-S\-E}}
+\index{R\-E\-V\-E\-R\-S\-E@{R\-E\-V\-E\-R\-S\-E}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{R\-E\-V\-E\-R\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-V\-E\-R\-S\-E~0}}\label{servo__ctl_8h_a00548cec6d104932bf79a65bac1c47e8}
+The motor reverse direction \hypertarget{servo__ctl_8h_a02a2dcde419161a54d0c8c994e2424cc}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T@{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T}}
+\index{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T@{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-R\-V\-O\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N\-\_\-\-T\-I\-M\-E\-O\-U\-T~1000}}\label{servo__ctl_8h_a02a2dcde419161a54d0c8c994e2424cc}
+The time the motor is allowed to correct its position before it stops \hypertarget{servo__ctl_8h_ae2af80213d699a79be05671a827beaed}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D@{S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D}}
+\index{S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D@{S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-R\-V\-O\-\_\-\-S\-P\-E\-E\-D~50}}\label{servo__ctl_8h_ae2af80213d699a79be05671a827beaed}
+The default duty cycle for the P\-W\-M on P\-B5, which determines the motor speed \hypertarget{servo__ctl_8h_ae19b6bb2940d2fbe0a79852b070eeafd}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!S\-T\-O\-P@{S\-T\-O\-P}}
+\index{S\-T\-O\-P@{S\-T\-O\-P}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{S\-T\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-O\-P~0}}\label{servo__ctl_8h_ae19b6bb2940d2fbe0a79852b070eeafd}
+The motor stop moving command \hypertarget{servo__ctl_8h_a2d37d1eb5ea11e4dbc41c369421c2e45}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D@{U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D}}
+\index{U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D@{U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-P\-P\-E\-R\-\_\-\-B\-O\-U\-N\-D~255}}\label{servo__ctl_8h_a2d37d1eb5ea11e4dbc41c369421c2e45}
+Upper bound for the motor position when the Tiny looks for the position where the solar panel receives the most light 
+
+\subsection{Function Documentation}
+\hypertarget{servo__ctl_8h_a0a696ea38f1e98715d125a2bf9629ecb}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!Servo\-Error@{Servo\-Error}}
+\index{Servo\-Error@{Servo\-Error}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{Servo\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int Servo\-Error (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{destination}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8h_a0a696ea38f1e98715d125a2bf9629ecb}
+Checks the current position of the servo and calculates the error from its destination. 
+\begin{DoxyParams}{Parameters}
+{\em destination} & The destination of the servo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error between the servo's current position and its destination. 
+\end{DoxyReturn}
+\hypertarget{servo__ctl_8h_a5d3830fc0d077d49df335a50a6d7f3f9}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!Set\-Motor\-Direction@{Set\-Motor\-Direction}}
+\index{Set\-Motor\-Direction@{Set\-Motor\-Direction}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{Set\-Motor\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Motor\-Direction (
+\begin{DoxyParamCaption}
+\item[{int}]{dir}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8h_a5d3830fc0d077d49df335a50a6d7f3f9}
+Changes the direction of the servo motor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & Direction of motor motion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{servo__ctl_8h_a7017cb34a52a8b8b85d7f3457e0a8e9e}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!set\-Servo\-Position@{set\-Servo\-Position}}
+\index{set\-Servo\-Position@{set\-Servo\-Position}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{set\-Servo\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Servo\-Position (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{destination, }
+\item[{uint16\-\_\-t}]{seek\-Time}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8h_a7017cb34a52a8b8b85d7f3457e0a8e9e}
+Moves the servo to the desired position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & The position that the servo should move to. \\
+\hline
+{\em seek\-Time} & The time that the servo spends locking on to its destination in milliseconds (roughly). \\
+\hline
+\end{DoxyParams}
+\hypertarget{servo__ctl_8h_a0727842682167a853fc9357fb8764e52}{\index{servo\-\_\-ctl.\-h@{servo\-\_\-ctl.\-h}!Update\-Servo@{Update\-Servo}}
+\index{Update\-Servo@{Update\-Servo}!servo_ctl.h@{servo\-\_\-ctl.\-h}}
+\subsubsection[{Update\-Servo}]{\setlength{\rightskip}{0pt plus 5cm}void Update\-Servo (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{destination}
+\end{DoxyParamCaption}
+)}}\label{servo__ctl_8h_a0727842682167a853fc9357fb8764e52}
+Updates the servo to turn clockwise or counter-\/clockwise to reach its destination. 

@@ -1,0 +1,5 @@
+# begin LFP file Z:\Windows.Documents\My Documents\Sophomore\Section2\Section2_Schematic.lfp
+designfile Section2_Schematic.vhd
+parttype xc9572xl-vq44-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

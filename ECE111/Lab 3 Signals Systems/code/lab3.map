@@ -1,0 +1,567 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+                              main.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+speakerPort         0x2               ../../libraries/sound.o
+tempo               0x2               main.o
+speakerPin          0x1               ../../libraries/sound.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+LOAD main.o
+LOAD ../../libraries/adc.o
+LOAD ../../libraries/util.o
+LOAD ../../libraries/sound.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x6d2
+ *(.vectors)
+ .vectors       0x00000000       0x26 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000026                . = ALIGN (0x2)
+                0x00000026                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000026        0x0 linker stubs
+ *(.trampolines*)
+                0x00000026                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000026                __ctors_start = .
+ *(.ctors)
+                0x00000026                __ctors_end = .
+                0x00000026                __dtors_start = .
+ *(.dtors)
+                0x00000026                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000026        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+                0x00000026                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000026        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000002e       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x0000002e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000003e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ *(.init9)
+ *(.text)
+ .text          0x00000042        0x2 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+                0x00000042                __vector_1
+                0x00000042                __vector_12
+                0x00000042                __bad_interrupt
+                0x00000042                __vector_11
+                0x00000042                __vector_13
+                0x00000042                __vector_17
+                0x00000042                __vector_7
+                0x00000042                __vector_5
+                0x00000042                __vector_4
+                0x00000042                __vector_9
+                0x00000042                __vector_2
+                0x00000042                __vector_15
+                0x00000042                __vector_8
+                0x00000042                __vector_14
+                0x00000042                __vector_10
+                0x00000042                __vector_16
+                0x00000042                __vector_18
+ .text          0x00000044      0x288 main.o
+                0x000000ac                chooseFrequency
+                0x0000009c                setupIO
+                0x00000128                EighthNote
+                0x00000044                __vector_6
+                0x00000076                __vector_3
+                0x000001ae                main
+                0x00000180                QuarterNote
+                0x00000156                QuarterRest
+                0x000000fe                EighthRest
+ .text          0x000002cc      0x144 ../../libraries/adc.o
+                0x0000032e                ADCDisable
+                0x00000326                ADCDisableInterrupt
+                0x000003d6                ReadPreciseADCAveraged
+                0x0000034c                SetupADC
+                0x00000322                ADCEnableInterrupt
+                0x00000336                ADCFinish
+                0x0000037c                ReadADCAveraged
+                0x0000032a                ADCEnable
+                0x000002cc                ADCSetChannel
+                0x0000033a                ADCDone
+                0x00000360                ReadADC
+                0x000002f8                ADCSetFreeRunning
+                0x000002dc                ADCSetAdjust
+                0x000003b6                ReadPreciseADC
+                0x000002e8                ADCSetPrescaler
+                0x0000030a                ADCSetReference
+                0x00000332                ADCStart
+ .text          0x00000410       0x12 ../../libraries/util.o
+                0x00000410                maskedCopy
+ .text          0x00000422      0x284 ../../libraries/sound.o
+                0x0000061c                MeasureSix
+                0x000005d2                MeasureTen
+                0x000005a8                MeasureThirteen
+                0x00000454                disableSpeaker
+                0x0000049a                MeasureSeventeen
+                0x0000044c                speakerOn
+                0x00000566                MeasureTwenty
+                0x000004b8                MeasureFifteen
+                0x00000634                MeasureThree
+                0x00000602                MeasureSeven
+                0x000004f2                MeasureEight
+                0x0000054a                MeasureOne
+                0x00000422                setupSpeaker
+                0x00000582                MeasureSixteen
+                0x00000532                MeasureFour
+                0x00000510                MeasureFive
+                0x0000065a                MeasureTwentyOne
+                0x000004d4                MeasureTwelve
+                0x0000059a                MeasureFourteen
+                0x00000578                MeasureEighteen
+                0x000005e8                MeasureNine
+                0x00000448                setFrequency
+                0x000005b8                MeasureEleven
+                0x00000648                MeasureTwo
+                0x0000047e                MeasureNineteen
+ .text          0x000006a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+ .text          0x000006a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .text          0x000006a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x000006a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000006a6       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+                0x000006a6                __udivmodhi4
+ .text.libgcc   0x000006ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x000006ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                0x000006ce                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000006ce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                0x000006ce                exit
+                0x000006ce                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000006ce        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000006d2                _etext = .
+
+.data           0x00800060        0x0 load address 0x000006d2
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ .data          0x00800060        0x0 main.o
+ .data          0x00800060        0x0 ../../libraries/adc.o
+ .data          0x00800060        0x0 ../../libraries/util.o
+ .data          0x00800060        0x0 ../../libraries/sound.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x7
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+ .bss           0x00800060        0x2 main.o
+                0x00800060                timerCount
+ .bss           0x00800062        0x0 ../../libraries/adc.o
+ .bss           0x00800062        0x0 ../../libraries/util.o
+ .bss           0x00800062        0x0 ../../libraries/sound.o
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+ .bss           0x00800062        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800062        0x2 main.o
+                0x00800062                tempo
+ COMMON         0x00800064        0x3 ../../libraries/sound.o
+                0x00800064                speakerPort
+                0x00800066                speakerPin
+                0x00800067                PROVIDE (__bss_end, .)
+                0x000006d2                __data_load_start = LOADADDR (.data)
+                0x000006d2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800067        0x0
+                0x00800067                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800067                PROVIDE (__noinit_end, .)
+                0x00800067                _end = .
+                0x00800067                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 ../../libraries/adc.o
+ .debug_aranges
+                0x00000040       0x20 ../../libraries/util.o
+ .debug_aranges
+                0x00000060       0x20 ../../libraries/sound.o
+
+.debug_pubnames
+                0x00000000      0x3fb
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xb0 main.o
+ .debug_pubnames
+                0x000000b0      0x141 ../../libraries/adc.o
+ .debug_pubnames
+                0x000001f1       0x21 ../../libraries/util.o
+ .debug_pubnames
+                0x00000212      0x1e9 ../../libraries/sound.o
+
+.debug_info     0x00000000      0x936
+ *(.debug_info)
+ .debug_info    0x00000000      0x19b main.o
+ .debug_info    0x0000019b      0x42e ../../libraries/adc.o
+ .debug_info    0x000005c9       0xb6 ../../libraries/util.o
+ .debug_info    0x0000067f      0x2b7 ../../libraries/sound.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x362
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xdc main.o
+ .debug_abbrev  0x000000dc      0x175 ../../libraries/adc.o
+ .debug_abbrev  0x00000251       0x6a ../../libraries/util.o
+ .debug_abbrev  0x000002bb       0xa7 ../../libraries/sound.o
+
+.debug_line     0x00000000      0xf0a
+ *(.debug_line)
+ .debug_line    0x00000000      0x3f1 main.o
+ .debug_line    0x000003f1      0x31c ../../libraries/adc.o
+ .debug_line    0x0000070d       0x78 ../../libraries/util.o
+ .debug_line    0x00000785      0x785 ../../libraries/sound.o
+
+.debug_frame    0x00000000      0x380
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa0 main.o
+ .debug_frame   0x000000a0      0x120 ../../libraries/adc.o
+ .debug_frame   0x000001c0       0x20 ../../libraries/util.o
+ .debug_frame   0x000001e0      0x1a0 ../../libraries/sound.o
+
+.debug_str      0x00000000      0x421
+ *(.debug_str)
+ .debug_str     0x00000000       0xeb main.o
+                                0x11f (size before relaxing)
+ .debug_str     0x000000eb      0x165 ../../libraries/adc.o
+                                0x1fd (size before relaxing)
+ .debug_str     0x00000250       0x33 ../../libraries/util.o
+                                 0xd0 (size before relaxing)
+ .debug_str     0x00000283      0x19e ../../libraries/sound.o
+                                0x236 (size before relaxing)
+
+.debug_loc      0x00000000      0x1e9
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x5a main.o
+ .debug_loc     0x0000005a      0x171 ../../libraries/adc.o
+ .debug_loc     0x000001cb       0x1e ../../libraries/util.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(lab3.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+ADCDisable                                        ../../libraries/adc.o
+ADCDisableInterrupt                               ../../libraries/adc.o
+ADCDone                                           ../../libraries/adc.o
+ADCEnable                                         ../../libraries/adc.o
+ADCEnableInterrupt                                ../../libraries/adc.o
+ADCFinish                                         ../../libraries/adc.o
+ADCSetAdjust                                      ../../libraries/adc.o
+ADCSetChannel                                     ../../libraries/adc.o
+ADCSetFreeRunning                                 ../../libraries/adc.o
+ADCSetPrescaler                                   ../../libraries/adc.o
+ADCSetReference                                   ../../libraries/adc.o
+ADCStart                                          ../../libraries/adc.o
+EighthNote                                        main.o
+                                                  ../../libraries/sound.o
+EighthRest                                        main.o
+                                                  ../../libraries/sound.o
+MeasureEight                                      ../../libraries/sound.o
+MeasureEighteen                                   ../../libraries/sound.o
+MeasureEleven                                     ../../libraries/sound.o
+MeasureFifteen                                    ../../libraries/sound.o
+MeasureFive                                       ../../libraries/sound.o
+MeasureFour                                       ../../libraries/sound.o
+MeasureFourteen                                   ../../libraries/sound.o
+MeasureNine                                       ../../libraries/sound.o
+MeasureNineteen                                   ../../libraries/sound.o
+MeasureOne                                        ../../libraries/sound.o
+MeasureSeven                                      ../../libraries/sound.o
+MeasureSeventeen                                  ../../libraries/sound.o
+MeasureSix                                        ../../libraries/sound.o
+MeasureSixteen                                    ../../libraries/sound.o
+MeasureTen                                        ../../libraries/sound.o
+MeasureThirteen                                   ../../libraries/sound.o
+MeasureThree                                      ../../libraries/sound.o
+MeasureTwelve                                     ../../libraries/sound.o
+MeasureTwenty                                     ../../libraries/sound.o
+MeasureTwentyOne                                  ../../libraries/sound.o
+MeasureTwo                                        ../../libraries/sound.o
+QuarterNote                                       main.o
+                                                  ../../libraries/sound.o
+QuarterRest                                       main.o
+                                                  ../../libraries/sound.o
+ReadADC                                           ../../libraries/adc.o
+ReadADCAveraged                                   ../../libraries/adc.o
+ReadPreciseADC                                    ../../libraries/adc.o
+ReadPreciseADCAveraged                            ../../libraries/adc.o
+SetupADC                                          ../../libraries/adc.o
+__bad_interrupt                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__bss_end                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+__do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
+                                                  ../../libraries/sound.o
+                                                  main.o
+__heap_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__init                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__stack                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__udivmodhi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_udivmodhi4.o)
+                                                  ../../libraries/adc.o
+                                                  main.o
+__vector_1                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_10                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_11                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_12                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_13                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_14                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_15                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_16                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_17                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_18                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_3                                        main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_4                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_5                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_6                                        main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_7                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_8                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_9                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+__vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+_exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+chooseFrequency                                   main.o
+disableSpeaker                                    ../../libraries/sound.o
+                                                  main.o
+exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+main                                              main.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn261.o
+maskedCopy                                        ../../libraries/util.o
+setFrequency                                      ../../libraries/sound.o
+                                                  main.o
+setupIO                                           main.o
+setupSpeaker                                      ../../libraries/sound.o
+                                                  main.o
+speakerOn                                         ../../libraries/sound.o
+                                                  main.o
+speakerPin                                        ../../libraries/sound.o
+speakerPort                                       ../../libraries/sound.o
+tempo                                             main.o
+timerCount                                        main.o

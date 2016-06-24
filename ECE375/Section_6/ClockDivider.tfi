@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+ClockDivider instance_name (
+    .Clock(Clock), 
+    .Reset(Reset), 
+    .Clock_2(Clock_2), 
+    .Clock_4(Clock_4), 
+    .Clock_8(Clock_8), 
+    .Clock_16(Clock_16), 
+    .Clock_32(Clock_32), 
+    .Clock_64(Clock_64), 
+    .Clock_128(Clock_128), 
+    .Clock_256(Clock_256), 
+    .Clock_512(Clock_512), 
+    .Clock_1024(Clock_1024)
+    );
+
+

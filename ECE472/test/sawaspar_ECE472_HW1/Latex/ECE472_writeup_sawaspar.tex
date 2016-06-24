@@ -1,0 +1,120 @@
+\documentclass[letterpaper,10pt,titlepage,fleqn]{article}
+
+%example of setting the fleqn parameter to the article class -- the below sets the offset from flush left (fl)
+\setlength{\mathindent}{1cm}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{alltt}
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+%the following sets the geometry of the page
+\usepackage{geometry}
+\geometry{textheight=9in, textwidth=6.5in}
+
+% random comment
+
+\newcommand{\cred}[1]{{\color{red}#1}}
+\newcommand{\cblue}[1]{{\color{blue}#1}}
+
+\usepackage{hyperref}
+
+\usepackage{textcomp}
+\usepackage{listings}
+
+\def\name{Rattanai Sawaspanich}
+
+%% The following metadata will show up in the PDF properties
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {ECE472 Advance Computer Architecture},
+  pdftitle = {ECE472 Homework 1},
+  pdfsubject = {ECE472 Homework 1},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.2 in
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+\section*{ECE472 Advance Computer Architecture - Homework 1}
+Write-up
+
+Rattanai Sawaspanich
+\end{center}
+
+%\rule[0 in]{6.5 in}{0.01 in}
+
+\section*{Describe the difference between architecture and organization.}
+
+A computer \textbf{architecture} is typically put more empahsis on software aspect of a computer; it is defined by the assembly instruction set that a CPU can support. 
+While an \textbf{organization} focuses more on hardware aspect and is defined by how transistors, registers, memory, are laid out physically.
+
+\section*{Describe the concept of endianness. What common platforms use what endianness?}
+
+The concept of endianness is used to describe how each byte in a word is enumerated. 
+\textbf{Big endian} is a bit-oriented byte ordering that puts the most significant byte (the highest byte value) in the right-most byte position of a word and the lowest byte value in the left-most byte position. The Big Endian is a byte oriented because the bytes in a word is numbered in order. 
+\textbf{Little endian} is a byte-oriented byte ordering that puts the least significant byte (the lowest byte value) in the right-most bit position of a word and the highest byte value in the left-most byte position. The Little Endian enriches the bit-orientation because all the bits in a word is in a decending order.
+\newline 32 bits architecture: \newline
+\begin{tabular} {l c  c  c  c}
+   Big   Endian:   & 07|00    &  15|08    & 23|16    & 31|24\\ 
+   Bit             & [7 ... 0]&  [7 ... 0]& [7 ... 0]& [7 ... 0]\\ 
+   Small Endian:   & 31|24    &  23|16    & 15|08    &  07|00 \\
+\end{tabular}
+\newline
+Note: x86 and ARM architecture use little endian format.
+
+\section*{Give the IEEE 754 floating point format for both single and double precision.}
+
+\begin{center}
+   $ Float Number = (-1)^{SignBit} * (1 + Fraction) * 2^{Exponent - Bias}  $
+
+\begin{tabular} { l | c | c }
+   Variable & Single  & Double\\
+   Fraction & 23 bits & 52 bits\\ 
+   Exponent & 8 bits  & 11 bits\\
+   Bias     & 127 bits& 1023 bits \\
+
+\end{tabular}
+\end{center}
+
+\section*{Describe the concept of the memory hierarchy. What levels of the hierarchy are present on flip.engr.oregonstate.edu?}
+
+Memory heirarchy are layers of computer storage/memory. Each layer represents a blocks of storage that has the same accessing time that is unique to the layer (or level). \newline
+
+Flip Memory Heirarchy:\newline
+1st-level data cache  24 KBytes, 6-way set associative, 64 byte line size\newline
+ No 2nd-level cache or, if processor contains a valid 2nd-level cache, no 3rd-level cache
+ 
+
+\section*{What streaming SIMD instruction levels are present on flip.engr.oregonstate.edu?}
+
+SSE3, SSSE3, SSE4.1, SSE, SSE2 are streaming SIMD instruction leveles that are presented on flip.engr.oregonstate.edu  
+
+\section*{If a feature is not supported, report that.}
+
+Since the maximum number of CPUID leaf that is supported on flip.engr.oregonstate.edu is 10, any features that has a higher leaf than 10 is not supported. For this specific assignment, the clock frequency feature is not supported. [Thanks to CPU Brand name string that provide us with CPU frequency].
+
+
+\end{document}
+

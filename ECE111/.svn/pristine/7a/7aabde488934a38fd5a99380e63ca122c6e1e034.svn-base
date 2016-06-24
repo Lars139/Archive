@@ -1,0 +1,31 @@
+\hypertarget{namespacelauncher}{\section{launcher Namespace Reference}
+\label{namespacelauncher}\index{launcher@{launcher}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacelauncher_ae89ee08b571448a6c7d24b325e6c4c15}{tuple \hyperlink{namespacelauncher_ae89ee08b571448a6c7d24b325e6c4c15}{app} \hyperlink{classgui_1_1_g_u_i___launcher}{G\-U\-I\-\_\-\-Launcher}(0)}\label{namespacelauncher_ae89ee08b571448a6c7d24b325e6c4c15}
+
+\begin{DoxyCompactList}\small\item\em New instance of the application class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Launches the MotorGUI
+
+Created on Aug 17, 2012
+
+@author: Robert L. Phillips III
+@version: 1.0
+
+@section DEPENDENCIES
+    -  python target
+  Python 2.7 (x86) (http://www.python.org/getit/)
+  
+    -  wxPython version
+  wxPython2.8-win32-unicode-py27 (http://wxpython.org/download.php)
+  
+    -  build environment
+  This project was originally coded and built using Eclipse Indigo and the pydev
+  extension.  The third party library wxPython was used in order to generate the
+  GUI and its components\end{DoxyVerb}
+ 

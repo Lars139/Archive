@@ -1,0 +1,43 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega128"</DEVICE>
+ <WORKING_DIR>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m128def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Debug/Lab6.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab6.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab6.map</FILE>
+  <FILE>Lab6.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <INIT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>73</LINE></INIT>
+  <BUMPR><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>140</LINE></BUMPR>
+  <BUMPL><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>168</LINE></BUMPL>
+  <USART_RECIEVE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>213</LINE></USART_RECIEVE>
+  <MAIN><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>125</LINE></MAIN>
+  <WAIT><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>196</LINE></WAIT>
+  <OLOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>197</LINE></OLOOP>
+  <MLOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>199</LINE></MLOOP>
+  <ILOOP><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>201</LINE></ILOOP>
+  <DONE><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>291</LINE></DONE>
+  <DECODE_COMMAND><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>252</LINE></DECODE_COMMAND>
+  <send_me_in_coach><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>241</LINE></send_me_in_coach>
+  <RW_Rcv><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>269</LINE></RW_Rcv>
+  <FF_Rcv><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>273</LINE></FF_Rcv>
+  <TR_Rcv><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>277</LINE></TR_Rcv>
+  <TL_Rcv><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>281</LINE></TL_Rcv>
+  <HT_Rcv><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>285</LINE></HT_Rcv>
+  <FR_Rcv><FILE>H:\Windows.Documents\My Documents\Atmel Studio\6.2\Lab6\Lab6\Lab6_Recieve.asm</FILE><LINE>289</LINE></FR_Rcv>
+ </LABELS>
+</ASSEMBLER_INFO>

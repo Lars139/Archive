@@ -1,0 +1,489 @@
+#include<iostream>
+#include<string>
+#include<cstdlib>
+using namespace std;
+
+class Board
+{
+   public:
+      Board();//instructor to initialize the ship
+
+      struct Ship
+      {
+	 string stype;
+	 int itype,spots;
+	 bool used;
+
+      };
+
+      //Functions in wonder land
+      void BoardReset();
+      void BoardPrint();
+      void ShipInfo();
+      void iInputX();
+      void Input();
+      bool ShipBound();
+      void ShipDup();
+      void ShipSetting();
+      int  P2Ship(Board &p1, Board &p2);
+      void ShipDirect();
+      void ShipPlacingNS();
+      void ShipPlacingEW();
+      bool AllShip();
+      bool ShipStackNS(int d);
+      bool ShipStackEW(int d);
+      void Hit();
+      bool Attack(Board &p, int &turn);
+      void SunkShip();
+      // bool Turn(int *turn);  declare in global
+      bool GG(int &turn);
+
+      Ship *ShipMatch(int inShip);
+
+   private:
+      int board[10][10];
+      char col, dir;
+      int row,irow, icol,inShip;
+      Ship Car, Bat, Des, Sub, Pat;
+      Ship *TheShip;      
+};
+
+
+Board::Board()
+{
+   Car.stype = "Aircarft Carrier"; Car.itype=1; Car.spots=5; Car.used=0;
+   Bat.stype = "Battleship"; Bat.itype=2; Bat.spots=4; Bat.used=0;
+   Des.stype = "Destroyer"; Des.itype=3; Des.spots=3; Des.used=0;
+   Sub.stype = "Submarine"; Sub.itype=4; Sub.spots=3; Sub.used=0;
+   Pat.stype = "Patrol Boat"; Pat.itype=5; Pat.spots=2; Pat.used=0;
+}
+
+
+
+//Resetting the battle boards
+void Board::BoardReset()
+{
+   int y =10, x=10;
+   for(int j=0; j<y; j++)
+   {
+      for(int i=0; i<x; i++)
+      {
+	 board[j][i] = 0;
+      }
+   }
+}
+
+//Printing the board
+void Board:: BoardPrint()
+{
+   int y =10, x=10;
+   cout<<"   A B C D E F G H I J "<<endl;
+   for(int j=0; j<y; j++)
+   {
+      if(j<(y-1))
+	 cout<<j+1<<"  ";
+      else
+	 cout<<j+1<<" ";
+      for(int i=0; i<x; i++)
+      {
+	 cout<<board[j][i]<<" ";  //print array
+      }
+      cout<<"\n";
+   }
+}
+
+//Allow 2nd player to put ships down
+int Board::P2Ship(Board &p1, Board &p2)
+{
+   int r=0;
+   if(p1.Car.used ==1 && p1.Bat.used==1 && p1.Des.used==1 && p1.Sub.used==1 && p1.Pat.used==1)
+   {
+      r=1; //if player 1 has placed all the ships
+   }
+   if(r==1 && p2.Car.used ==1 && p2.Bat.used==1 && p2.Des.used==1 && p2.Sub.used==1 && p2.Pat.used==1)
+      r=2; //palyer 2 has placed all the ships
+   return r;
+}
+
+//Print ship information
+void Board::ShipInfo()
+{
+   BoardPrint();
+   cout<<"Please choose a ship: \n [1] Aircraft Carrier - 5 spots\n [2] Battleship - 4 spots\n [3] Destroyer - 3 spots\n [4] Submarine - 3 spots\n [5] Patrol Boat -2 spots\n What ship would you like to put on a board?"<<endl;
+}
+
+//Change the input into an integer (Board grid)
+void Board::iInputX() //interpret from letter to a number
+{
+   if(col=='a'||col=='A')
+      icol=0;
+   else if(col=='b'||col=='B')
+      icol=1;
+   else if(col=='c'||col=='C')
+      icol=2;
+   else if(col=='d'||col=='D')
+      icol=3;
+   else if(col=='e'||col=='E')
+      icol=4;
+   else if(col=='f'||col=='F')
+      icol=5;
+   else if(col=='g'||col=='G')
+      icol=6;
+   else if(col=='h'||col=='H')
+      icol=7;
+   else if(col=='i'||col=='I')
+      icol=8;
+   else if(col=='j'||col=='J')
+      icol=9;
+}
+
+//Ask for input
+void Board::Input()
+{
+   cout<<"Please insert a row [A-J]"<<endl;
+   cin>>col;
+   cout<<"Please insert a column [1-10]"<<endl;
+   cin>>row;
+   irow = row-1;
+   iInputX();
+}
+
+//Check if the ship lies outside the bound
+bool Board::ShipBound()
+{
+   if(dir=='N'||dir=='n'||dir=='W'||dir=='w') //if ship lies toward north or west
+   {
+      if((irow-TheShip->spots)<0||(icol-TheShip->spots)<0)
+      {
+	 cout<<"\n*** Error: Ship out of boundary ***\n"<<endl;
+	 return (1==1);
+      }
+      else
+	 return (1==0);
+   }
+   if(dir=='S'||dir=='s') //if ship lies toward south or east
+   {
+      if((irow+TheShip->spots)>11||(icol+TheShip->spots)>11)
+      {
+	 cout<<"\n*** Error: Ship out of boundary ***\n"<<endl;
+	 return (1==1);
+      }
+      else
+	 return (1==0);
+   }
+}
+
+//Matching the ship  and return the ship struck to be stored in *TheShip
+Board::Ship * Board::ShipMatch(int inShip) 
+{
+   switch (inShip)
+   {
+      case 1:
+	 {
+	    return &(Car);
+	    break;
+	 }
+      case 2:
+	 {
+	    return &(Bat);
+	    break;
+	 }
+      case 3:
+	 {
+	    return &(Des);
+	    break;
+	 }
+      case 4:
+	 {
+	    return &(Sub);
+	    break;
+	 }
+      case 5:
+	 {
+	    return &(Pat);
+	    break;
+	 }
+   }
+
+}
+
+//Check if the ship has been used
+void Board::ShipDup()
+{
+   bool k=0;
+   do{
+      ShipInfo(); //print out the ship info and ask what kind of ship the user want (store in int tyep)
+      cin>>inShip;
+      TheShip = ShipMatch(inShip); //return the struct addresss of the ship.
+
+      if(TheShip->used!=0)
+      {
+	 cout<<"The "<<TheShip->stype<<" has been used."<<endl;
+	 TheShip->used =1;
+	 k=1;
+      }
+   }while(k);
+
+}
+
+
+//Ask What direction to place a ship
+/*void Board::ShipDirect()
+  {
+  bool t;
+  cout<<"What direction to put a ship?\n[N] North  [E] East  [W] West  [S] South"<<endl;
+  cin>>dir;
+  t=ShipBound();
+  if(t)
+  {
+  ShipSetting();
+  }  
+  }*/
+
+//Check if ship stack on top of each other
+bool Board::ShipStackNS(int d) //check for the north and south; recieve 'd' to multiply to control direction of N or S.
+{
+   int c=0, co ,ro;
+   for(int i=0;i<TheShip->spots;i++)
+   {
+      if(board[irow-(i*d)][icol]==0)
+      {
+	 c++;
+      }
+      else
+      {
+	 co = icol;
+	 ro = (irow -(i*d));
+      }
+      if(c==TheShip->spots)
+      {
+	 return (1);//if ship doesn't stack return true
+      }
+      else
+      {
+	 cout<<" ***Error: "<<TheShip->stype<<" has been placed at ("<<col<<","<<ro+1<<") ***\n"<<endl;
+	 return (0); //if ship stack return false
+      }
+   }
+}
+
+bool Board::ShipStackEW(int d) //check for the north and south; recieve 'd' to multiply to control direction of E or W.
+{
+   int c=0, co ,ro;
+   for(int i=0;i<TheShip->spots-1;i++)
+   {
+      if(board[irow][icol-(i*d)]==0)
+      {
+	 c++;
+      }
+      else
+      {
+	 co = (icol-(i*d));
+	 ro = irow;
+      }
+      if(c==TheShip->spots)
+	 return (1); //if ship doesn't stack return true.
+      else
+      {
+	 std::cout<<TheShip->stype<<" has been placed at ("<<co<<","<<ro<<")"<<std::endl;
+	 return (0);//if ship stacks return flase
+      }
+   }
+}
+
+
+//Placing Ships
+void Board::ShipPlacingNS() //placing the ship on the board in direction of N and S.
+{
+   int d=0; bool SS;
+   if(dir=='n'||dir=='N')
+      d=1;
+   if(dir=='s'||dir=='S')
+      d = -1;
+   if(d==-1||d==1)
+   {
+      SS=ShipStackNS(d);
+      if(SS)//if ship doesn't go on top of other ship, place it.
+      {
+	 for(int i=0;i<TheShip->spots-1;i++) 
+	 {
+	    board[irow-(i*d)][icol]=TheShip->itype;
+	 }
+      }
+   }
+   else
+   {
+      cout<<"Please enter a valid direction";
+   }
+}
+
+
+void Board::ShipPlacingEW() //placing the ship on the board in direction of E and W.
+{
+   int d=0; bool SS;
+   if(dir=='e'||dir=='E')
+      d=1;
+   if(dir=='w'||dir=='W')
+      d = -1;
+   if(d==-1||d==1)
+   {
+      SS=ShipStackEW(d);
+      if(SS) //if ship doesn't go on top of other place the ship
+      {
+	 for(int i=0;i<TheShip->spots-1;i++)
+	 {
+	    board[irow][icol-(i*d)]=TheShip->itype;
+	 }
+      }
+   }
+   else
+   {
+      cout<<"Please enter a valid direction";
+   }
+}
+
+
+bool Board::AllShip()//check if all the ships are used
+{
+   if(Car.used==1&&Bat.used==1&&Des.used==1&&Sub.used==1&&Pat.used==1)
+      return (1==1);
+   else
+      return (0==1);
+}
+
+
+//Where to put the ship in the board
+void Board::ShipSetting() //the object that was passed now name p
+{
+   bool r,e ;
+      do{
+	 do{
+	    ShipDup();
+	    Input();
+	    cout<<"What direction to put a ship?\n[N] North  [E] East  [W] West  [S] South"<<endl;
+	    cin>>dir;
+	    e=ShipBound();
+	 }while(e);
+	 if(dir=='s'||dir=='S'||dir=='n'||dir=='N') 
+	    ShipPlacingNS();
+	 else if(dir=='e'||dir=='E'||dir=='w'||dir=='W')
+	    ShipPlacingEW();
+	 r = AllShip();
+      }while(!r);
+
+}
+
+
+
+bool Turn(int &turn)
+{
+
+   if((turn)%2==0)
+   {
+      (turn)++;
+      return(0); // false if it is an even number
+   }
+   else 
+   {
+      (turn)++;
+      return(1); // true if it's an odd number
+   }
+}
+
+
+
+
+//Check if the game is over
+bool Board::GG(int &turn)
+{
+   int left=0;
+   int y =10, x=10;
+   for(int j=0; j<y; j++)
+   {
+      for(int i=0; i<x; i++)
+      {
+	 if(board[y][x]< 0)
+	    left++;
+      }
+   }
+   if(left==17)
+   {
+      cout<<"Game Over"<<endl;      //Need to indicate what player won
+      return (0);
+   }
+   else
+   {
+      Turn(turn);
+      return (1);
+   }
+
+}
+
+
+//Check if the ship is sunk
+void Board::SunkShip()
+{
+   if(TheShip->spots<=0)
+   {
+      cout<<"You have sunk "<<TheShip->stype<<endl;
+
+   }
+}
+
+//Check if it hits a ship
+void Board::Hit()
+{
+   int dmg;
+   if(board[irow][icol]==0)
+   {
+      cout<<"  Miss  "<<endl;
+      return ;
+   }
+   else
+   {
+      dmg = board[irow][icol];
+      TheShip=ShipMatch(dmg);
+      board[irow][icol] *= -1;
+      TheShip->spots -=1;
+      cout<<"** Hit **"<<endl;
+      SunkShip();
+      return ;
+   }
+}
+
+//Begin to attck ship
+bool Board::Attack(Board &p, int &turn) //passing the board of opponent
+{
+   bool gg,end=0;
+   do{
+      cout<<"Select target:"<<endl;
+      p.Input(); //input will be stored in irow, icol.
+      p.Hit();
+      gg = p.GG(turn);
+   }while(!gg);
+   if(!gg)
+      return end;
+
+
+}
+
+
+int main()
+{
+   bool gg, rTurn;
+   int turn=1;
+   Board p1, p2;
+   p1.BoardReset(); //first method of passing --passing object
+   p1.ShipSetting();
+   p2.ShipSetting();
+   
+   do{
+      rTurn = Turn(turn);
+      if(rTurn)
+      gg=p1.Attack(p2,turn);
+      else
+	 gg=p2.Attack(p1,turn);
+   }while(!gg);
+
+   return 0;
+}

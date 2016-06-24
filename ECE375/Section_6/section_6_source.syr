@@ -1,0 +1,305 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: section_6_source.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "section_6_source.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "section_6_source"
+Output Format                      : NGC
+Target Device                      : XC9500XL CPLDs
+
+---- Source Options
+Top Module Name                    : section_6_source
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "clock_divider.v" in library work
+Module <ClockDivider> compiled
+Compiling verilog file "section_6_source.v" in library work
+Module <ClockDividerStage> compiled
+Module <section_6_source> compiled
+Module <stateswitch> compiled
+Module <decoder> compiled
+No errors in compilation
+Analysis of file <"section_6_source.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <section_6_source> in library <work>.
+
+Analyzing hierarchy for module <ClockDivider> in library <work>.
+
+Analyzing hierarchy for module <stateswitch> in library <work> with parameters.
+	S0 = "000"
+	S1 = "001"
+	S2 = "010"
+	S3 = "011"
+	S4 = "100"
+
+Analyzing hierarchy for module <decoder> in library <work>.
+
+Analyzing hierarchy for module <ClockDividerStage> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <section_6_source>.
+WARNING:Xst:863 - "section_6_source.v" line 22: Name conflict (<Reset> and <reset>, renaming Reset as reset_rnm0).
+Module <section_6_source> is correct for synthesis.
+ 
+Analyzing module <ClockDivider> in library <work>.
+Module <ClockDivider> is correct for synthesis.
+ 
+Analyzing module <ClockDividerStage> in library <work>.
+Module <ClockDividerStage> is correct for synthesis.
+ 
+Analyzing module <stateswitch> in library <work>.
+	S0 = 3'b000
+	S1 = 3'b001
+	S2 = 3'b010
+	S3 = 3'b011
+	S4 = 3'b100
+Module <stateswitch> is correct for synthesis.
+ 
+Analyzing module <decoder> in library <work>.
+Module <decoder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <ren> in unit <section_6_source> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <stateswitch>.
+    Related source file is "section_6_source.v".
+WARNING:Xst:737 - Found 3-bit latch for signal <$old_nextstate_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 3-bit register for signal <state>.
+Unit <stateswitch> synthesized.
+
+
+Synthesizing Unit <decoder>.
+    Related source file is "section_6_source.v".
+    Found 5x5-bit ROM for signal <state_out$mux0000>.
+WARNING:Xst:737 - Found 5-bit latch for signal <state_out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <ClockDividerStage>.
+    Related source file is "clock_divider.v".
+    Found 1-bit register for signal <HalvedClock>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <ClockDividerStage> synthesized.
+
+
+Synthesizing Unit <ClockDivider>.
+    Related source file is "clock_divider.v".
+Unit <ClockDivider> synthesized.
+
+
+Synthesizing Unit <section_6_source>.
+    Related source file is "section_6_source.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <state> is never assigned. Tied to value 000.
+WARNING:Xst:653 - Signal <reset_rnm0> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <Clock_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_64> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_512> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_32> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_256> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_16> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_128> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Clock_1024> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Clock> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:737 - Found 1-bit latch for signal <len>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ldir>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <rdir>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <section_6_source> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 5x5-bit ROM                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 10
+ 3-bit register                                        : 1
+# Latches                                              : 5
+ 1-bit latch                                           : 3
+ 3-bit latch                                           : 1
+ 5-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 0.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <HalvedClock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Divider_2> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_3> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_4> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_5> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_6> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_7> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_8> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_9> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Divider_A> is unconnected in block <instance_name>.
+   It will be removed from the design.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1290 - Hierarchical block <instance_name> is unconnected in block <section_6_source>.
+   It will be removed from the design.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 5x5-bit ROM                                           : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Latches                                              : 5
+ 1-bit latch                                           : 3
+ 3-bit latch                                           : 1
+ 5-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <section_6_source> on signal <state_out<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <outputblock/state_out_4>
+   Signal <state_out<4>> in Unit <section_6_source> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <section_6_source> on signal <state_out<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <outputblock/state_out_3>
+   Signal <state_out<3>> in Unit <section_6_source> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <section_6_source> on signal <state_out<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <stateblock/_old_nextstate_2_2>
+   Output signal of LD instance <outputblock/state_out_2>
+
+ERROR:Xst:528 - Multi-source in Unit <section_6_source> on signal <state_out<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <stateblock/_old_nextstate_2_1>
+   Output signal of LD instance <outputblock/state_out_1>
+
+ERROR:Xst:528 - Multi-source in Unit <section_6_source> on signal <state_out<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <stateblock/_old_nextstate_2_0>
+   Output signal of LD instance <outputblock/state_out_0>
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.96 secs
+ 
+--> 
+
+Total memory usage is 212396 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

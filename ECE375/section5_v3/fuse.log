@@ -1,0 +1,51 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest_isim_beh.exe -prj Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest_beh.prj work.VerilogTest work.glbl 
+ISim P.15xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" into library work
+Analyzing Verilog file "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/section3_schematic.vhf" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 72: Size mismatch in connection of port <Bi1>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 73: Size mismatch in connection of port <Bi2>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 75: Size mismatch in connection of port <Q>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 82: Size mismatch in connection of port <Bi1>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 83: Size mismatch in connection of port <Bi2>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 85: Size mismatch in connection of port <Q>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 92: Size mismatch in connection of port <Bi1>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 93: Size mismatch in connection of port <Bi2>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 95: Size mismatch in connection of port <Q>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 62: Size mismatch in connection of port <Bi1>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 63: Size mismatch in connection of port <Bi2>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "Z:/Windows.Documents/My Documents/Sophomore/section5_v3/verilog_module_lab5.v" Line 65: Size mismatch in connection of port <Q>. Formal port size is 4-bit while actual signal size is 1-bit.
+Completed static elaboration
+Fuse Memory Usage: 129408 KB
+Fuse CPU Usage: 280 ms
+Compiling module Sc5
+Compiling module verilog_module_lab5
+Compiling module VerilogTest
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling architecture ibuf_v of entity IBUF [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture and2b2_v of entity AND2B2 [and2b2_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and3b2_v of entity AND3B2 [and3b2_default]
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture and3b3_v of entity AND3B3 [and3b3_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture behavioral of entity section3_schematic [section3_schematic_default]
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Compiled 4 Verilog Units
+Built simulation executable Z:/Windows.Documents/My Documents/Sophomore/section5_v3/VerilogTest_isim_beh.exe
+Fuse Memory Usage: 173488 KB
+Fuse CPU Usage: 701 ms

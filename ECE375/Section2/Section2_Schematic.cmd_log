@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "Z:/Windows.Documents/My Documents/Sophomore/Section2/Section2_Schematic.xst" -ofn "Z:/Windows.Documents/My Documents/Sophomore/Section2/Section2_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-VQ44-10 "Section2_Schematic.ngc" Section2_Schematic.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Section2_Schematic.ngd 
+XSLTProcess Section2_Schematic_build.xml 
+tsim -intstyle ise Section2_Schematic Section2_Schematic.nga 
+taengine -intstyle ise -f Section2_Schematic -w --format html1 -l Section2_Schematic_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Section2_Schematic -i Section2_Schematic 
+ngdbuild -intstyle ise -dd _ngo -uc Section2_Schematic.ucf -p xc9572xl-VQ44-10 "Section2_Schematic.ngc" Section2_Schematic.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Section2_Schematic.ngd 
+XSLTProcess Section2_Schematic_build.xml 
+tsim -intstyle ise Section2_Schematic Section2_Schematic.nga 
+hprep6 -s IEEE1149 -n Section2_Schematic -i Section2_Schematic 
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -nogtsopt -nogsropt -unused float -power std -terminate float Section2_Schematic.ngd 
+XSLTProcess Section2_Schematic_build.xml 
+tsim -intstyle ise Section2_Schematic Section2_Schematic.nga 
+hprep6 -s IEEE1149 -n Section2_Schematic -i Section2_Schematic 
