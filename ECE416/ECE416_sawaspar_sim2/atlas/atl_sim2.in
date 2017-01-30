@@ -1,0 +1,44 @@
+go atlas
+
+mesh
+
+x.mesh loc=0.00 spac=0.05
+x.mesh loc=1.50 spac=0.05
+
+y.mesh loc=0.00 spac=0.20
+y.mesh loc=1.00 spac=0.001
+y.mesh loc=2.00 spac=0.20
+
+region number=1 x.min=0.0 x.max=1.5 y.min=0.0 y.max=1.0 material=silicon
+region number=2 x.min=0.0 x.max=1.5 y.min=1.0 y.max=2.0 material=silicon
+
+electrode name=cathode top
+electrode name=anode   bottom
+
+doping uniform conc=1e16 n.type region=1
+doping uniform conc=1e16 p.type region=2
+
+model conmob fldmob srh auger bgn
+contact name=anode   neutral 
+contact name=cathode neutral 
+
+probe n.mob    x=0.05 y=0.2
+probe p.mob    x=0.05 y=1.8
+solve init
+#save outfile=diode1.str
+#tonyplot diode1.str
+
+#solve vanode=0.01
+#solve vanode=-0.01
+
+log outfile=diode1.log
+solve  vanode=-1.5 vstep=0.1 vfinal=1.5 name=anode
+tonyplot diode1.log 
+
+# Bias at -5V and save the structure file
+# Then plot in Tonyplot to create the appropriate cutline
+solve  vanode=-5 name=anode
+output con.ban val.ban e.mobility h.mobility
+save outfile=diode_rev5.str
+tonyplot diode_rev5.str
+#quit

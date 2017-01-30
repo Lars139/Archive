@@ -1,0 +1,29 @@
+### ECE 416/516  ATLAS Simulation Assignment 1
+###
+### Modified oct 24,2016 by Youhawin Philvastvanid
+go atlas
+
+## Define simulation mesh, units in microns
+mesh  space.mult=1.0 
+x.mesh loc=0.00 spac=100
+x.mesh loc=10000.00 spac=100
+y.mesh loc=-100.00 spac=100
+y.mesh loc=7600.00 spac=100
+
+## Define device structure and composition
+region    number=1 x.min=0 x.max=10000 y.min=0 y.max=7500 material=Ge
+electrode  name=anode   number=1 x.min=0 x.max=10000 y.min=-100 y.max=0
+electrode   name=cathode number=2 x.min=0 x.max=10000 y.min=7500 y.max=7600
+contact     name=anode   neutral 
+contact     name=cathode neutral 
+
+#Part (ii)
+doping  region=1 n.type uniform conc=1e18  
+models bipolar temperature=300 kla analytic srh
+method newton
+solve init
+log   outfile=../logs/Ge2.log
+solve      vanode=1  vstep=1  vfinal=10  name=anode
+log off
+
+quit
