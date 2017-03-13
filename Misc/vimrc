@@ -1,0 +1,16 @@
+filetype on
+filetype plugin on
+filetype indent on
+set background=dark
+colorscheme solarized
+set sw=2 "Set the sw for the auto indent to 3 spaces
+set tabstop=2 expandtab "URGHHHHHH SOFT TABBBBBB
+set number "Show the line numbers on the left
+set undolevels=500
+set viminfo='20,<1000
+syntax enable"Turn on sytax highlighting
+set showmatch
+set showmode
+au FileType c set makeprg=gcc\c 
+au FileType cpp set makeprg=g++\ 
+set t_kb=
